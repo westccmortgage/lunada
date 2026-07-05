@@ -3,13 +3,18 @@ import { siteConfig } from '../data/translations.js'
 import { organizationSchema, personSchema, websiteSchema, faqSchema } from '../lib/schema.js'
 import Seo from '../components/Seo.jsx'
 import Hero from '../components/Hero.jsx'
+import StartHere from '../components/StartHere.jsx'
+import Divider from '../components/Divider.jsx'
 import LocalAuthority from '../components/LocalAuthority.jsx'
 import JumboStrategy from '../components/JumboStrategy.jsx'
+import MortgageGuide from '../components/MortgageGuide.jsx'
+import DocumentsNeeded from '../components/DocumentsNeeded.jsx'
 import AboutFounder from '../components/AboutFounder.jsx'
 import LocalMarkets from '../components/LocalMarkets.jsx'
 import LoanPrograms from '../components/LoanPrograms.jsx'
 import ClientProfiles from '../components/ClientProfiles.jsx'
 import Process from '../components/Process.jsx'
+import PrivateReviewModel from '../components/PrivateReviewModel.jsx'
 import Insights from '../components/Insights.jsx'
 import FAQ from '../components/FAQ.jsx'
 import ContactForm from '../components/ContactForm.jsx'
@@ -43,13 +48,19 @@ export default function Home() {
         </div>
       </section>
 
+      <StartHere t={t} />
+      <Divider />
       <LocalAuthority t={t} />
       <JumboStrategy t={t} />
+      <MortgageGuide t={t} />
+      <DocumentsNeeded t={t} />
+      <Divider />
       <AboutFounder t={t} config={siteConfig} />
       <LocalMarkets t={t} />
       <LoanPrograms t={t} />
       <ClientProfiles t={t} />
       <Process t={t} />
+      <PrivateReviewModel t={t} />
       <Insights t={t} lang={lang} />
       <FAQ t={t} />
       <ContactForm t={t} />

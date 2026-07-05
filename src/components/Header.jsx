@@ -13,11 +13,12 @@ export default function Header({ t, lang, setLang }) {
   }, [])
 
   const navItems = [
+    { key: 'start', href: '/#start-here' },
     { key: 'strategy', href: '/#strategy' },
+    { key: 'guide', href: '/#guide' },
     { key: 'about', href: '/#about' },
     { key: 'markets', href: '/#markets' },
     { key: 'programs', href: '/#programs' },
-    { key: 'clients', href: '/#clients' },
     { key: 'process', href: '/#process' },
     { key: 'faq', href: '/#faq' },
   ]

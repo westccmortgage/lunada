@@ -54,12 +54,197 @@ export const translations = {
   en: {
     langLabel: 'EN',
 
+    startHere: {
+      eyebrow: 'Start Here',
+      title: 'Not Sure Where to Begin?',
+      copy: 'Buying or refinancing a high-value home can feel complicated. Start with a few simple questions and understand which mortgage path may need to be reviewed.',
+      cta: 'Start Mortgage Path',
+      hint: '6 short questions · about a minute',
+    },
+
+    wizard: {
+      stepLabel: 'Step',
+      of: 'of',
+      back: 'Back',
+      next: 'Next',
+      finish: 'See my path',
+      restart: 'Start over',
+      steps: [
+        {
+          key: 'purpose',
+          type: 'choice',
+          question: 'Are you buying, refinancing, cashing out, investing, or purchasing a second home?',
+          options: ['Buying', 'Refinancing', 'Cash-out', 'Investing', 'Second home'],
+        },
+        {
+          key: 'location',
+          type: 'text',
+          question: 'Where is the property located?',
+          placeholder: 'City or ZIP — e.g. Lunada Bay or 90274',
+        },
+        {
+          key: 'price',
+          type: 'choice',
+          question: 'What is the estimated purchase price or property value?',
+          options: ['Under $1M', '$1M – $2M', '$2M – $3M', '$3M – $5M', '$5M+'],
+        },
+        {
+          key: 'loan',
+          type: 'choice',
+          question: 'What is the estimated loan amount?',
+          options: ['Under $800K', '$800K – $1.5M', '$1.5M – $2.5M', '$2.5M – $4M', '$4M+', 'Not sure yet'],
+        },
+        {
+          key: 'income',
+          type: 'choice',
+          question: 'What is your income type?',
+          options: ['W-2', 'Self-employed', 'Business owner', 'Investor', 'Other'],
+        },
+        {
+          key: 'language',
+          type: 'choice',
+          question: 'Preferred language?',
+          options: ['English', '中文', 'Both'],
+        },
+      ],
+      result: {
+        eyebrow: 'Your Path',
+        title:
+          'Based on your answers, your scenario may benefit from a private jumbo mortgage strategy review.',
+        body:
+          'Every situation is different. A short, private conversation is the best way to understand which loan structures and documentation may apply to your goals — with no obligation.',
+        summaryTitle: 'Your answers',
+        nextTitle: 'Next step',
+        nextBody: 'Request a private review with a licensed mortgage professional.',
+        nextCta: 'Request a Private Review',
+        disclaimer:
+          'This is general guidance only — not a loan decision, pre-qualification, or commitment to lend.',
+      },
+    },
+
+    guide: {
+      whatIsJumbo: {
+        eyebrow: 'The Basics',
+        title: 'What Makes a Loan Jumbo?',
+        paras: [
+          'A mortgage is called “jumbo” when the loan amount is larger than the conforming loan limit set for the county each year. Loans at or below that limit follow standard Fannie Mae or Freddie Mac guidelines; loans above it do not, so they follow more detailed lender guidelines.',
+          'In high-value areas like Lunada Bay and Palos Verdes, many homes sit above that limit — which is why jumbo financing is common here. A jumbo loan is not riskier by nature; it simply involves a closer look at income, assets, and the property.',
+        ],
+        glossaryTitle: 'Plain-language glossary',
+        glossary: [
+          { term: 'Conforming limit', def: 'The maximum loan amount that follows standard Fannie Mae / Freddie Mac guidelines. Above it, a loan is “jumbo.”' },
+          { term: 'Reserves', def: 'Savings or assets left after closing — often measured in months of payments — that show you can carry the loan.' },
+          { term: 'Non-QM', def: '“Non-Qualified Mortgage.” Loans that use alternative ways to document income while still following lender rules.' },
+          { term: 'Bank statement loan', def: 'A Non-QM option where income is reviewed using bank deposits instead of tax returns — often for self-employed borrowers.' },
+          { term: 'DSCR', def: '“Debt-Service Coverage Ratio.” For investment property, it compares the rental income to the loan payment.' },
+          { term: 'Interest-only', def: 'A structure where payments cover interest for a set period, which can lower the payment during that time.' },
+        ],
+      },
+      lenderReview: {
+        eyebrow: 'How Review Works',
+        title: 'What Lenders May Review',
+        intro:
+          'A jumbo file is reviewed as a full picture. These are the areas a lender may consider. Every program and borrower is different, and all are subject to lender guidelines and underwriting.',
+        cards: [
+          { title: 'Credit profile', body: 'Your credit history and how you have managed prior obligations.' },
+          { title: 'Income documentation', body: 'How income is shown — tax returns, W-2s, bank statements, or other records.' },
+          { title: 'Assets and reserves', body: 'Funds for down payment and closing, plus savings left over afterward.' },
+          { title: 'Property type', body: 'Single-family, condo, multi-unit, or second home — each can have different rules.' },
+          { title: 'Occupancy', body: 'Whether the home is a primary residence, second home, or investment.' },
+          { title: 'Loan amount', body: 'The size of the loan relative to property value and county limits.' },
+          { title: 'Down payment or equity', body: 'How much you put down, or the equity you hold when refinancing.' },
+          { title: 'Underwriting guidelines', body: 'The specific lender’s rules that a complete file must meet.' },
+        ],
+      },
+      beforeOffer: {
+        eyebrow: 'Before You Buy',
+        title: 'Before You Make an Offer',
+        copy:
+          'Before making an offer on a Lunada Bay or Palos Verdes home, it may help to understand the financing behind the property — loan amount, down payment, reserves, documentation, and whether a jumbo or alternative loan path may be appropriate.',
+        cta: 'Start Mortgage Path',
+      },
+    },
+
+    documents: {
+      eyebrow: 'Preparation',
+      title: 'Documents You May Need',
+      intro:
+        'Requirements vary by program and lender, but here is a general starting point by borrower type. Nothing here is required to begin — it simply helps you prepare.',
+      note: 'Documents are reviewed subject to lender guidelines and underwriting approval.',
+      tabs: [
+        {
+          label: 'W-2 Borrower',
+          items: [
+            'Recent W-2 forms (typically two years)',
+            'Recent pay stubs',
+            'Two months of bank statements',
+            'Government-issued photo ID',
+            'Details on assets and reserves',
+          ],
+        },
+        {
+          label: 'Self-Employed',
+          items: [
+            'Personal tax returns (often two years)',
+            'Business tax returns, if applicable',
+            'Year-to-date profit and loss',
+            'Recent bank statements',
+            'Business license or equivalent',
+          ],
+        },
+        {
+          label: 'Business Owner',
+          items: [
+            'Business and personal tax returns',
+            'Profit and loss and balance sheet',
+            'Business bank statements',
+            'Proof of ownership percentage',
+            'Details on assets and reserves',
+          ],
+        },
+        {
+          label: 'Investor / DSCR',
+          items: [
+            'Lease agreements or market rent estimate',
+            'Property details and operating expenses',
+            'Recent bank statements',
+            'Portfolio summary, if applicable',
+            'Entity documents, if held in an LLC',
+          ],
+        },
+        {
+          label: 'Refinance',
+          items: [
+            'Current mortgage statement',
+            'Homeowners insurance and property tax details',
+            'Proof of income for your borrower type',
+            'Recent bank statements',
+            'Estimate of current property value',
+          ],
+        },
+      ],
+    },
+
+    privateReview: {
+      eyebrow: 'The Engagement',
+      title: 'The Private Review',
+      intro: 'A calm, confidential way to understand your options — before you commit to anything.',
+      points: [
+        { label: 'By request', text: 'Access is by request — a private conversation, not an automated quote.' },
+        { label: 'Confidential', text: 'Your information is handled with discretion and reviewed by a licensed professional.' },
+        { label: 'No obligation', text: 'No commitment to lend, no rate quote, no pressure — only clear guidance.' },
+        { label: 'Strategy first', text: 'We focus on structure, documentation, and timing — not just a number.' },
+      ],
+      cta: 'Request a Private Review',
+    },
+
     nav: {
+      start: 'Start Here',
       strategy: 'Jumbo Strategy',
+      guide: 'Guide',
       about: 'About',
       markets: 'Local Markets',
       programs: 'Loan Programs',
-      clients: 'Who We Serve',
       process: 'Process',
       faq: 'FAQ',
       contact: 'Contact',
@@ -286,28 +471,44 @@ export const translations = {
           a: 'A jumbo loan is generally a mortgage that exceeds the standard conforming loan limits set for a county. High-value coastal homes often fall into this category, which can call for a more considered financing structure.',
         },
         {
-          q: 'Do jumbo loans require 20% down?',
-          a: 'Not necessarily. Down payment requirements vary by lender, program, property, and borrower profile. Some scenarios may allow for different structures, subject to guidelines and underwriting review.',
+          q: 'Do I need 20% down?',
+          a: 'Not necessarily. Down payment requirements vary by lender, program, property, and borrower profile. Some scenarios may allow for different structures, subject to lender guidelines and underwriting review.',
         },
         {
-          q: 'Can self-employed borrowers qualify?',
-          a: 'Yes, self-employed and business-owner borrowers may qualify. The key is presenting income clearly and choosing documentation paths — such as bank statement or Non-QM options — that align with lender guidelines.',
+          q: 'What if I am self-employed?',
+          a: 'Self-employed borrowers may qualify. The key is presenting income clearly and choosing documentation paths — such as bank statement or Non-QM options — that align with lender guidelines. We help position the file accurately and early.',
         },
         {
-          q: 'Are interest-only options available?',
+          q: 'What if my tax returns do not show all of my income?',
+          a: 'This is common for self-employed and business-owner borrowers. Alternative-documentation options — such as bank statement loans — may review income through business deposits instead of tax returns, subject to lender guidelines and underwriting approval.',
+        },
+        {
+          q: 'Can business owners qualify?',
+          a: 'Yes, business owners may qualify. Lenders may review business and personal documentation to understand income. The goal is to present it in the way lenders are prepared to evaluate — subject to lender guidelines and underwriting review.',
+        },
+        {
+          q: 'Can investors use DSCR?',
+          a: 'For qualifying investment properties, DSCR (Debt-Service Coverage Ratio) financing looks at the property’s rental income relative to the loan payment rather than personal income. Availability is subject to property type, lender guidelines, and underwriting.',
+        },
+        {
+          q: 'Can I use interest-only?',
           a: 'Interest-only structures may be available on certain jumbo programs, depending on lender guidelines and borrower profile. They can support cash-flow planning but are not suited to every situation.',
         },
         {
-          q: 'Can Chinese-speaking clients receive bilingual guidance?',
-          a: 'Yes. We provide bilingual guidance in English and Simplified Chinese, with clear explanation of the U.S. mortgage process and help understanding documentation for purchase, refinance, and investment scenarios.',
+          q: 'Can I refinance a high-value property?',
+          a: 'Yes. Refinancing may help adjust your loan structure, access equity through a cash-out refinance, or move between interest-only and amortizing options where available — subject to borrower qualification and underwriting approval.',
         },
         {
-          q: 'Do you work with investment properties?',
-          a: 'Yes. For qualifying properties, we can discuss DSCR and other investment-oriented structures, subject to lender guidelines, property type, and underwriting review.',
+          q: 'Can you explain the process in Chinese?',
+          a: 'Yes. We provide bilingual guidance in English and Simplified Chinese (中文), with clear explanation of the U.S. mortgage process and help understanding documentation for purchase, refinance, and investment scenarios.',
         },
         {
           q: 'Is this a commitment to lend?',
           a: 'No. This website is informational and is not a commitment to lend. All loans are subject to borrower qualification, credit approval, income, assets, property review, lender guidelines, and underwriting approval.',
+        },
+        {
+          q: 'What happens after I submit my information?',
+          a: 'A licensed mortgage professional will review what you share and follow up privately to understand your goals. There is no obligation — the first step is simply a clear, confidential conversation.',
         },
         {
           q: 'Why work with someone who also has real estate and development experience?',
@@ -373,12 +574,195 @@ export const translations = {
   zh: {
     langLabel: '中文',
 
+    startHere: {
+      eyebrow: '从这里开始',
+      title: '不确定从哪里开始？',
+      copy: '购买或再融资高价值住宅可能会涉及许多贷款规则。您可以先回答几个简单问题，了解哪些贷款路径可能需要进一步评估。',
+      cta: '开始了解贷款路径',
+      hint: '6 个简短问题 · 约一分钟',
+    },
+
+    wizard: {
+      stepLabel: '第',
+      of: '步，共',
+      back: '上一步',
+      next: '下一步',
+      finish: '查看我的路径',
+      restart: '重新开始',
+      steps: [
+        {
+          key: 'purpose',
+          type: 'choice',
+          question: '您此次的目的是购买、再融资、套现、投资，还是购买第二套住宅？',
+          options: ['购买', '再融资', '套现', '投资', '第二套住宅'],
+        },
+        {
+          key: 'location',
+          type: 'text',
+          question: '房产位于何处？',
+          placeholder: '城市或邮编——例如：露娜达湾 或 90274',
+        },
+        {
+          key: 'price',
+          type: 'choice',
+          question: '预计购买价格或房产价值？',
+          options: ['100万美元以下', '100万–200万美元', '200万–300万美元', '300万–500万美元', '500万美元以上'],
+        },
+        {
+          key: 'loan',
+          type: 'choice',
+          question: '预计贷款金额？',
+          options: ['80万美元以下', '80万–150万美元', '150万–250万美元', '250万–400万美元', '400万美元以上', '尚未确定'],
+        },
+        {
+          key: 'income',
+          type: 'choice',
+          question: '您的收入类型？',
+          options: ['W-2 雇员', '自雇', '企业主', '投资者', '其他'],
+        },
+        {
+          key: 'language',
+          type: 'choice',
+          question: '首选语言？',
+          options: ['English', '中文', '两者皆可'],
+        },
+      ],
+      result: {
+        eyebrow: '您的路径',
+        title: '根据您的回答，您的情况可能适合进行私人化的大额房贷策略评估。',
+        body:
+          '每个人的情况都不同。一次简短、私密的沟通，是了解哪些贷款结构与文件可能适合您目标的最佳方式——且没有任何义务。',
+        summaryTitle: '您的回答',
+        nextTitle: '下一步',
+        nextBody: '与持牌房贷专业人士预约一次私人评估。',
+        nextCta: '预约私人评估',
+        disclaimer: '以上仅为一般性指导——并非贷款决定、预先资格审核或贷款承诺。',
+      },
+    },
+
+    guide: {
+      whatIsJumbo: {
+        eyebrow: '基础知识',
+        title: '什么样的贷款属于“大额贷款”？',
+        paras: [
+          '当贷款金额超过所在县当年设定的合规贷款上限时，这笔房贷即被称为“大额贷款”（Jumbo）。等于或低于该上限的贷款遵循标准的房利美或房地美规定；超过上限的贷款则不适用，因此需遵循更细致的贷款机构规定。',
+          '在露娜达湾和帕洛斯弗迪斯这样的高价值地区，许多住宅的价值都超过该上限——这正是大额贷款在此地常见的原因。大额贷款本身并非风险更高，只是需要对收入、资产与房产进行更细致的审阅。',
+        ],
+        glossaryTitle: '通俗词汇表',
+        glossary: [
+          { term: '合规上限（Conforming limit）', def: '遵循标准房利美 / 房地美规定的最高贷款金额。超过该上限，贷款即为“大额贷款”。' },
+          { term: '储备金（Reserves）', def: '交割后仍保留的存款或资产——通常以可覆盖的月供数衡量——用以证明您有能力承担贷款。' },
+          { term: 'Non-QM', def: '“非合格房贷”。在仍遵循机构规定的前提下，采用替代方式记录收入的贷款。' },
+          { term: '银行流水贷款', def: '一种 Non-QM 方案，以银行存款而非税表来审阅收入——常见于自雇借款人。' },
+          { term: 'DSCR', def: '“偿债覆盖率”。针对投资房产，将租金收入与贷款还款进行比较。' },
+          { term: '只还利息', def: '在设定期限内仅偿还利息的结构，可在此期间降低月供。' },
+        ],
+      },
+      lenderReview: {
+        eyebrow: '审阅方式',
+        title: '贷款机构可能审阅哪些方面',
+        intro:
+          '大额贷款文件会作为一个整体来审阅。以下是贷款机构可能考量的方面。每个项目与借款人都不同，均需符合机构规定及承保。',
+        cards: [
+          { title: '信用状况', body: '您的信用记录，以及您对以往债务的管理情况。' },
+          { title: '收入文件', body: '收入的呈现方式——税表、W-2、银行流水或其他记录。' },
+          { title: '资产与储备金', body: '用于首付与交割的资金，以及之后保留的存款。' },
+          { title: '房产类型', body: '独立屋、公寓、多单元或第二套住宅——各自规定可能不同。' },
+          { title: '居住性质', body: '房产是自住、第二套住宅还是投资用途。' },
+          { title: '贷款金额', body: '贷款金额相对于房产价值及县级上限的大小。' },
+          { title: '首付或净值', body: '您的首付金额，或再融资时已持有的房产净值。' },
+          { title: '承保规定', body: '完整文件须满足的特定贷款机构规则。' },
+        ],
+      },
+      beforeOffer: {
+        eyebrow: '出价之前',
+        title: '在您出价之前',
+        copy:
+          '在为 Lunada Bay 或 Palos Verdes 的房产出价之前，先了解房产背后的贷款结构可能非常重要，包括贷款金额、首付、储备金、文件要求，以及是否可能需要大额贷款或其他贷款路径。',
+        cta: '开始了解贷款路径',
+      },
+    },
+
+    documents: {
+      eyebrow: '准备工作',
+      title: '您可能需要的文件',
+      intro:
+        '具体要求因项目与贷款机构而异，以下是按借款人类型列出的一般起点。开始时无需备齐这些文件——它只是帮助您做好准备。',
+      note: '所提供的文件将在符合贷款机构规定及承保审批的前提下审阅。',
+      tabs: [
+        {
+          label: 'W-2 雇员',
+          items: [
+            '近期 W-2 表格（通常为两年）',
+            '近期工资单',
+            '两个月的银行流水',
+            '政府签发的带照片身份证件',
+            '资产与储备金说明',
+          ],
+        },
+        {
+          label: '自雇人士',
+          items: [
+            '个人税表（通常为两年）',
+            '企业税表（如适用）',
+            '本年度至今的损益表',
+            '近期银行流水',
+            '营业执照或同等证明',
+          ],
+        },
+        {
+          label: '企业主',
+          items: [
+            '企业及个人税表',
+            '损益表与资产负债表',
+            '企业银行流水',
+            '持股比例证明',
+            '资产与储备金说明',
+          ],
+        },
+        {
+          label: '投资者 / DSCR',
+          items: [
+            '租约或市场租金估算',
+            '房产详情与运营支出',
+            '近期银行流水',
+            '资产组合概览（如适用）',
+            '实体文件（如以 LLC 持有）',
+          ],
+        },
+        {
+          label: '再融资',
+          items: [
+            '现有贷款月结单',
+            '房屋保险与房产税信息',
+            '与您借款人类型相符的收入证明',
+            '近期银行流水',
+            '当前房产价值估算',
+          ],
+        },
+      ],
+    },
+
+    privateReview: {
+      eyebrow: '合作方式',
+      title: '私人评估',
+      intro: '在您做出任何承诺之前，以从容、私密的方式了解您的选择。',
+      points: [
+        { label: '预约制', text: '以预约方式进行——一次私人沟通，而非自动报价。' },
+        { label: '保密', text: '您的信息将被审慎对待，并由持牌专业人士审阅。' },
+        { label: '无义务', text: '不构成贷款承诺、不提供利率报价、不施加压力——只提供清晰指导。' },
+        { label: '策略优先', text: '我们关注结构、文件与时机——而不仅是一个数字。' },
+      ],
+      cta: '预约私人评估',
+    },
+
     nav: {
+      start: '从这里开始',
       strategy: '大额贷款策略',
+      guide: '贷款指南',
       about: '关于我们',
       markets: '本地市场',
       programs: '贷款项目',
-      clients: '服务对象',
       process: '服务流程',
       faq: '常见问题',
       contact: '联系我们',
@@ -577,28 +961,44 @@ export const translations = {
           a: '大额贷款通常指超过所在县合规贷款上限的房贷。高价值的海岸住宅常属于这一类别，往往需要更为周全的融资结构。',
         },
         {
-          q: '大额贷款是否必须首付 20%？',
-          a: '不一定。首付要求因贷款机构、项目、房产及借款人情况而异。部分情形在符合规定与承保审核的前提下，可能采用不同结构。',
+          q: '我必须首付 20% 吗？',
+          a: '不一定。首付要求因贷款机构、项目、房产及借款人情况而异。部分情形在符合机构规定与承保审核的前提下，可能采用不同结构。',
         },
         {
-          q: '自雇借款人能否获批？',
-          a: '可以。自雇及企业主借款人有机会获批，关键在于清晰呈现收入，并选择符合机构规定的文件路径，例如银行流水或 Non-QM 方案。',
+          q: '如果我是自雇人士怎么办？',
+          a: '自雇借款人有机会获批。关键在于清晰呈现收入，并选择符合机构规定的文件路径，例如银行流水或 Non-QM 方案。我们会协助尽早、准确地整理文件。',
         },
         {
-          q: '是否提供只还利息方案？',
+          q: '如果我的税表未能体现全部收入怎么办？',
+          a: '这在自雇及企业主借款人中很常见。替代性文件方案（例如银行流水贷款）可能以企业存款而非税表来审阅收入，具体视机构规定及承保审批而定。',
+        },
+        {
+          q: '企业主能否获批？',
+          a: '可以。贷款机构可能审阅企业及个人文件以了解收入。目标是以机构认可的方式呈现收入——具体视机构规定及承保审核而定。',
+        },
+        {
+          q: '投资者能否使用 DSCR？',
+          a: '对于符合条件的投资房产，DSCR（偿债覆盖率）融资关注房产的租金收入相对于贷款还款，而非个人收入。是否适用取决于房产类型、机构规定及承保。',
+        },
+        {
+          q: '我能否使用只还利息方案？',
           a: '在部分大额贷款项目中可能提供只还利息结构，具体视机构规定与借款人情况而定。此类结构有助于现金流规划，但并非适合所有情况。',
         },
         {
-          q: '华语客户能否获得双语指导？',
-          a: '可以。我们提供中英双语指导，清晰讲解美国房贷流程，并协助理解购房、再融资及投资场景中所需的文件。',
+          q: '我能否为高价值房产再融资？',
+          a: '可以。再融资可能有助于调整贷款结构、通过套现动用房产净值，或在可提供时在只还利息与本息摊还之间转换——需符合借款人资格及承保审批。',
         },
         {
-          q: '你们是否办理投资房产贷款？',
-          a: '是的。对于符合条件的房产，我们可探讨 DSCR 及其他面向投资的结构，具体视机构规定、房产类型及承保审核而定。',
+          q: '你们能用中文讲解流程吗？',
+          a: '可以。我们提供中英双语指导，清晰讲解美国房贷流程，并协助理解购房、再融资及投资场景中所需的文件。',
         },
         {
           q: '本网站是否构成贷款承诺？',
           a: '不构成。本网站仅供参考，不构成贷款承诺。所有贷款均需符合借款人资格、信用审批、收入、资产、房产审核、机构规定及承保审批。',
+        },
+        {
+          q: '提交信息之后会发生什么？',
+          a: '持牌房贷专业人士将审阅您分享的信息，并私下与您联系以了解您的目标。没有任何义务——第一步只是一次清晰、私密的沟通。',
         },
         {
           q: '为何选择一位同时具备房地产与开发经验的顾问？',

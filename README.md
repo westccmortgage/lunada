@@ -93,6 +93,20 @@ Local page routes:
 
 ---
 
+## Guided experience & in-site education
+
+The homepage doubles as a private mortgage strategy guide so a visitor can understand the path without leaving the site:
+
+- **"Not Sure Where to Begin?" → Start Mortgage Path** (`StartHere.jsx` + `MortgageWizard.jsx`): a front-end-only, 6-question guided flow (purpose, location, price range, loan range, income type, language) that ends in a **soft, compliant result** and a CTA to the private review form. No approval, no rate quote, no payment calculation.
+- **"What Makes a Loan Jumbo?"** with a plain-language glossary (jumbo, reserves, Non-QM, bank statement, DSCR, interest-only) as expandable rows — progressive disclosure (`MortgageGuide.jsx`).
+- **"What Lenders May Review"** — 8 structured strategy cards.
+- **"Documents You May Need"** — tabbed by borrower type: W-2, Self-Employed, Business Owner, Investor/DSCR, Refinance (`DocumentsNeeded.jsx`).
+- **"Before You Make an Offer"** — a navy education band.
+- **"The Private Review"** — the engagement / strategy model card: by request, confidential, no obligation, strategy first (`PrivateReviewModel.jsx`).
+- **Expanded FAQ** — 12 real borrower questions in both languages.
+
+All copy lives in `src/data/translations.js` (`startHere`, `wizard`, `guide`, `documents`, `privateReview`, `faq`) and exists in English and Simplified Chinese. Everything uses compliance-safe language ("may be available," "subject to lender guidelines / underwriting approval").
+
 ## Local SEO / Google Business Profile Checklist
 
 Complete these to strengthen local ranking. **Accuracy and consistency matter more than volume.**

@@ -16,7 +16,7 @@ export default function Hero({ t }) {
           <p className="eyebrow text-gold-soft">{t.hero.eyebrow}</p>
           <div className="mt-5 mb-7 hairline bg-gold/70" />
 
-          <h1 className="font-serif text-4xl font-medium leading-[1.1] tracking-tight text-ivory sm:text-5xl lg:text-6xl">
+          <h1 className="font-serif text-4xl font-semibold leading-[1.05] tracking-tight text-ivory sm:text-5xl lg:text-[4rem]">
             {t.hero.headline}
           </h1>
 

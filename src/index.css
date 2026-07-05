@@ -62,6 +62,26 @@
   .hairline {
     @apply h-px w-16 bg-gold/70;
   }
+
+  /* Private-banking discipline: sharper, heavier section titles */
+  .section-title {
+    @apply font-serif font-semibold tracking-tight text-navy;
+  }
+
+  .eyebrow-rule {
+    @apply flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.22em] text-gold-muted;
+  }
+
+  .btn-outline-light {
+    @apply inline-flex items-center justify-center rounded-sm border border-ivory/25 px-7 py-3.5 text-sm font-medium tracking-wide text-ivory transition-all duration-300 hover:border-gold hover:text-gold-soft focus:outline-none focus-visible:ring-2 focus-visible:ring-gold;
+  }
+}
+
+@layer base {
+  /* Subtle site-wide nudge toward bolder, more confident serif headlines */
+  .font-serif {
+    font-weight: 500;
+  }
 }
 
 /* Subtle fade-in on load for a calm, premium feel */
