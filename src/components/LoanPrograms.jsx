@@ -3,7 +3,7 @@ import SectionHead from './SectionHead.jsx'
 export default function LoanPrograms({ t }) {
   const p = t.programs
   return (
-    <section id="programs" className="scroll-mt-20 bg-ivory py-24 sm:py-32">
+    <section id="programs" className="scroll-mt-20 bg-ivory py-32 sm:py-44">
       <div className="section-shell">
         <SectionHead no="09" eyebrow={p.eyebrow} title={p.title} intro={p.intro} />
 

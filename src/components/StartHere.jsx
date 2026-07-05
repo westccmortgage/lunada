@@ -15,7 +15,7 @@ export default function StartHere({ t }) {
   }
 
   return (
-    <section id="start-here" className="scroll-mt-20 bg-ivory py-24 sm:py-28">
+    <section id="start-here" className="scroll-mt-20 bg-ivory py-32 sm:py-44">
       <div className="section-shell">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:items-center lg:gap-16">
           <div className="lg:col-span-5">

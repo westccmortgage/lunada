@@ -17,7 +17,7 @@ const SLUGS = [
 export default function LocalMarkets({ t }) {
   const m = t.markets
   return (
-    <section id="markets" className="scroll-mt-20 bg-sand-soft py-24 sm:py-28">
+    <section id="markets" className="scroll-mt-20 bg-sand-soft py-32 sm:py-44">
       <div className="section-shell">
         <SectionHead no="08" eyebrow={m.eyebrow} title={m.title} intro={m.intro} />
 

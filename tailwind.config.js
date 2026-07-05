@@ -16,10 +16,11 @@ export default {
           soft: '#f4efe6',
           deep: '#d9cfba',
         },
+        // Cool champagne — desaturated, grayer gold
         gold: {
-          DEFAULT: '#b08d4f',
-          soft: '#c7a970',
-          muted: '#9a7c46',
+          DEFAULT: '#a5967a',
+          soft: '#c0b49c',
+          muted: '#877a60',
         },
       },
       fontFamily: {

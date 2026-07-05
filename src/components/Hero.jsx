@@ -23,16 +23,16 @@ function ContourArt() {
         <path
           key={i}
           d={d}
-          stroke="#b08d4f"
+          stroke="#a5967a"
           strokeWidth="1"
           opacity={0.38 - i * 0.05}
         />
       ))}
-      <circle cx="340" cy="270" r="3" fill="#b08d4f" opacity="0.7" />
-      <text x="356" y="264" fill="#9a7c46" opacity="0.75" fontSize="10" letterSpacing="2.5" fontFamily="Inter, sans-serif">
+      <circle cx="340" cy="270" r="3" fill="#a5967a" opacity="0.7" />
+      <text x="356" y="264" fill="#877a60" opacity="0.75" fontSize="10" letterSpacing="2.5" fontFamily="Inter, sans-serif">
         LUNADA BAY
       </text>
-      <text x="356" y="280" fill="#9a7c46" opacity="0.5" fontSize="9" letterSpacing="1.5" fontFamily="Inter, sans-serif">
+      <text x="356" y="280" fill="#877a60" opacity="0.5" fontSize="9" letterSpacing="1.5" fontFamily="Inter, sans-serif">
         33.7761° N — 118.4184° W
       </text>
     </svg>

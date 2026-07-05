@@ -3,7 +3,7 @@ import SectionHead from './SectionHead.jsx'
 export default function Process({ t }) {
   const p = t.process
   return (
-    <section id="process" className="scroll-mt-20 bg-ivory py-24 sm:py-32">
+    <section id="process" className="scroll-mt-20 bg-ivory py-32 sm:py-44">
       <div className="section-shell">
         <SectionHead no="11" eyebrow={p.eyebrow} title={p.title} intro={p.intro} />
 
