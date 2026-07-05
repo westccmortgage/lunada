@@ -57,7 +57,7 @@ function Shell() {
           <Route path="*" element={<Home />} />
         </Routes>
       </main>
-      <Footer t={t} config={siteConfig} />
+      <Footer t={t} config={siteConfig} lang={lang} />
     </div>
   )
 }

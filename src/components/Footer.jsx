@@ -1,3 +1,6 @@
+import { Link } from 'react-router-dom'
+import { localPages } from '../data/localPages.js'
+
 const NmlsLine = ({ label, number, verify, verifyNote }) => (
   <p className="text-[0.82rem] leading-relaxed text-ivory/55">
     {label} NMLS #{number}
@@ -5,7 +8,17 @@ const NmlsLine = ({ label, number, verify, verifyNote }) => (
   </p>
 )
 
-export default function Footer({ t, config }) {
+// Curated labels for the two Chinese-broker pages; others use their city name.
+function areaLabel(page, lang) {
+  if (page.slug === 'chinese-mortgage-broker-los-angeles')
+    return lang === 'zh' ? '洛杉矶华人房贷顾问' : 'Chinese Mortgage Broker · Los Angeles'
+  if (page.slug === 'chinese-mortgage-broker-palos-verdes')
+    return lang === 'zh' ? '帕洛斯弗迪斯华人房贷顾问' : 'Chinese Mortgage Broker · Palos Verdes'
+  const label = lang === 'zh' ? page.cityZh : page.city
+  return label.replace(/^the /, '')
+}
+
+export default function Footer({ t, config, lang = 'en' }) {
   const f = t.footer
   return (
     <footer className="overflow-hidden bg-navy-deep text-ivory">
@@ -93,6 +106,25 @@ export default function Footer({ t, config }) {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Service areas — complete internal links to every local page */}
+        <div className="mt-14 border-t border-ivory/10 pt-8">
+          <p className="text-xs font-medium uppercase tracking-widest text-ivory/40">
+            {f.areasTitle}
+          </p>
+          <ul className="mt-5 flex flex-wrap gap-x-7 gap-y-2.5">
+            {localPages.map((p) => (
+              <li key={p.slug}>
+                <Link
+                  to={p.path}
+                  className="text-[0.82rem] text-ivory/55 transition-colors hover:text-gold-soft"
+                >
+                  {areaLabel(p, lang)}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
 
         {/* Disclosure */}
