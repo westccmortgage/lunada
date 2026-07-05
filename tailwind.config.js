@@ -23,6 +23,7 @@ export default {
         },
       },
       fontFamily: {
+        display: ['"Fraunces"', '"Cormorant Garamond"', 'Georgia', 'ui-serif', 'serif'],
         serif: ['"Cormorant Garamond"', 'Georgia', 'ui-serif', 'serif'],
         sans: ['"Inter"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
       },

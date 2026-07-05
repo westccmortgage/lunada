@@ -21,8 +21,15 @@
     font-family: 'Noto Sans SC', 'Inter', ui-sans-serif, system-ui, sans-serif;
   }
 
-  html[lang='zh'] .font-serif {
+  html[lang='zh'] .font-serif,
+  html[lang='zh'] .font-display {
     font-family: 'Noto Serif SC', 'Cormorant Garamond', Georgia, serif;
+  }
+
+  /* Italic accents don't suit CJK — swap to upright with color only */
+  html[lang='zh'] em,
+  html[lang='zh'] .italic {
+    font-style: normal;
   }
 
   ::selection {
@@ -39,6 +46,30 @@
     @apply text-xs font-medium uppercase tracking-widest text-gold-muted;
   }
 
+  /* Editorial micro-label — wide-tracked studio caption */
+  .meta-label {
+    @apply text-[0.65rem] font-semibold uppercase tracking-[0.3em] text-navy/50;
+  }
+
+  /* Display headline scale — the studio voice */
+  .title-hero {
+    @apply font-display font-medium text-navy;
+    font-size: clamp(3rem, 8.5vw, 7rem);
+    line-height: 0.98;
+    letter-spacing: -0.03em;
+  }
+
+  .title-xl {
+    @apply font-display font-medium text-navy;
+    font-size: clamp(2.25rem, 4.6vw, 3.9rem);
+    line-height: 1.02;
+    letter-spacing: -0.02em;
+  }
+
+  .sec-index {
+    @apply font-display italic text-gold-muted;
+  }
+
   .btn-primary {
     @apply inline-flex items-center justify-center rounded-sm bg-navy px-7 py-3.5 text-sm font-medium tracking-wide text-ivory transition-all duration-300 hover:bg-navy-soft focus:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2;
   }
@@ -49,6 +80,23 @@
 
   .btn-gold {
     @apply inline-flex items-center justify-center rounded-sm bg-gold px-7 py-3.5 text-sm font-medium tracking-wide text-navy-deep transition-all duration-300 hover:bg-gold-soft focus:outline-none focus-visible:ring-2 focus-visible:ring-navy focus-visible:ring-offset-2;
+  }
+
+  .btn-outline-light {
+    @apply inline-flex items-center justify-center rounded-sm border border-ivory/25 px-7 py-3.5 text-sm font-medium tracking-wide text-ivory transition-all duration-300 hover:border-gold hover:text-gold-soft focus:outline-none focus-visible:ring-2 focus-visible:ring-gold;
+  }
+
+  /* Understated editorial link with animated underline */
+  .link-editorial {
+    @apply relative inline-flex items-center gap-2 text-sm font-medium uppercase tracking-[0.18em] text-navy transition-colors duration-300 hover:text-gold-muted;
+  }
+  .link-editorial::after {
+    content: '';
+    @apply absolute -bottom-1.5 left-0 h-px w-full origin-left bg-gold transition-transform duration-300;
+    transform: scaleX(0.35);
+  }
+  .link-editorial:hover::after {
+    transform: scaleX(1);
   }
 
   .card {
@@ -63,7 +111,6 @@
     @apply h-px w-16 bg-gold/70;
   }
 
-  /* Private-banking discipline: sharper, heavier section titles */
   .section-title {
     @apply font-serif font-semibold tracking-tight text-navy;
   }
@@ -72,15 +119,33 @@
     @apply flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.22em] text-gold-muted;
   }
 
-  .btn-outline-light {
-    @apply inline-flex items-center justify-center rounded-sm border border-ivory/25 px-7 py-3.5 text-sm font-medium tracking-wide text-ivory transition-all duration-300 hover:border-gold hover:text-gold-soft focus:outline-none focus-visible:ring-2 focus-visible:ring-gold;
+  /* Outlined giant footer wordmark */
+  .wordmark-outline {
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(250, 248, 243, 0.16);
+  }
+  @supports not (-webkit-text-stroke: 1px black) {
+    .wordmark-outline {
+      color: rgba(250, 248, 243, 0.06);
+    }
   }
 }
 
 @layer base {
-  /* Subtle site-wide nudge toward bolder, more confident serif headlines */
+  /* Bolder, more confident serif headlines site-wide */
   .font-serif {
     font-weight: 500;
+  }
+
+  /* CJK display type breathes differently — no negative tracking, smaller max */
+  html[lang='zh'] .title-hero {
+    letter-spacing: 0;
+    font-size: clamp(2.5rem, 7vw, 5.4rem);
+    line-height: 1.12;
+  }
+  html[lang='zh'] .title-xl {
+    letter-spacing: 0;
+    line-height: 1.18;
   }
 }
 
@@ -98,4 +163,64 @@
 
 .rise-in {
   animation: riseIn 0.7s ease-out both;
+}
+
+/* Marquee strip */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 48s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+  }
+}
+
+/* Scroll-reveal (classes applied by JS only, so no-JS stays visible) */
+.will-reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.will-reveal.is-in {
+  opacity: 1;
+  transform: none;
+}
+
+/* Slow drift for the hero contour art */
+@keyframes drift {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-18px);
+  }
+}
+
+.drift {
+  animation: drift 9s ease-in-out infinite alternate;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .drift {
+    animation: none;
+  }
 }

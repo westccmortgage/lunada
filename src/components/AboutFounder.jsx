@@ -6,9 +6,12 @@ export default function AboutFounder({ t, config }) {
         <div className="grid grid-cols-1 gap-14 lg:grid-cols-12 lg:gap-16">
           {/* Left — narrative */}
           <div className="lg:col-span-7">
-            <p className="eyebrow text-gold-soft">{a.eyebrow}</p>
-            <div className="mt-4 mb-6 hairline bg-gold/70" />
-            <h2 className="font-serif text-3xl leading-tight text-ivory sm:text-4xl">{a.title}</h2>
+            <div className="flex items-baseline gap-4">
+              <span className="sec-index text-lg text-gold-soft" aria-hidden="true">( 07 )</span>
+              <span className="meta-label !text-ivory/50">{a.eyebrow}</span>
+              <span className="h-px flex-1 bg-ivory/15" aria-hidden="true" />
+            </div>
+            <h2 className="title-xl mt-7 !text-ivory">{a.title}</h2>
             <p className="mt-7 text-lg leading-relaxed text-ivory/80">{a.lead}</p>
             <p className="mt-5 text-base leading-relaxed text-ivory/60">{a.body}</p>
 

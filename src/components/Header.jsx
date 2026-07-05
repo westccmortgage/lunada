@@ -25,30 +25,31 @@ export default function Header({ t, lang, setLang }) {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
+      className={`fixed inset-x-0 top-0 z-50 border-b transition-all duration-300 ${
         scrolled
-          ? 'bg-ivory/95 backdrop-blur border-b border-sand-deep/50 shadow-[0_1px_20px_-12px_rgba(15,32,53,0.5)]'
-          : 'bg-transparent'
+          ? 'border-navy/10 bg-ivory/95 backdrop-blur'
+          : 'border-transparent bg-ivory/80 backdrop-blur-sm'
       }`}
     >
-      <div className="section-shell flex items-center justify-between py-4">
-        {/* Brand */}
-        <a href="/#top" className="group flex flex-col leading-none">
-          <span className="font-serif text-xl tracking-wide text-navy sm:text-2xl">
-            Lunada Bay
+      <div className="flex w-full items-center justify-between px-5 py-4 sm:px-8 lg:px-10">
+        {/* Brand — studio wordmark */}
+        <a href="/#top" className="group flex items-baseline gap-3 leading-none">
+          <span className="font-display text-lg font-semibold uppercase tracking-[0.08em] text-navy sm:text-xl">
+            Lunada&nbsp;Bay
           </span>
-          <span className="mt-0.5 text-[0.62rem] font-medium uppercase tracking-widest text-gold-muted">
+          <span className="hidden h-3 w-px bg-navy/25 sm:block" aria-hidden="true" />
+          <span className="hidden text-[0.6rem] font-semibold uppercase tracking-[0.3em] text-gold-muted sm:block">
             Mortgage
           </span>
         </a>
 
         {/* Desktop nav */}
-        <nav className="hidden items-center gap-7 lg:flex">
+        <nav className="hidden items-center gap-5 pl-6 xl:gap-6 lg:flex">
           {navItems.map((item) => (
             <a
               key={item.key}
               href={item.href}
-              className="text-sm text-navy/70 transition-colors hover:text-navy"
+              className="whitespace-nowrap text-[0.72rem] font-medium uppercase tracking-[0.14em] text-navy/60 transition-colors hover:text-navy"
             >
               {t.nav[item.key]}
             </a>
@@ -57,7 +58,7 @@ export default function Header({ t, lang, setLang }) {
 
         <div className="flex items-center gap-3 sm:gap-5">
           <LanguageToggle lang={lang} setLang={setLang} />
-          <a href="/#contact" className="hidden btn-primary sm:inline-flex !px-5 !py-2.5 !text-[0.8rem]">
+          <a href="/#contact" className="hidden btn-primary whitespace-nowrap sm:inline-flex !px-5 !py-2.5 !text-[0.8rem]">
             {t.nav.cta}
           </a>
 
@@ -83,7 +84,7 @@ export default function Header({ t, lang, setLang }) {
       {/* Mobile nav */}
       {menuOpen && (
         <nav className="lg:hidden border-t border-sand-deep/50 bg-ivory/98 backdrop-blur">
-          <div className="section-shell flex flex-col py-3">
+          <div className="flex w-full flex-col px-5 py-3 sm:px-8">
             {navItems.map((item) => (
               <a
                 key={item.key}

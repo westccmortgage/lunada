@@ -51,7 +51,7 @@ export default function MortgageWizard({ t }) {
               {w.stepLabel} {step + 1} {w.of} {total}
             </p>
 
-            <h3 className="mt-5 max-w-xl font-serif text-2xl font-semibold leading-snug text-navy sm:text-[1.7rem]">
+            <h3 className="mt-5 max-w-xl font-display text-2xl font-medium tracking-tight leading-snug text-navy sm:text-[1.7rem]">
               {current.question}
             </h3>
 
@@ -112,7 +112,7 @@ export default function MortgageWizard({ t }) {
               <span className="h-px w-6 bg-gold/60" />
               {w.result.eyebrow}
             </p>
-            <h3 className="mt-5 max-w-2xl font-serif text-2xl font-semibold leading-snug text-navy sm:text-3xl">
+            <h3 className="mt-5 max-w-2xl font-display text-2xl font-medium tracking-tight leading-snug text-navy sm:text-3xl">
               {w.result.title}
             </h3>
             <p className="mt-5 max-w-2xl leading-relaxed text-navy/65">{w.result.body}</p>

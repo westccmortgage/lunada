@@ -8,7 +8,7 @@ const NmlsLine = ({ label, number, verify, verifyNote }) => (
 export default function Footer({ t, config }) {
   const f = t.footer
   return (
-    <footer className="bg-navy-deep text-ivory">
+    <footer className="overflow-hidden bg-navy-deep text-ivory">
       <div className="section-shell py-16">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-12">
           {/* Brand + tagline */}
@@ -55,7 +55,7 @@ export default function Footer({ t, config }) {
             <ul className="mt-5 space-y-2 text-sm text-ivory/70">
               {config.links.map((l) => (
                 <li key={l.href}>
-                  <a href={l.href} target="_blank" rel="noopener noreferrer" className="hover:text-gold-soft">
+                  <a href={l.href} target="_blank" rel="noopener noreferrer" className="break-all hover:text-gold-soft">
                     {l.label}
                   </a>
                 </li>
@@ -108,6 +108,13 @@ export default function Footer({ t, config }) {
             © {config.brandName}. {f.rights}
           </p>
         </div>
+      </div>
+
+      {/* Giant outlined wordmark — cropped at the page edge */}
+      <div aria-hidden="true" className="pointer-events-none select-none">
+        <p className="wordmark-outline -mb-[0.24em] whitespace-nowrap px-4 text-center font-display text-[15.5vw] font-semibold uppercase leading-none tracking-tight">
+          Lunada Bay
+        </p>
       </div>
     </footer>
   )

@@ -31,9 +31,12 @@ export default function ContactForm({ t }) {
       <div className="section-shell">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-5">
-            <p className="eyebrow text-gold-soft">{c.eyebrow}</p>
-            <div className="mt-4 mb-6 hairline bg-gold/70" />
-            <h2 className="font-serif text-3xl leading-tight text-ivory sm:text-4xl">{c.title}</h2>
+            <div className="flex items-baseline gap-4">
+              <span className="sec-index text-lg text-gold-soft" aria-hidden="true">( 14 )</span>
+              <span className="meta-label !text-ivory/50">{c.eyebrow}</span>
+              <span className="h-px flex-1 bg-ivory/15" aria-hidden="true" />
+            </div>
+            <h2 className="title-xl mt-7 !text-ivory">{c.title}</h2>
             <p className="mt-6 max-w-md text-base leading-relaxed text-ivory/70">{c.intro}</p>
           </div>
 

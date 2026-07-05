@@ -10,7 +10,7 @@ export default function PrivateReviewModel({ t }) {
               {p.eyebrow}
               <span className="h-px w-6 bg-gold/60" />
             </p>
-            <h2 className="mt-5 font-serif text-3xl font-semibold tracking-tight text-ivory sm:text-4xl">
+            <h2 className="mt-5 font-display text-3xl font-medium tracking-tight text-ivory sm:text-4xl">
               {p.title}
             </h2>
             <p className="mx-auto mt-5 max-w-xl leading-relaxed text-ivory/70">{p.intro}</p>

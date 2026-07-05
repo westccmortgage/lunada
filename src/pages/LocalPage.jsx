@@ -54,7 +54,7 @@ export default function LocalPage() {
 
           <p className="eyebrow text-gold-soft">{t.localPositioning}</p>
           <div className="mt-4 mb-6 hairline bg-gold/70" />
-          <h1 className="max-w-4xl font-serif text-4xl leading-[1.12] tracking-tight text-ivory sm:text-5xl">
+          <h1 className="max-w-4xl font-display font-medium text-4xl leading-[1.05] tracking-tight text-ivory sm:text-6xl">
             {c.h1}
           </h1>
           <div className="mt-8 max-w-3xl space-y-4">
@@ -92,7 +92,7 @@ export default function LocalPage() {
 
             {/* Local context */}
             <div className="mt-12">
-              <h2 className="font-serif text-2xl text-navy sm:text-3xl">{c.localContext.heading}</h2>
+              <h2 className="font-display font-medium tracking-tight text-2xl text-navy sm:text-3xl">{c.localContext.heading}</h2>
               <div className="mt-4 space-y-4">
                 {c.localContext.paras.map((para, i) => (
                   <p key={i} className="leading-relaxed text-navy/70">
@@ -105,7 +105,7 @@ export default function LocalPage() {
             {/* Shared educational sections */}
             {c.sections.map((sec, i) => (
               <div key={i} className="mt-12">
-                <h2 className="font-serif text-2xl text-navy sm:text-3xl">{sec.heading}</h2>
+                <h2 className="font-display font-medium tracking-tight text-2xl text-navy sm:text-3xl">{sec.heading}</h2>
                 <div className="mt-4 space-y-4">
                   {sec.paras.map((para, j) => (
                     <p key={j} className="leading-relaxed text-navy/70">
@@ -126,7 +126,7 @@ export default function LocalPage() {
             <div className="sticky top-24 space-y-8">
               {/* CTA card */}
               <div className="rounded-sm border border-navy/15 bg-navy p-7 text-ivory">
-                <h3 className="font-serif text-xl">{lp.ctaTitle}</h3>
+                <h3 className="font-display font-medium tracking-tight text-xl">{lp.ctaTitle}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-ivory/70">{lp.ctaBody}</p>
                 <a href="#page-contact" className="btn-gold mt-5 w-full">
                   {lp.ctaButton}

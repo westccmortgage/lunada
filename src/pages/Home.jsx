@@ -39,13 +39,25 @@ export default function Home() {
 
       <Hero t={t} />
 
-      {/* Local positioning strip */}
-      <section className="border-y border-sand-deep/60 bg-navy-deep py-6">
-        <div className="section-shell flex items-center justify-center gap-4 text-center">
-          <span className="hidden h-px w-10 bg-gold/50 sm:block" aria-hidden="true" />
-          <p className="font-serif text-lg text-ivory/90 sm:text-xl">{t.localPositioning}</p>
-          <span className="hidden h-px w-10 bg-gold/50 sm:block" aria-hidden="true" />
+      {/* Local positioning — slow editorial marquee */}
+      <section className="overflow-hidden border-y border-navy/10 bg-navy-deep py-5" aria-label={t.localPositioning}>
+        <div className="marquee-track" aria-hidden="true">
+          {[0, 1].map((copy) => (
+            <div key={copy} className="flex shrink-0 items-center">
+              <span className="mx-8 font-display text-lg italic text-ivory/90">{t.localPositioning}</span>
+              {t.markets.items.map((m, i) => (
+                <span key={i} className="flex items-center">
+                  <span className="mx-8 h-1.5 w-1.5 rotate-45 bg-gold/70" />
+                  <span className="whitespace-nowrap text-sm uppercase tracking-[0.2em] text-ivory/50">
+                    {m.name}
+                  </span>
+                </span>
+              ))}
+              <span className="mx-8 h-1.5 w-1.5 rotate-45 bg-gold/70" />
+            </div>
+          ))}
         </div>
+        <span className="sr-only">{t.localPositioning}</span>
       </section>
 
       <StartHere t={t} />

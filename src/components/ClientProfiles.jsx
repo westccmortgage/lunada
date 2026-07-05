@@ -1,25 +1,20 @@
+import SectionHead from './SectionHead.jsx'
+
 export default function ClientProfiles({ t }) {
   const c = t.clients
   return (
-    <section id="clients" className="scroll-mt-20 bg-sand-soft py-24 sm:py-28">
+    <section id="clients" className="scroll-mt-20 bg-sand-soft py-24 sm:py-32">
       <div className="section-shell">
-        <div className="max-w-3xl">
-          <p className="eyebrow">{c.eyebrow}</p>
-          <div className="mt-4 mb-6 hairline" />
-          <h2 className="font-serif text-3xl leading-tight text-navy sm:text-4xl">{c.title}</h2>
-          <p className="mt-6 text-lg leading-relaxed text-navy/65">{c.intro}</p>
-        </div>
+        <SectionHead no="10" eyebrow={c.eyebrow} title={c.title} intro={c.intro} />
 
-        <div className="mt-14 grid grid-cols-1 gap-5 md:grid-cols-2">
+        <div className="mt-16 grid grid-cols-1 gap-px overflow-hidden border border-navy/15 bg-navy/15 md:grid-cols-2">
           {c.items.map((item, i) => (
-            <div key={i} className="card card-hover flex gap-5">
-              <span className="font-serif text-3xl leading-none text-gold/60">
+            <div key={i} className="group bg-sand-soft p-8 transition-colors duration-300 hover:bg-white sm:p-10">
+              <span className="sec-index block text-4xl leading-none" aria-hidden="true">
                 {String(i + 1).padStart(2, '0')}
               </span>
-              <div>
-                <h3 className="font-serif text-xl text-navy">{item.title}</h3>
-                <p className="mt-2.5 text-[0.95rem] leading-relaxed text-navy/60">{item.body}</p>
-              </div>
+              <h3 className="mt-6 font-display text-2xl font-medium tracking-tight text-navy">{item.title}</h3>
+              <p className="mt-3 max-w-md text-[0.95rem] leading-relaxed text-navy/60">{item.body}</p>
             </div>
           ))}
         </div>

@@ -254,6 +254,12 @@ export const translations = {
     hero: {
       eyebrow: 'Private Jumbo Mortgage Advisory',
       headline: 'Jumbo Mortgage Strategy for Lunada Bay & Coastal Los Angeles',
+      headlineLines: [
+        [{ text: 'Jumbo Mortgage ' }, { text: 'Strategy', accent: true }],
+        [{ text: 'for Lunada Bay &' }],
+        [{ text: 'Coastal Los Angeles' }],
+      ],
+      scrollCue: 'Scroll',
       subhead:
         'Private mortgage guidance for luxury homebuyers, investors, business owners, and high-net-worth borrowers seeking financing beyond standard loan limits.',
       primaryCta: 'Request a Private Mortgage Review',
@@ -772,6 +778,11 @@ export const translations = {
     hero: {
       eyebrow: '私人大额房贷咨询',
       headline: '露娜达湾及洛杉矶海岸高端住宅大额贷款策略',
+      headlineLines: [
+        [{ text: '露娜达湾及洛杉矶海岸' }],
+        [{ text: '高端住宅' }, { text: '大额贷款策略', accent: true }],
+      ],
+      scrollCue: '下滑浏览',
       subhead:
         '为购买、再融资或投资高价值住宅的客户提供专业、私密、清晰的大额房贷方案指导。',
       primaryCta: '预约私人贷款评估',

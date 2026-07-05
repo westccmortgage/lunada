@@ -19,11 +19,11 @@ export default function StartHere({ t }) {
       <div className="section-shell">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:items-center lg:gap-16">
           <div className="lg:col-span-5">
-            <p className="eyebrow-rule">
-              <span className="h-px w-6 bg-gold/60" />
-              {s.eyebrow}
-            </p>
-            <h2 className="mt-5 section-title text-4xl leading-[1.08] sm:text-5xl">{s.title}</h2>
+            <div className="flex items-baseline gap-4">
+              <span className="sec-index text-lg" aria-hidden="true">( 01 )</span>
+              <span className="meta-label">{s.eyebrow}</span>
+            </div>
+            <h2 className="title-xl mt-7">{s.title}</h2>
             <p className="mt-6 max-w-md text-lg leading-relaxed text-navy/65">{s.copy}</p>
             {!open && (
               <button type="button" onClick={start} className="btn-primary mt-8">
@@ -52,7 +52,7 @@ export default function StartHere({ t }) {
                     </svg>
                   </span>
                   <div>
-                    <p className="font-serif text-xl font-semibold text-navy">{s.cta}</p>
+                    <p className="font-display text-xl font-medium tracking-tight text-navy">{s.cta}</p>
                     <p className="mt-1 text-sm text-navy/50">{s.hint}</p>
                   </div>
                 </div>

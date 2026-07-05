@@ -1,35 +1,38 @@
 import { Link } from 'react-router-dom'
 import { insights } from '../data/insights.js'
+import SectionHead from './SectionHead.jsx'
 
 export default function Insights({ t, lang }) {
   const s = t.insights
   return (
-    <section id="insights" className="scroll-mt-20 bg-ivory py-24 sm:py-28">
+    <section id="insights" className="scroll-mt-20 bg-ivory py-24 sm:py-32">
       <div className="section-shell">
-        <div className="max-w-3xl">
-          <p className="eyebrow">{s.eyebrow}</p>
-          <div className="mt-4 mb-6 hairline" />
-          <h2 className="font-serif text-3xl leading-tight text-navy sm:text-4xl">{s.title}</h2>
-          <p className="mt-6 text-lg leading-relaxed text-navy/65">{s.intro}</p>
-        </div>
+        <SectionHead no="12" eyebrow={s.eyebrow} title={s.title} intro={s.intro} />
 
-        <div className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {insights.map((article) => {
+        {/* Editorial article index */}
+        <div className="mt-16 border-t border-navy/10">
+          {insights.map((article, i) => {
             const a = article[lang]
             return (
               <Link
                 key={article.id}
                 to={article.to}
-                className="card card-hover group flex flex-col"
+                className="group grid grid-cols-12 items-baseline gap-x-4 gap-y-1.5 border-b border-navy/10 py-6 transition-colors duration-300 hover:bg-white"
               >
-                <span className="eyebrow text-gold-muted/80">{s.eyebrow}</span>
-                <h3 className="mt-3 font-serif text-lg leading-snug text-navy">{a.title}</h3>
-                <p className="mt-2.5 flex-grow text-[0.88rem] leading-relaxed text-navy/60">
+                <span className="sec-index col-span-2 text-lg sm:col-span-1" aria-hidden="true">
+                  {String(i + 1).padStart(2, '0')}
+                </span>
+                <h3 className="col-span-10 font-display text-xl font-medium tracking-tight text-navy transition-transform duration-300 group-hover:translate-x-2 sm:col-span-5 sm:text-[1.35rem]">
+                  {a.title}
+                </h3>
+                <p className="col-span-10 col-start-3 text-[0.9rem] leading-relaxed text-navy/55 sm:col-span-5 sm:col-start-7">
                   {a.excerpt}
                 </p>
-                <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-gold-muted transition-colors group-hover:text-gold">
-                  {s.readMore}
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true" className="transition-transform group-hover:translate-x-0.5">
+                <span
+                  className="col-span-1 hidden justify-self-end text-navy/25 transition-all duration-300 group-hover:translate-x-1 group-hover:text-gold sm:block"
+                  aria-hidden="true"
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
                     <path d="M5 12h14M13 6l6 6-6 6" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </span>

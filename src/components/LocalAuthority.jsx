@@ -1,14 +1,11 @@
+import SectionHead from './SectionHead.jsx'
+
 export default function LocalAuthority({ t }) {
   const la = t.localAuthority
   return (
-    <section id="local-authority" className="scroll-mt-20 bg-ivory py-24 sm:py-28">
+    <section id="local-authority" className="scroll-mt-20 bg-ivory py-24 sm:py-32">
       <div className="section-shell">
-        <div className="max-w-3xl">
-          <p className="eyebrow">{la.eyebrow}</p>
-          <div className="mt-4 mb-6 hairline" />
-          <h2 className="font-serif text-3xl leading-tight text-navy sm:text-4xl">{la.title}</h2>
-          <p className="mt-6 text-lg leading-relaxed text-navy/65">{la.intro}</p>
-        </div>
+        <SectionHead no="02" eyebrow={la.eyebrow} title={la.title} intro={la.intro} />
 
         {/* Local trust callout */}
         <div className="mt-8 max-w-3xl rounded-sm border-l-2 border-gold bg-sand-soft/70 px-6 py-5">

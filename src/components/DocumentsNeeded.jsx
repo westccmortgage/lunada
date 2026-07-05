@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import SectionHead from './SectionHead.jsx'
 
 export default function DocumentsNeeded({ t }) {
   const d = t.documents
@@ -8,14 +9,7 @@ export default function DocumentsNeeded({ t }) {
   return (
     <section id="documents" className="scroll-mt-20 bg-ivory py-24 sm:py-28">
       <div className="section-shell">
-        <div className="max-w-3xl">
-          <p className="eyebrow-rule">
-            <span className="h-px w-6 bg-gold/60" />
-            {d.eyebrow}
-          </p>
-          <h2 className="mt-5 section-title text-3xl sm:text-4xl">{d.title}</h2>
-          <p className="mt-6 text-lg leading-relaxed text-navy/65">{d.intro}</p>
-        </div>
+        <SectionHead no="06" eyebrow={d.eyebrow} title={d.title} intro={d.intro} />
 
         <div className="mt-12 grid grid-cols-1 gap-8 lg:grid-cols-12">
           {/* Tab list */}
@@ -65,7 +59,7 @@ export default function DocumentsNeeded({ t }) {
               key={active}
               className="rise-in rounded-sm border border-sand-deep/70 bg-white p-7 sm:p-9"
             >
-              <h3 className="font-serif text-2xl font-semibold text-navy">{tab.label}</h3>
+              <h3 className="font-display text-2xl font-medium tracking-tight text-navy">{tab.label}</h3>
               <div className="mt-3 hairline" />
               <ul className="mt-6 grid grid-cols-1 gap-x-8 gap-y-3.5 sm:grid-cols-2">
                 {tab.items.map((item, i) => (
