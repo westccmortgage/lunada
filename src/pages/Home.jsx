@@ -44,7 +44,7 @@ export default function Home() {
         <div className="marquee-track" aria-hidden="true">
           {[0, 1].map((copy) => (
             <div key={copy} className="flex shrink-0 items-center">
-              <span className="mx-8 font-display text-lg italic text-ivory/90">{t.localPositioning}</span>
+              <span className="mx-8 text-[0.95rem] font-medium tracking-wide text-ivory/90">{t.localPositioning}</span>
               {t.markets.items.map((m, i) => (
                 <span key={i} className="flex items-center">
                   <span className="mx-8 h-1.5 w-1.5 rotate-45 bg-gold/70" />

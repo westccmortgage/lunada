@@ -9,7 +9,7 @@ export default function LocalAuthority({ t }) {
 
         {/* Local trust callout */}
         <div className="mt-8 max-w-3xl rounded-sm border-l-2 border-gold bg-sand-soft/70 px-6 py-5">
-          <p className="text-[0.98rem] italic leading-relaxed text-navy/75">{t.localTrust}</p>
+          <p className="text-[0.98rem] leading-relaxed text-navy/75">{t.localTrust}</p>
         </div>
 
         <div className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">

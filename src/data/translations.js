@@ -110,7 +110,7 @@ export const translations = {
       result: {
         eyebrow: 'Your Path',
         title:
-          'Based on your answers, your scenario may benefit from a private jumbo mortgage strategy review.',
+          'Based on your answers, your scenario may benefit from a private mortgage strategy review.',
         body:
           'Every situation is different. A short, private conversation is the best way to understand which loan structures and documentation may apply to your goals — with no obligation.',
         summaryTitle: 'Your answers',
@@ -240,7 +240,7 @@ export const translations = {
 
     nav: {
       start: 'Start Here',
-      strategy: 'Jumbo Strategy',
+      strategy: 'Loan Strategy',
       guide: 'Guide',
       about: 'About',
       markets: 'Local Markets',
@@ -252,10 +252,10 @@ export const translations = {
     },
 
     hero: {
-      eyebrow: 'Private Jumbo Mortgage Advisory',
-      headline: 'Jumbo Mortgage Strategy for Lunada Bay & Coastal Los Angeles',
+      eyebrow: 'Private Mortgage Advisory',
+      headline: 'Private Mortgage Strategy for Lunada Bay & Coastal Los Angeles',
       headlineLines: [
-        [{ text: 'Jumbo Mortgage ' }, { text: 'Strategy', accent: true }],
+        [{ text: 'Private Mortgage ' }, { text: 'Strategy', accent: true }],
         [{ text: 'for Lunada Bay &' }],
         [{ text: 'Coastal Los Angeles' }],
       ],
@@ -263,12 +263,12 @@ export const translations = {
       subhead:
         'Private mortgage guidance for luxury homebuyers, investors, business owners, and high-net-worth borrowers seeking financing beyond standard loan limits.',
       primaryCta: 'Request a Private Mortgage Review',
-      secondaryCta: 'Explore Jumbo Options',
+      secondaryCta: 'Explore Loan Options',
       trustLine:
         'Serving Lunada Bay, Palos Verdes, South Bay, Los Angeles County, and select California luxury markets.',
     },
 
-    localPositioning: 'Local jumbo mortgage strategy for Lunada Bay, Palos Verdes, and coastal Los Angeles.',
+    localPositioning: 'Private mortgage strategy for Lunada Bay, Palos Verdes, and coastal Los Angeles.',
     localTrust:
       'Guidance from a mortgage professional who lives in the Palos Verdes community and understands the local luxury residential market.',
 
@@ -635,7 +635,7 @@ export const translations = {
       ],
       result: {
         eyebrow: '您的路径',
-        title: '根据您的回答，您的情况可能适合进行私人化的大额房贷策略评估。',
+        title: '根据您的回答，您的情况可能适合进行私人化的房贷策略评估。',
         body:
           '每个人的情况都不同。一次简短、私密的沟通，是了解哪些贷款结构与文件可能适合您目标的最佳方式——且没有任何义务。',
         summaryTitle: '您的回答',
@@ -764,7 +764,7 @@ export const translations = {
 
     nav: {
       start: '从这里开始',
-      strategy: '大额贷款策略',
+      strategy: '贷款策略',
       guide: '贷款指南',
       about: '关于我们',
       markets: '本地市场',
@@ -776,22 +776,22 @@ export const translations = {
     },
 
     hero: {
-      eyebrow: '私人大额房贷咨询',
-      headline: '露娜达湾及洛杉矶海岸高端住宅大额贷款策略',
+      eyebrow: '私人房贷咨询',
+      headline: '露娜达湾及洛杉矶海岸私人房贷策略',
       headlineLines: [
         [{ text: '露娜达湾及洛杉矶海岸' }],
-        [{ text: '高端住宅' }, { text: '大额贷款策略', accent: true }],
+        [{ text: '私人' }, { text: '房贷策略', accent: true }],
       ],
       scrollCue: '下滑浏览',
       subhead:
-        '为购买、再融资或投资高价值住宅的客户提供专业、私密、清晰的大额房贷方案指导。',
+        '为购买、再融资或投资高价值住宅的客户提供专业、私密、清晰的房贷方案指导。',
       primaryCta: '预约私人贷款评估',
-      secondaryCta: '了解大额贷款方案',
+      secondaryCta: '了解贷款方案',
       trustLine:
         '服务露娜达湾、帕洛斯弗迪斯、南湾、洛杉矶县及加州精选高端住宅市场。',
     },
 
-    localPositioning: '为露娜达湾、帕洛斯弗迪斯及洛杉矶海岸地区提供本地大额房贷策略。',
+    localPositioning: '为露娜达湾、帕洛斯弗迪斯及洛杉矶海岸地区提供私人房贷策略。',
     localTrust:
       '由居住在帕洛斯弗迪斯本地社区的房贷专业人士提供指导，了解当地高端住宅市场及大额贷款需求。',
 

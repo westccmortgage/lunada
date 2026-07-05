@@ -80,7 +80,7 @@ export default function MortgageGuide({ t }) {
           <div className="mt-12 grid grid-cols-1 gap-px overflow-hidden rounded-sm border border-sand-deep/70 bg-sand-deep/70 sm:grid-cols-2 lg:grid-cols-4">
             {lr.cards.map((card, i) => (
               <div key={i} className="bg-white p-6">
-                <span className="font-display italic text-lg text-gold-muted">
+                <span className="sec-index text-sm">
                   {String(i + 1).padStart(2, '0')}
                 </span>
                 <h3 className="mt-2 font-display text-lg font-medium tracking-tight text-navy">{card.title}</h3>

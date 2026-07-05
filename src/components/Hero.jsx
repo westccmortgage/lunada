@@ -63,7 +63,7 @@ export default function Hero({ t }) {
               <span key={i} className="block">
                 {line.map((seg, j) =>
                   seg.accent ? (
-                    <em key={j} className="italic text-gold-muted">
+                    <em key={j} className="not-italic text-gold-muted">
                       {seg.text}
                     </em>
                   ) : (

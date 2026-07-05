@@ -45,7 +45,7 @@ export default function LocalMarkets({ t }) {
           ))}
         </div>
 
-        <p className="mt-10 max-w-2xl border-l-2 border-gold/40 pl-5 text-[0.95rem] italic leading-relaxed text-navy/55">
+        <p className="mt-10 max-w-2xl border-l-2 border-gold/40 pl-5 text-[0.95rem] leading-relaxed text-navy/55">
           {m.note}
         </p>
       </div>

@@ -17,7 +17,7 @@ export default function AboutFounder({ t, config }) {
 
             {/* Local, community-based positioning */}
             <div className="mt-8 border-l border-gold/50 pl-5">
-              <p className="text-[0.98rem] italic leading-relaxed text-gold-soft/90">
+              <p className="text-[0.98rem] leading-relaxed text-gold-soft/90">
                 {t.localTrust}
               </p>
             </div>

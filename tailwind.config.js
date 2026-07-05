@@ -23,8 +23,9 @@ export default {
         },
       },
       fontFamily: {
-        display: ['"Fraunces"', '"Cormorant Garamond"', 'Georgia', 'ui-serif', 'serif'],
-        serif: ['"Cormorant Garamond"', 'Georgia', 'ui-serif', 'serif'],
+        // Precise, neutral display — SF-like discipline
+        display: ['"Inter"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        serif: ['"Inter"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
         sans: ['"Inter"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
       },
       letterSpacing: {

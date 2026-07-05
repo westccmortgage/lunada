@@ -13,7 +13,7 @@ export default function Footer({ t, config }) {
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-12">
           {/* Brand + tagline */}
           <div className="lg:col-span-4">
-            <div className="font-serif text-2xl tracking-wide text-ivory">Lunada Bay</div>
+            <div className="text-xl font-semibold uppercase tracking-[0.08em] text-ivory">Lunada Bay</div>
             <div className="mt-0.5 text-[0.62rem] font-medium uppercase tracking-widest text-gold-soft">
               Mortgage
             </div>
@@ -108,13 +108,6 @@ export default function Footer({ t, config }) {
             © {config.brandName}. {f.rights}
           </p>
         </div>
-      </div>
-
-      {/* Giant outlined wordmark — cropped at the page edge */}
-      <div aria-hidden="true" className="pointer-events-none select-none">
-        <p className="wordmark-outline -mb-[0.24em] whitespace-nowrap px-4 text-center font-display text-[15.5vw] font-semibold uppercase leading-none tracking-tight">
-          Lunada Bay
-        </p>
       </div>
     </footer>
   )
