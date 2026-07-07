@@ -47,7 +47,18 @@ Options to deploy:
 2. **CLI:** `npm i -g netlify-cli && netlify deploy --prod`
 3. **Drag-and-drop:** run `npm run build` and drag the `dist/` folder into Netlify.
 
-The contact form uses **Netlify Forms** attributes (`data-netlify="true"`, hidden `form-name`, honeypot). It works automatically once deployed to Netlify — no backend needed. Form submissions appear under **Forms** in the Netlify dashboard. Locally it just shows the success message.
+### Contact form (Netlify Forms — no backend needed)
+
+How it works:
+
+1. **Registration:** Netlify's build bot only reads static HTML, so the form is registered via a hidden copy in `index.html` (form name `private-mortgage-review`, all field names mirrored). **Do not delete that block** — without it, submissions 404.
+2. **Submission:** the React form POSTs via AJAX (urlencoded) to the site origin. On success the visitor sees the bilingual thank-you message; on failure they see an honest fallback with the direct phone and email, so no lead is lost silently. The submission also records `site_language` (`en`/`zh`) so you know which language the client was browsing in.
+3. **Where leads land:** Netlify dashboard → your site → **Forms** → `private-mortgage-review`.
+4. **Get notified:** Netlify dashboard → Site configuration → **Forms → Form notifications** → add an email notification (e.g. to `westccmortgage@gmail.com`). Slack/webhook notifications are also available there.
+5. **Spam:** a honeypot field is in place; Netlify also runs its own spam filtering. If spam gets through, enable reCAPTCHA in the same settings panel.
+6. **Limits:** the free tier includes 100 submissions/month; paid tiers raise this.
+
+> Local dev note: outside Netlify the POST has nowhere to go, so locally the form shows the fallback error state — that's expected. It works on the deployed site.
 
 ---
 

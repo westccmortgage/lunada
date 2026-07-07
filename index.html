@@ -37,6 +37,27 @@
     />
   </head>
   <body>
+    <!--
+      Netlify Forms registration. Netlify's build bot only parses static HTML,
+      so this hidden copy (field names must match the React form exactly) is
+      what makes the SPA's AJAX submissions land in the Netlify Forms inbox.
+      Do not remove.
+    -->
+    <form name="private-mortgage-review" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="text" name="bot-field" />
+      <input type="text" name="name" />
+      <input type="tel" name="phone" />
+      <input type="email" name="email" />
+      <input type="text" name="preferred_language" />
+      <input type="text" name="location" />
+      <input type="text" name="purchase_price" />
+      <input type="text" name="loan_amount" />
+      <input type="text" name="loan_purpose" />
+      <input type="text" name="employment_type" />
+      <input type="text" name="site_language" />
+      <textarea name="message"></textarea>
+    </form>
+
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

@@ -556,8 +556,11 @@ export const translations = {
         select: 'Please select',
       },
       submit: 'Request Private Review',
+      sending: 'Sending…',
       success:
         'Thank you. Your request has been received. A licensed mortgage professional will review your information and contact you.',
+      error:
+        'Something went wrong while sending your request. Please try again, or reach us directly:',
       required: 'Required',
     },
 
@@ -1052,8 +1055,11 @@ export const translations = {
         select: '请选择',
       },
       submit: '提交私人评估申请',
+      sending: '提交中…',
       success:
         '谢谢。我们已收到您的申请。持牌房贷专业人士将审核您的信息并与您联系。',
+      error:
+        '提交时出现问题。请重试，或直接与我们联系：',
       required: '必填',
     },
 

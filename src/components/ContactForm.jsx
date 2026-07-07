@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { siteConfig } from '../data/translations.js'
 
 function Field({ label, required, children }) {
   return (
@@ -18,12 +19,32 @@ const inputCls =
 export default function ContactForm({ t }) {
   const c = t.contact
   const [submitted, setSubmitted] = useState(false)
+  const [sending, setSending] = useState(false)
+  const [error, setError] = useState(false)
 
-  // Front-end only. Netlify Forms attributes are present so this works once
-  // deployed to Netlify; locally it simply shows the success message.
-  const handleSubmit = (e) => {
+  // Submits to Netlify Forms via AJAX (urlencoded POST to the current origin).
+  // The form is registered with Netlify through the hidden static copy in
+  // index.html. Outside Netlify (local dev) the POST fails and the visitor
+  // sees an honest fallback with direct contact details — no lead is lost
+  // silently.
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    setSubmitted(true)
+    setError(false)
+    setSending(true)
+    try {
+      const body = new URLSearchParams(new FormData(e.target)).toString()
+      const res = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body,
+      })
+      if (!res.ok) throw new Error(`HTTP ${res.status}`)
+      setSubmitted(true)
+    } catch {
+      setError(true)
+    } finally {
+      setSending(false)
+    }
   }
 
   return (
@@ -64,6 +85,13 @@ export default function ContactForm({ t }) {
                 >
                   {/* Netlify form plumbing */}
                   <input type="hidden" name="form-name" value="private-mortgage-review" />
+                  {/* Language the visitor was browsing in when they applied */}
+                  <input
+                    type="hidden"
+                    name="site_language"
+                    value={typeof document !== 'undefined' ? document.documentElement.lang : 'en'}
+                    readOnly
+                  />
                   <p className="hidden">
                     <label>
                       Do not fill this out: <input name="bot-field" />
@@ -153,9 +181,26 @@ export default function ContactForm({ t }) {
                     </Field>
                   </div>
 
+                  {error && (
+                    <div className="sm:col-span-2 rounded-sm border border-gold/50 bg-sand-soft/70 px-4 py-3 text-sm leading-relaxed text-navy/75">
+                      {c.error}{' '}
+                      <a href={`tel:${siteConfig.contact.directPhone}`} className="font-medium text-navy underline decoration-gold/60 underline-offset-2">
+                        {siteConfig.contact.directPhone}
+                      </a>{' '}
+                      ·{' '}
+                      <a href={`mailto:${siteConfig.contact.email}`} className="font-medium text-navy underline decoration-gold/60 underline-offset-2">
+                        {siteConfig.contact.email}
+                      </a>
+                    </div>
+                  )}
+
                   <div className="sm:col-span-2 mt-1">
-                    <button type="submit" className="btn-gold w-full sm:w-auto">
-                      {c.submit}
+                    <button
+                      type="submit"
+                      disabled={sending}
+                      className="btn-gold w-full sm:w-auto disabled:cursor-wait disabled:opacity-60"
+                    >
+                      {sending ? c.sending : c.submit}
                     </button>
                   </div>
                 </form>
