@@ -1,14 +1,17 @@
 import { useState } from 'react'
+import { useWizardPrefill } from '../context/WizardPrefillContext.jsx'
 
 /**
  * Guided, front-end-only mortgage-path wizard.
  * Compliance: produces only soft, general guidance — no approval, no rate,
- * no payment calculation. Ends by pointing to the private review form.
+ * no payment calculation. Ends by pointing to the private review form,
+ * handing the answers over so the visitor never re-types them.
  */
 export default function MortgageWizard({ t }) {
   const w = t.wizard
   const steps = w.steps
   const total = steps.length
+  const { setPrefill } = useWizardPrefill()
 
   const [step, setStep] = useState(0)
   const [answers, setAnswers] = useState({})
@@ -21,8 +24,25 @@ export default function MortgageWizard({ t }) {
   const setAnswer = (key, val) => setAnswers((a) => ({ ...a, [key]: val }))
 
   const goNext = () => {
-    if (step < total - 1) setStep((s) => s + 1)
-    else setDone(true)
+    if (step < total - 1) {
+      setStep((s) => s + 1)
+      return
+    }
+    setDone(true)
+    // Hand answers to the contact form. Choice answers as indices (arrays are
+    // parallel across EN/中文); free text and range labels as-is.
+    const idx = (stepKey) => {
+      const s = steps.find((st) => st.key === stepKey)
+      return s?.options ? s.options.indexOf(answers[stepKey]) : -1
+    }
+    setPrefill({
+      purposeIdx: idx('purpose'),
+      incomeIdx: idx('income'),
+      langIdx: idx('language'),
+      location: answers.location || '',
+      price: answers.price || '',
+      loan: answers.loan || '',
+    })
   }
   const goBack = () => setStep((s) => Math.max(0, s - 1))
   const restart = () => {

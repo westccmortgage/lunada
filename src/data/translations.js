@@ -557,6 +557,7 @@ export const translations = {
       },
       submit: 'Request Private Review',
       sending: 'Sending…',
+      prefillNote: 'We pre-filled some details from your answers — please review and adjust if needed.',
       success:
         'Thank you. Your request has been received. A licensed mortgage professional will review your information and contact you.',
       error:
@@ -1056,6 +1057,7 @@ export const translations = {
       },
       submit: '提交私人评估申请',
       sending: '提交中…',
+      prefillNote: '我们已根据您的回答预填了部分信息，请核对并按需修改。',
       success:
         '谢谢。我们已收到您的申请。持牌房贷专业人士将审核您的信息并与您联系。',
       error:

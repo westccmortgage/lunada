@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 import { LanguageProvider, useLang } from './context/LanguageContext.jsx'
+import { WizardPrefillProvider } from './context/WizardPrefillContext.jsx'
 import { siteConfig } from './data/translations.js'
 import Header from './components/Header.jsx'
 import Footer from './components/Footer.jsx'
@@ -65,9 +66,11 @@ function Shell() {
 export default function App() {
   return (
     <LanguageProvider>
-      <BrowserRouter>
-        <Shell />
-      </BrowserRouter>
+      <WizardPrefillProvider>
+        <BrowserRouter>
+          <Shell />
+        </BrowserRouter>
+      </WizardPrefillProvider>
     </LanguageProvider>
   )
 }

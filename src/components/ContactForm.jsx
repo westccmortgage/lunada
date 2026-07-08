@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { siteConfig } from '../data/translations.js'
+import { useWizardPrefill } from '../context/WizardPrefillContext.jsx'
 
 function Field({ label, required, children }) {
   return (
@@ -21,6 +22,22 @@ export default function ContactForm({ t }) {
   const [submitted, setSubmitted] = useState(false)
   const [sending, setSending] = useState(false)
   const [error, setError] = useState(false)
+  const { prefill } = useWizardPrefill()
+
+  // Map wizard answers to this form's option strings (index-based, so it
+  // stays correct across EN/中文). Free-text answers pass through as-is.
+  const pick = (arr, i) => (i != null && i >= 0 && arr[i] ? arr[i] : '')
+  const pv = {
+    loanPurpose: pick(c.options.loanPurpose, prefill?.purposeIdx),
+    employmentType: pick(c.options.employmentType, prefill?.incomeIdx),
+    preferredLanguage: pick(c.options.preferredLanguage, prefill?.langIdx),
+    location: prefill?.location || '',
+    price: prefill?.price || '',
+    loan: prefill?.loan || '',
+  }
+  // Remount the (uncontrolled) form whenever new prefill arrives so
+  // defaultValue takes effect.
+  const formKey = prefill ? `pf-${JSON.stringify(prefill)}` : 'blank'
 
   // Submits to Netlify Forms via AJAX (urlencoded POST to the current origin).
   // The form is registered with Netlify through the hidden static copy in
@@ -76,6 +93,7 @@ export default function ContactForm({ t }) {
                 </div>
               ) : (
                 <form
+                  key={formKey}
                   name="private-mortgage-review"
                   method="POST"
                   data-netlify="true"
@@ -83,6 +101,11 @@ export default function ContactForm({ t }) {
                   onSubmit={handleSubmit}
                   className="grid grid-cols-1 gap-5 sm:grid-cols-2"
                 >
+                  {prefill && (
+                    <p className="sm:col-span-2 rounded-sm border-l-2 border-gold bg-sand-soft/70 px-4 py-2.5 text-sm leading-relaxed text-navy/70">
+                      {c.prefillNote}
+                    </p>
+                  )}
                   {/* Netlify form plumbing */}
                   <input type="hidden" name="form-name" value="private-mortgage-review" />
                   {/* Language the visitor was browsing in when they applied */}
@@ -115,7 +138,7 @@ export default function ContactForm({ t }) {
                   </div>
                   <div className="sm:col-span-1">
                     <Field label={c.fields.preferredLanguage}>
-                      <select className={inputCls} name="preferred_language" defaultValue="">
+                      <select className={inputCls} name="preferred_language" defaultValue={pv.preferredLanguage}>
                         <option value="" disabled>
                           {c.options.select}
                         </option>
@@ -129,22 +152,22 @@ export default function ContactForm({ t }) {
                   </div>
                   <div className="sm:col-span-1">
                     <Field label={c.fields.location}>
-                      <input className={inputCls} type="text" name="location" placeholder={c.placeholders.location} />
+                      <input className={inputCls} type="text" name="location" defaultValue={pv.location} placeholder={c.placeholders.location} />
                     </Field>
                   </div>
                   <div className="sm:col-span-1">
                     <Field label={c.fields.purchasePrice}>
-                      <input className={inputCls} type="text" name="purchase_price" placeholder={c.placeholders.purchasePrice} />
+                      <input className={inputCls} type="text" name="purchase_price" defaultValue={pv.price} placeholder={c.placeholders.purchasePrice} />
                     </Field>
                   </div>
                   <div className="sm:col-span-1">
                     <Field label={c.fields.loanAmount}>
-                      <input className={inputCls} type="text" name="loan_amount" placeholder={c.placeholders.loanAmount} />
+                      <input className={inputCls} type="text" name="loan_amount" defaultValue={pv.loan} placeholder={c.placeholders.loanAmount} />
                     </Field>
                   </div>
                   <div className="sm:col-span-1">
                     <Field label={c.fields.loanPurpose}>
-                      <select className={inputCls} name="loan_purpose" defaultValue="">
+                      <select className={inputCls} name="loan_purpose" defaultValue={pv.loanPurpose}>
                         <option value="" disabled>
                           {c.options.select}
                         </option>
@@ -158,7 +181,7 @@ export default function ContactForm({ t }) {
                   </div>
                   <div className="sm:col-span-2">
                     <Field label={c.fields.employmentType}>
-                      <select className={inputCls} name="employment_type" defaultValue="">
+                      <select className={inputCls} name="employment_type" defaultValue={pv.employmentType}>
                         <option value="" disabled>
                           {c.options.select}
                         </option>
