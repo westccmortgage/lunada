@@ -5,7 +5,7 @@ export default function Process({ t }) {
   return (
     <section id="process" className="scroll-mt-20 bg-ivory py-32 sm:py-44">
       <div className="section-shell">
-        <SectionHead no="11" eyebrow={p.eyebrow} title={p.title} intro={p.intro} />
+        <SectionHead no="12" eyebrow={p.eyebrow} title={p.title} intro={p.intro} />
 
         {/* Swiss grid — oversized numerals over ruled columns */}
         <ol className="mt-16 grid grid-cols-1 gap-x-10 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">

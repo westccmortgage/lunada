@@ -9,6 +9,7 @@ import LocalAuthority from '../components/LocalAuthority.jsx'
 import JumboStrategy from '../components/JumboStrategy.jsx'
 import MortgageGuide from '../components/MortgageGuide.jsx'
 import DocumentsNeeded from '../components/DocumentsNeeded.jsx'
+import EstimateCalculator from '../components/EstimateCalculator.jsx'
 import AboutFounder from '../components/AboutFounder.jsx'
 import LocalMarkets from '../components/LocalMarkets.jsx'
 import LoanPrograms from '../components/LoanPrograms.jsx'
@@ -66,6 +67,7 @@ export default function Home() {
       <JumboStrategy t={t} />
       <MortgageGuide t={t} />
       <DocumentsNeeded t={t} />
+      <EstimateCalculator t={t} lang={lang} />
       <Divider />
       <AboutFounder t={t} config={siteConfig} />
       <LocalMarkets t={t} />

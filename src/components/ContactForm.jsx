@@ -34,6 +34,7 @@ export default function ContactForm({ t }) {
     location: prefill?.location || '',
     price: prefill?.price || '',
     loan: prefill?.loan || '',
+    message: prefill?.message || '',
   }
   // Remount the (uncontrolled) form whenever new prefill arrives so
   // defaultValue takes effect.
@@ -70,7 +71,7 @@ export default function ContactForm({ t }) {
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-5">
             <div className="flex items-baseline gap-4">
-              <span className="sec-index text-lg text-gold-soft" aria-hidden="true">( 14 )</span>
+              <span className="sec-index text-lg text-gold-soft" aria-hidden="true">( 15 )</span>
               <span className="meta-label !text-ivory/50">{c.eyebrow}</span>
               <span className="h-px flex-1 bg-ivory/15" aria-hidden="true" />
             </div>
@@ -199,6 +200,7 @@ export default function ContactForm({ t }) {
                         className={`${inputCls} min-h-[7rem] resize-y`}
                         name="message"
                         rows={4}
+                        defaultValue={pv.message}
                         placeholder={c.placeholders.message}
                       />
                     </Field>

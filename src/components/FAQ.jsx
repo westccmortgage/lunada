@@ -41,7 +41,7 @@ export default function FAQ({ t }) {
   return (
     <section id="faq" className="scroll-mt-20 bg-sand-soft py-32 sm:py-44">
       <div className="section-shell">
-        <SectionHead no="13" eyebrow={f.eyebrow} title={f.title} />
+        <SectionHead no="14" eyebrow={f.eyebrow} title={f.title} />
 
         <div className="mt-12 border-t border-sand-deep/60">
           {f.items.map((item, i) => (

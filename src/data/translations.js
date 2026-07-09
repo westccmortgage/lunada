@@ -122,6 +122,82 @@ export const translations = {
       },
     },
 
+    calculator: {
+      eyebrow: 'Estimate',
+      title: 'Estimate Your Numbers',
+      intro:
+        'A clear, private estimate — your monthly payment and, for a purchase, the full cash you need to close. Educational only: not a quote, pre-approval, or Loan Estimate.',
+      purpose: { label: 'I am', purchase: 'Buying', refinance: 'Refinancing' },
+      fields: {
+        price: 'Home price',
+        value: 'Property value',
+        down: 'Down payment',
+        loanAmount: 'Loan amount',
+        rate: 'Assumed interest rate',
+        rateHelp:
+          'You choose this rate — for illustration only. It is not a rate we are offering. Your actual rate depends on your program, credit, property, and underwriting.',
+        term: 'Loan term',
+        years: 'yr',
+      },
+      assumptions: {
+        toggle: 'Adjust assumptions',
+        taxRate: 'Property tax (annual, % of value)',
+        insurance: 'Home insurance (annual)',
+        hoa: 'HOA dues (monthly)',
+        lenderFee: 'Lender / broker fee (% of loan)',
+        titleEscrow: 'Title & escrow (% of price)',
+        other: 'Recording & other fees',
+        reserves: 'Reserves (months of payments)',
+      },
+      monthly: {
+        title: 'Estimated monthly payment',
+        pi: 'Principal & interest',
+        tax: 'Property tax',
+        insurance: 'Home insurance',
+        hoa: 'HOA dues',
+        total: 'Estimated total / month',
+      },
+      cash: {
+        title: 'Estimated cash to close',
+        down: 'Down payment',
+        lenderFee: 'Lender / broker fee',
+        titleEscrow: 'Title & escrow',
+        prepaids: 'Prepaids & escrow account (impounds)',
+        other: 'Recording & other fees',
+        closingTitle: 'Estimated closing costs',
+        total: 'Estimated cash to close',
+        reservesNote:
+          'Plus reserves: lenders often want you to keep about {v} in savings after closing.',
+        keyNote:
+          'Beyond your down payment, plan for roughly {v} in closing costs. This is the part buyers most often overlook.',
+      },
+      refiNote:
+        'For a refinance there is no down payment. Closing costs may be paid at closing or, with some programs, included in the loan — subject to lender guidelines.',
+      explainTitle: 'What these costs mean',
+      explain: [
+        {
+          q: 'What is escrow?',
+          a: 'Two things share the name. (1) Escrow / settlement: a neutral third party holds the funds and documents while the sale closes, then pays everyone correctly. (2) An escrow (impound) account: after closing, part of your monthly payment is set aside to pay property tax and insurance when they come due.',
+        },
+        {
+          q: 'What is a broker / lender fee?',
+          a: 'A fee for arranging, processing, and underwriting your loan. It is disclosed up front on your Loan Estimate and is part of your closing costs.',
+        },
+        {
+          q: 'Property tax & other expenses',
+          a: 'California property tax is roughly 1%+ of value each year. Add homeowners insurance, any HOA dues, and one-time recording and title fees. These are separate from principal and interest.',
+        },
+        {
+          q: 'Why is cash to close more than the down payment?',
+          a: 'The down payment is only one part. You also pay closing costs — lender/broker fee, title & escrow, and prepaids for your first taxes and insurance. Lenders may also want to see reserves — savings you keep after closing.',
+        },
+      ],
+      cta: 'Request a review with these numbers',
+      disclaimer:
+        'Estimate only. Figures are illustrations based on the numbers you enter — not a quote, pre-approval, Loan Estimate, or commitment to lend. Rates, taxes, insurance, and closing costs vary and change. All loans are subject to borrower qualification, lender guidelines, and underwriting approval.',
+      summaryPrefix: 'Estimate from website',
+    },
+
     guide: {
       whatIsJumbo: {
         eyebrow: 'The Basics',
@@ -242,6 +318,7 @@ export const translations = {
       start: 'Start Here',
       strategy: 'Loan Strategy',
       guide: 'Guide',
+      estimate: 'Estimate',
       about: 'About',
       markets: 'Local Markets',
       programs: 'Loan Programs',
@@ -651,6 +728,80 @@ export const translations = {
       },
     },
 
+    calculator: {
+      eyebrow: '费用估算',
+      title: '估算您的数字',
+      intro:
+        '清晰、私密的估算——每月还款，以及（购房时）交割所需的全部现金。仅供教育参考：并非报价、预批或贷款估算书（Loan Estimate）。',
+      purpose: { label: '我要', purchase: '购买', refinance: '再融资' },
+      fields: {
+        price: '房屋价格',
+        value: '房产价值',
+        down: '首付',
+        loanAmount: '贷款金额',
+        rate: '假设利率',
+        rateHelp:
+          '此利率由您自行设定，仅供演示，并非我们提供的利率。您的实际利率取决于贷款项目、信用、房产及承保审核。',
+        term: '贷款期限',
+        years: '年',
+      },
+      assumptions: {
+        toggle: '调整假设参数',
+        taxRate: '房产税（每年，占价值 %）',
+        insurance: '房屋保险（每年）',
+        hoa: 'HOA 管理费（每月）',
+        lenderFee: '贷款 / 经纪费（占贷款 %）',
+        titleEscrow: '产权与过户托管（占价格 %）',
+        other: '登记及其他费用',
+        reserves: '储备金（月供月数）',
+      },
+      monthly: {
+        title: '预计每月还款',
+        pi: '本金及利息',
+        tax: '房产税',
+        insurance: '房屋保险',
+        hoa: 'HOA 管理费',
+        total: '预计每月合计',
+      },
+      cash: {
+        title: '预计交割所需现金',
+        down: '首付',
+        lenderFee: '贷款 / 经纪费',
+        titleEscrow: '产权与过户托管',
+        prepaids: '预付款及托管账户（impounds）',
+        other: '登记及其他费用',
+        closingTitle: '预计交割费用',
+        total: '预计交割所需现金',
+        reservesNote: '另需储备金：贷款机构通常希望您在交割后仍保留约 {v} 的存款。',
+        keyNote: '在首付之外，还需准备约 {v} 的交割费用。这正是买家最容易忽略的部分。',
+      },
+      refiNote:
+        '再融资无需首付。交割费用可在交割时支付，或在部分项目中计入贷款——具体视贷款机构规定而定。',
+      explainTitle: '这些费用的含义',
+      explain: [
+        {
+          q: '什么是 Escrow（托管）？',
+          a: '这个词有两层含义。（1）交割托管：由中立第三方在交易完成期间保管资金与文件，再准确地支付给各方。（2）托管（impound）账户：交割后，您的部分月供会被预留，用于到期时缴纳房产税和保险。',
+        },
+        {
+          q: '什么是经纪 / 贷款费？',
+          a: '用于安排、处理和承保您贷款的费用。它会在贷款估算书（Loan Estimate）上提前披露，属于交割费用的一部分。',
+        },
+        {
+          q: '房产税及其他支出',
+          a: '加州房产税每年约为房产价值的 1% 以上。此外还有房屋保险、HOA 管理费，以及一次性的登记与产权费用。这些与本金和利息是分开的。',
+        },
+        {
+          q: '为什么交割现金多于首付？',
+          a: '首付只是其中一部分。您还需支付交割费用——贷款/经纪费、产权与托管费，以及首期税款和保险的预付款。贷款机构还可能希望看到储备金，即交割后您保留的存款。',
+        },
+      ],
+      cta: '带上这些数字预约评估',
+      disclaimer:
+        '仅为估算。以上数字基于您输入的信息进行演示——并非报价、预批、贷款估算书或贷款承诺。利率、税费、保险及交割费用会有所不同并可能变化。所有贷款均需符合借款人资格、贷款机构规定及承保审批。',
+      summaryPrefix: '来自网站的估算',
+    },
+
     guide: {
       whatIsJumbo: {
         eyebrow: '基础知识',
@@ -771,6 +922,7 @@ export const translations = {
       start: '从这里开始',
       strategy: '贷款策略',
       guide: '贷款指南',
+      estimate: '费用估算',
       about: '关于我们',
       markets: '本地市场',
       programs: '贷款项目',

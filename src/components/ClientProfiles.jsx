@@ -5,7 +5,7 @@ export default function ClientProfiles({ t }) {
   return (
     <section id="clients" className="scroll-mt-20 bg-sand-soft py-32 sm:py-44">
       <div className="section-shell">
-        <SectionHead no="10" eyebrow={c.eyebrow} title={c.title} intro={c.intro} />
+        <SectionHead no="11" eyebrow={c.eyebrow} title={c.title} intro={c.intro} />
 
         <div className="mt-16 grid grid-cols-1 gap-px overflow-hidden border border-navy/15 bg-navy/15 md:grid-cols-2">
           {c.items.map((item, i) => (

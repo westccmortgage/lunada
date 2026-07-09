@@ -19,7 +19,7 @@ export default function LocalMarkets({ t }) {
   return (
     <section id="markets" className="scroll-mt-20 bg-sand-soft py-32 sm:py-44">
       <div className="section-shell">
-        <SectionHead no="08" eyebrow={m.eyebrow} title={m.title} intro={m.intro} />
+        <SectionHead no="09" eyebrow={m.eyebrow} title={m.title} intro={m.intro} />
 
         <div className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {m.items.map((item, i) => (

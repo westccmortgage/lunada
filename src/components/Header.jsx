@@ -16,10 +16,10 @@ export default function Header({ t, lang, setLang }) {
     { key: 'start', href: '/#start-here' },
     { key: 'strategy', href: '/#strategy' },
     { key: 'guide', href: '/#guide' },
+    { key: 'estimate', href: '/#estimate' },
     { key: 'about', href: '/#about' },
     { key: 'markets', href: '/#markets' },
     { key: 'programs', href: '/#programs' },
-    { key: 'process', href: '/#process' },
     { key: 'faq', href: '/#faq' },
   ]
 
