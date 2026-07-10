@@ -25,6 +25,7 @@ export const siteConfig = {
     title: 'California Real Estate Broker',
     dreBrokerLicense: '01385024', // CA DRE Broker License (individual)
     nmls: '2775380', // Individual MLO NMLS
+    photo: '/anatoliy.jpg', // drop the founder photo here → public/anatoliy.jpg
   },
 
   // --- Contact (placeholders — confirm before publishing) ---

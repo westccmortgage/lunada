@@ -1,3 +1,31 @@
+import { useState } from 'react'
+
+/** Circular founder portrait; falls back to the AK monogram until the photo
+ *  file exists at config.founder.photo (default /anatoliy.jpg in /public). */
+function FounderAvatar({ src, name }) {
+  const [ok, setOk] = useState(Boolean(src))
+  const initials = name
+    .split(' ')
+    .map((w) => w[0])
+    .slice(0, 2)
+    .join('')
+  if (ok) {
+    return (
+      <img
+        src={src}
+        alt={name}
+        onError={() => setOk(false)}
+        className="h-16 w-16 flex-shrink-0 rounded-full border border-gold/50 object-cover object-top"
+      />
+    )
+  }
+  return (
+    <div className="flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-full border border-gold/50 font-serif text-lg text-gold-soft">
+      {initials}
+    </div>
+  )
+}
+
 export default function AboutFounder({ t, config }) {
   const a = t.about
   return (
@@ -26,11 +54,9 @@ export default function AboutFounder({ t, config }) {
           {/* Right — credentials panel */}
           <div className="lg:col-span-5">
             <div className="rounded-sm border border-ivory/12 bg-navy-soft/40 p-8">
-              {/* Monogram */}
+              {/* Founder portrait (falls back to monogram until photo is added) */}
               <div className="flex items-center gap-4">
-                <div className="flex h-14 w-14 items-center justify-center rounded-full border border-gold/50 font-serif text-lg text-gold-soft">
-                  AK
-                </div>
+                <FounderAvatar src={config.founder.photo} name={config.founder.name} />
                 <div>
                   <p className="font-serif text-xl text-ivory">{config.founder.name}</p>
                   <p className="text-xs uppercase tracking-widest text-gold-soft/80">
