@@ -85,7 +85,7 @@ export const insights = [
   },
   {
     id: 'chinese-buyer-guide',
-    to: '/chinese-mortgage-broker-los-angeles',
+    to: '/before-you-make-an-offer',
     en: {
       title: 'Chinese Buyer Guide to U.S. Mortgage Financing',
       excerpt:

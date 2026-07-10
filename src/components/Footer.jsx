@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { localPages } from '../data/localPages.js'
+import { educationPages } from '../data/educationPages.js'
 
 const NmlsLine = ({ label, number, verify, verifyNote }) => (
   <p className="text-[0.82rem] leading-relaxed text-ivory/55">
@@ -8,15 +9,7 @@ const NmlsLine = ({ label, number, verify, verifyNote }) => (
   </p>
 )
 
-// Curated labels for the two Chinese-broker pages; others use their city name.
-function areaLabel(page, lang) {
-  if (page.slug === 'chinese-mortgage-broker-los-angeles')
-    return lang === 'zh' ? '洛杉矶华人房贷顾问' : 'Chinese Mortgage Broker · Los Angeles'
-  if (page.slug === 'chinese-mortgage-broker-palos-verdes')
-    return lang === 'zh' ? '帕洛斯弗迪斯华人房贷顾问' : 'Chinese Mortgage Broker · Palos Verdes'
-  const label = lang === 'zh' ? page.cityZh : page.city
-  return label.replace(/^the /, '')
-}
+const areaLabel = (page, lang) => (lang === 'zh' ? page.cityZh : page.city).replace(/^the /, '')
 
 export default function Footer({ t, config, lang = 'en' }) {
   const f = t.footer
@@ -108,8 +101,27 @@ export default function Footer({ t, config, lang = 'en' }) {
           </div>
         </div>
 
-        {/* Service areas — complete internal links to every local page */}
+        {/* Guides — loan-education pages */}
         <div className="mt-14 border-t border-ivory/10 pt-8">
+          <p className="text-xs font-medium uppercase tracking-widest text-ivory/40">
+            {f.guidesTitle}
+          </p>
+          <ul className="mt-5 flex flex-wrap gap-x-7 gap-y-2.5">
+            {educationPages.map((p) => (
+              <li key={p.slug}>
+                <Link
+                  to={p.path}
+                  className="text-[0.82rem] text-ivory/55 transition-colors hover:text-gold-soft"
+                >
+                  {p[lang].h1}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Service areas — complete internal links to every local page */}
+        <div className="mt-10 border-t border-ivory/10 pt-8">
           <p className="text-xs font-medium uppercase tracking-widest text-ivory/40">
             {f.areasTitle}
           </p>

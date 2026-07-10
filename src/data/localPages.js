@@ -40,9 +40,9 @@ const sharedEn = (city) => [
     ],
   },
   {
-    heading: 'Bilingual guidance for Chinese-speaking clients',
+    heading: 'Guidance in English and 中文',
     paras: [
-      `For Chinese-speaking buyers and international families, we provide guidance in both English and Simplified Chinese (中文) — including a clear explanation of the U.S. mortgage process, help understanding documentation, and support with purchase, refinance, and investment property decisions.`,
+      `Mortgage terms, lender documents, income and asset review, and next steps can be explained clearly in the language you prefer — English or Simplified Chinese (中文) — for purchase, refinance, and investment decisions.`,
     ],
   },
 ]
@@ -71,9 +71,9 @@ const sharedZh = (cityZh) => [
     ],
   },
   {
-    heading: '为华语客户提供的双语指导',
+    heading: '英文与中文双语指导',
     paras: [
-      `对于华语买家及国际家庭，我们提供中英双语指导——包括清晰讲解美国房贷流程、协助理解所需文件，并在购房、再融资及投资房产决策方面提供支持。`,
+      `房贷术语、贷款文件、收入与资产审核以及下一步流程，都可以用您更方便的语言清楚说明——英文或简体中文（中文）——涵盖购房、再融资及投资决策。`,
     ],
   },
 ]
@@ -615,114 +615,6 @@ const PAGES = [
         paras: [
           '南湾的多样性——高端海岸住宅、山坡庄园与投资房产——意味着并不存在唯一正确的贷款。合适的结构取决于房产与借款人。',
           '我们专注于清晰地比较这些路径，让您能自信地做出选择。',
-        ],
-      },
-    },
-  },
-
-  {
-    slug: 'chinese-mortgage-broker-los-angeles',
-    city: 'Los Angeles',
-    cityZh: '洛杉矶',
-    keywords:
-      'Chinese mortgage broker Los Angeles, 华人房贷顾问, 洛杉矶房贷, bilingual mortgage broker, 大额房贷, self-employed jumbo mortgage California',
-    en: {
-      title: 'Chinese Mortgage Broker Los Angeles | English & 中文 Mortgage Guidance',
-      description:
-        'Bilingual English and Chinese (中文) mortgage guidance in Los Angeles. Jumbo loans, self-employed options, and clear help understanding the U.S. mortgage process.',
-      h1: 'Chinese Mortgage Broker in Los Angeles | 华人房贷顾问',
-      intro: [
-        'For Chinese-speaking buyers and international families, the U.S. mortgage process can feel unfamiliar — different documentation, different terminology, and different expectations than in other countries. Clear, bilingual guidance can make a meaningful difference.',
-        'Lunada Bay Mortgage provides guidance in both English and Simplified Chinese (中文) across Los Angeles and the coastal South Bay. The goal is simple: help you understand the process, the documentation, and the options that may fit — whether you are buying, refinancing, or investing.',
-      ],
-      highlights: [
-        'Guidance in English and 中文',
-        'Clear explanation of the U.S. mortgage process and documentation',
-        'Jumbo, self-employed, and investment options subject to guidelines',
-        'Support for purchase, refinance, and investment property decisions',
-      ],
-      localContext: {
-        heading: 'Bilingual support you can rely on',
-        paras: [
-          'Many of our clients are business owners, professionals, and investors whose situations call for careful documentation. We help present income and assets clearly, in the way lenders are prepared to evaluate.',
-          'Every step is explained, and every recommendation is subject to borrower qualification, lender guidelines, and underwriting approval.',
-        ],
-      },
-    },
-    zh: {
-      title: '洛杉矶华人房贷顾问 | 中英双语房贷指导',
-      description:
-        '在洛杉矶提供中英双语房贷指导：大额贷款、自雇方案，并清晰讲解美国房贷流程，帮助您理解所需文件。',
-      h1: '洛杉矶华人房贷顾问 | Chinese Mortgage Broker in Los Angeles',
-      intro: [
-        '对于华语买家及国际家庭而言，美国房贷流程可能显得陌生——文件、术语与预期都与其他国家不同。清晰的双语指导能带来实质性的帮助。',
-        'Lunada Bay Mortgage 在洛杉矶及海岸南湾地区提供中英双语指导。目标很简单：帮助您理解流程、文件，以及可能契合的方案——无论您是购房、再融资还是投资。',
-      ],
-      highlights: [
-        '提供中英双语指导',
-        '清晰讲解美国房贷流程与所需文件',
-        '在符合规定的前提下提供大额、自雇及投资方案',
-        '为购房、再融资及投资房产决策提供支持',
-      ],
-      localContext: {
-        heading: '值得信赖的双语支持',
-        paras: [
-          '我们的许多客户是企业主、专业人士与投资者，他们的情况需要细致的文件整理。我们帮助以贷款机构认可的方式清晰呈现收入与资产。',
-          '每一步都会解释清楚，每项建议均需符合借款人资格、贷款机构规定及承保审批。',
-        ],
-      },
-    },
-  },
-
-  {
-    slug: 'chinese-mortgage-broker-palos-verdes',
-    city: 'Palos Verdes',
-    cityZh: '帕洛斯弗迪斯',
-    keywords:
-      'Chinese mortgage broker Palos Verdes, 帕洛斯弗迪斯房贷, 华人房贷顾问, Palos Verdes jumbo loans, 大额房贷, 洛杉矶房贷',
-    en: {
-      title: 'Chinese Mortgage Broker Palos Verdes | 帕洛斯弗迪斯华人房贷顾问',
-      description:
-        'Bilingual English and Chinese (中文) jumbo mortgage guidance for Palos Verdes and the South Bay. Local support for luxury buyers, investors, and self-employed borrowers.',
-      h1: 'Chinese Mortgage Broker for Palos Verdes | 华人房贷顾问',
-      intro: [
-        "Palos Verdes and the surrounding peninsula attract many Chinese-speaking buyers and international families drawn to the area's schools, coastline, and luxury homes. Financing a high-value peninsula home often involves a jumbo loan and careful documentation.",
-        'Lunada Bay Mortgage offers bilingual guidance in English and Simplified Chinese (中文), combined with local, community-based knowledge of the Palos Verdes market. The aim is to make a complex process clear.',
-      ],
-      highlights: [
-        'Bilingual English and 中文 guidance',
-        'Local Palos Verdes and peninsula market knowledge',
-        'Jumbo and self-employed borrower options subject to guidelines',
-        'Support for purchase, refinance, and investment decisions',
-      ],
-      localContext: {
-        heading: 'Local knowledge, bilingual clarity',
-        paras: [
-          "For families relocating or investing from abroad, understanding documentation and structure is often the biggest hurdle. We walk through each step in the language you're most comfortable with.",
-          'All financing is subject to borrower qualification, lender guidelines, and underwriting approval.',
-        ],
-      },
-    },
-    zh: {
-      title: '帕洛斯弗迪斯华人房贷顾问 | 中英双语大额贷款',
-      description:
-        '为帕洛斯弗迪斯及南湾提供中英双语大额房贷指导，本地服务高端买家、投资者及自雇借款人。',
-      h1: '帕洛斯弗迪斯华人房贷顾问 | Chinese Mortgage Broker for Palos Verdes',
-      intro: [
-        '帕洛斯弗迪斯及周边半岛吸引着许多华语买家与国际家庭，他们看重这里的学校、海岸线与高端住宅。为高价值的半岛住宅融资，通常涉及大额贷款与细致的文件。',
-        'Lunada Bay Mortgage 提供中英双语指导，并结合对帕洛斯弗迪斯市场本地、扎根社区的了解，力求让复杂的流程变得清晰。',
-      ],
-      highlights: [
-        '提供中英双语指导',
-        '熟悉帕洛斯弗迪斯及半岛本地市场',
-        '在符合规定的前提下提供大额及自雇借款人方案',
-        '为购房、再融资及投资决策提供支持',
-      ],
-      localContext: {
-        heading: '本地专业，双语清晰',
-        paras: [
-          '对于从海外迁居或投资的家庭而言，理解文件与结构往往是最大的障碍。我们会用您最熟悉的语言，逐步讲解每一个环节。',
-          '所有融资均需符合借款人资格、贷款机构规定及承保审批。',
         ],
       },
     },

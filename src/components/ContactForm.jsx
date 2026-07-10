@@ -71,12 +71,20 @@ export default function ContactForm({ t }) {
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-5">
             <div className="flex items-baseline gap-4">
-              <span className="sec-index text-lg text-gold-soft" aria-hidden="true">( 15 )</span>
+              <span className="sec-index text-lg text-gold-soft" aria-hidden="true">( 06 )</span>
               <span className="meta-label !text-ivory/50">{c.eyebrow}</span>
               <span className="h-px flex-1 bg-ivory/15" aria-hidden="true" />
             </div>
             <h2 className="title-xl mt-7 !text-ivory">{c.title}</h2>
             <p className="mt-6 max-w-md text-base leading-relaxed text-ivory/70">{c.intro}</p>
+            {c.trustLine && (
+              <p className="mt-5 inline-flex items-center gap-2 text-sm font-medium text-gold-soft">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden="true">
+                  <path d="M12 3l7 3v6c0 4-3 7-7 9-4-2-7-5-7-9V6l7-3z" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+                {c.trustLine}
+              </p>
+            )}
           </div>
 
           <div className="lg:col-span-7">

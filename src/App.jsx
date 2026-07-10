@@ -5,8 +5,9 @@ import { WizardPrefillProvider } from './context/WizardPrefillContext.jsx'
 import { siteConfig } from './data/translations.js'
 import Header from './components/Header.jsx'
 import Footer from './components/Footer.jsx'
+import ForceLang from './components/ForceLang.jsx'
 import Home from './pages/Home.jsx'
-import LocalPage from './pages/LocalPage.jsx'
+import SlugPage from './pages/SlugPage.jsx'
 
 /**
  * Subtle scroll-reveal for sections below the fold.
@@ -53,8 +54,25 @@ function Shell() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* Local SEO pages — LocalPage validates the slug and redirects home if unknown */}
-          <Route path="/:slug" element={<LocalPage />} />
+          {/* Chinese language layer — same content, forced to 中文 on load */}
+          <Route
+            path="/zh"
+            element={
+              <ForceLang>
+                <Home />
+              </ForceLang>
+            }
+          />
+          <Route
+            path="/zh/:slug"
+            element={
+              <ForceLang>
+                <SlugPage />
+              </ForceLang>
+            }
+          />
+          {/* Local area + loan-education pages; SlugPage resolves or redirects home */}
+          <Route path="/:slug" element={<SlugPage />} />
           <Route path="*" element={<Home />} />
         </Routes>
       </main>

@@ -6,14 +6,64 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://lunadabaymortgage.com/zh</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lunadabaymortgage.com/jumbo-loans</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lunadabaymortgage.com/self-employed-mortgage</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lunadabaymortgage.com/bank-statement-loans</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lunadabaymortgage.com/dscr-loans</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lunadabaymortgage.com/interest-only-jumbo</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lunadabaymortgage.com/cash-out-refinance</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lunadabaymortgage.com/non-qm-mortgage</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lunadabaymortgage.com/mortgage-documents</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lunadabaymortgage.com/before-you-make-an-offer</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://lunadabaymortgage.com/lunada-bay-mortgage</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://lunadabaymortgage.com/palos-verdes-jumbo-loans</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://lunadabaymortgage.com/palos-verdes-estates-mortgage</loc>
@@ -53,16 +103,31 @@
   <url>
     <loc>https://lunadabaymortgage.com/south-bay-jumbo-mortgage</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://lunadabaymortgage.com/chinese-mortgage-broker-los-angeles</loc>
+    <loc>https://lunadabaymortgage.com/zh/lunada-bay-mortgage</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://lunadabaymortgage.com/chinese-mortgage-broker-palos-verdes</loc>
+    <loc>https://lunadabaymortgage.com/zh/palos-verdes-jumbo-loans</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lunadabaymortgage.com/zh/jumbo-loans</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lunadabaymortgage.com/zh/mortgage-documents</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lunadabaymortgage.com/zh/before-you-make-an-offer</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>

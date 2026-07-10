@@ -4,11 +4,19 @@ import { translations } from '../data/translations.js'
 const STORAGE_KEY = 'lbm-lang'
 const LanguageContext = createContext(null)
 
-export function LanguageProvider({ children }) {
-  const [lang, setLang] = useState('en')
+// A /zh* URL is a Chinese entry point — it always wins over a saved preference,
+// so a direct load renders Chinese immediately (good for SEO and for sharing).
+const isZhPath = () => typeof window !== 'undefined' && window.location.pathname.startsWith('/zh')
 
-  // Restore a previously chosen language
+export function LanguageProvider({ children }) {
+  const [lang, setLang] = useState(() => (isZhPath() ? 'zh' : 'en'))
+
+  // Restore a previously chosen language — unless the URL is a /zh route.
   useEffect(() => {
+    if (isZhPath()) {
+      setLang('zh')
+      return
+    }
     const saved = typeof window !== 'undefined' ? window.localStorage.getItem(STORAGE_KEY) : null
     if (saved === 'en' || saved === 'zh') setLang(saved)
   }, [])

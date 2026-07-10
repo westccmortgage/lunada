@@ -20,7 +20,7 @@ export default function StartHere({ t }) {
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:items-center lg:gap-16">
           <div className="lg:col-span-5">
             <div className="flex items-baseline gap-4">
-              <span className="sec-index text-lg" aria-hidden="true">( 01 )</span>
+              <span className="sec-index text-lg" aria-hidden="true">( 02 )</span>
               <span className="meta-label">{s.eyebrow}</span>
             </div>
             <h2 className="title-xl mt-7">{s.title}</h2>

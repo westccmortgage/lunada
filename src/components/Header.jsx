@@ -14,13 +14,11 @@ export default function Header({ t, lang, setLang }) {
 
   const navItems = [
     { key: 'start', href: '/#start-here' },
-    { key: 'strategy', href: '/#strategy' },
-    { key: 'guide', href: '/#guide' },
+    { key: 'paths', href: '/#paths' },
     { key: 'estimate', href: '/#estimate' },
     { key: 'about', href: '/#about' },
-    { key: 'markets', href: '/#markets' },
-    { key: 'programs', href: '/#programs' },
-    { key: 'faq', href: '/#faq' },
+    { key: 'guides', href: '/jumbo-loans' },
+    { key: 'areas', href: '/lunada-bay-mortgage' },
   ]
 
   return (

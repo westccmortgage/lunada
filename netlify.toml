@@ -5,6 +5,19 @@
 [build.environment]
   NODE_VERSION = "18"
 
+# Retired "Chinese buyer" URLs → bilingual Chinese-language routes (301)
+[[redirects]]
+  from = "/chinese-mortgage-broker-los-angeles"
+  to = "/zh/lunada-bay-mortgage"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/chinese-mortgage-broker-palos-verdes"
+  to = "/zh/palos-verdes-jumbo-loans"
+  status = 301
+  force = true
+
 # SPA fallback so deep links resolve to index.html
 [[redirects]]
   from = "/*"

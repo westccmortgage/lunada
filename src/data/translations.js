@@ -55,8 +55,8 @@ export const translations = {
     langLabel: 'EN',
 
     startHere: {
-      eyebrow: 'Start Here',
-      title: 'Not Sure Where to Begin?',
+      eyebrow: 'Strategy Studio',
+      title: 'Private Mortgage Strategy Studio',
       copy: 'Buying or refinancing a high-value home can feel complicated. Start with a few simple questions and understand which mortgage path may need to be reviewed.',
       cta: 'Start Mortgage Path',
       hint: '6 short questions · about a minute',
@@ -316,33 +316,72 @@ export const translations = {
 
     nav: {
       start: 'Start Here',
-      strategy: 'Loan Strategy',
-      guide: 'Guide',
+      paths: 'Paths',
       estimate: 'Estimate',
       about: 'About',
-      markets: 'Local Markets',
-      programs: 'Loan Programs',
-      process: 'Process',
-      faq: 'FAQ',
+      guides: 'Guides',
+      areas: 'Areas',
       contact: 'Contact',
       cta: 'Request a Review',
     },
 
     hero: {
       eyebrow: 'Private Mortgage Advisory',
-      headline: 'Private Mortgage Strategy for Lunada Bay & Coastal Los Angeles',
+      headline: 'Private Mortgage Strategy for Buying in Lunada Bay & Palos Verdes',
       headlineLines: [
         [{ text: 'Private Mortgage ' }, { text: 'Strategy', accent: true }],
-        [{ text: 'for Lunada Bay &' }],
-        [{ text: 'Coastal Los Angeles' }],
+        [{ text: 'for Buying in' }],
+        [{ text: 'Lunada Bay & Palos Verdes' }],
       ],
       scrollCue: 'Scroll',
       subhead:
-        'Private mortgage guidance for luxury homebuyers, investors, business owners, and high-net-worth borrowers seeking financing beyond standard loan limits.',
-      primaryCta: 'Request a Private Mortgage Review',
-      secondaryCta: 'Explore Loan Options',
+        'Local guidance for high-value home decisions — the property, the financing, the structure, and the next step.',
+      primaryCta: 'Start Mortgage Path',
+      secondaryCta: 'Request Private Review',
       trustLine:
-        'Serving Lunada Bay, Palos Verdes, South Bay, Los Angeles County, and select California luxury markets.',
+        'You will speak with Anatoliy Kanevsky — a local Palos Verdes mortgage and real estate professional, not a call center.',
+    },
+
+    trustBlock: {
+      eyebrow: 'Why Us',
+      title: 'Local. Licensed. Personal.',
+      copy: 'Large home decisions require more than a loan quote. Anatoliy helps clients understand the property, the financing, and the strategy before they move forward.',
+      points: [
+        'Local Palos Verdes / Lunada Bay guidance',
+        'Licensed mortgage and real estate professional',
+        'Jumbo and complex borrower experience',
+        'English + 中文 guidance available',
+      ],
+    },
+
+    paths: {
+      eyebrow: 'Where to Start',
+      title: 'Three Simple Paths',
+      intro: 'Pick the one that sounds like you — each explains the essentials in plain language.',
+      cta: 'Learn more',
+      items: [
+        {
+          title: 'I’m thinking about buying a home.',
+          body: 'Understand purchase price, loan amount, down payment, documents, and whether jumbo financing may apply.',
+          to: '/jumbo-loans',
+        },
+        {
+          title: 'I already found a property.',
+          body: 'Before making an offer, review the financing structure behind the property.',
+          to: '/before-you-make-an-offer',
+        },
+        {
+          title: 'I want to refinance or access equity.',
+          body: 'Review refinance, cash-out, payment strategy, or alternative documentation options.',
+          to: '/cash-out-refinance',
+        },
+      ],
+    },
+
+    bilingual: {
+      eyebrow: 'Bilingual',
+      title: 'Mortgage Guidance in English and 中文',
+      copy: 'Mortgage terms, lender documents, income review, asset review, and next steps can be explained clearly in the language you prefer.',
     },
 
     localPositioning: 'Private mortgage strategy for Lunada Bay, Palos Verdes, and coastal Los Angeles.',
@@ -397,9 +436,41 @@ export const translations = {
       ctaBody:
         'Share a few details and a licensed mortgage professional will review your information and follow up.',
       ctaButton: 'Request a Private Review',
+      ctaStart: 'Start Mortgage Path',
+      faqTitle: 'Common questions',
+      faq: [
+        {
+          q: 'Do I need to be ready before I reach out?',
+          a: 'No. Nothing is required to begin — the first step is simply a clear, private conversation.',
+        },
+        {
+          q: 'Do you offer guidance in Chinese?',
+          a: 'Yes. Guidance is available in English and 中文, with each step explained clearly.',
+        },
+        {
+          q: 'Is this a commitment to lend?',
+          a: 'No. All loans are subject to borrower qualification, lender guidelines, and underwriting approval.',
+        },
+      ],
       disclaimerShort:
         'Informational only. Not a commitment to lend. All loans subject to borrower qualification, lender guidelines, and underwriting approval.',
       backHome: '← Back to home',
+    },
+
+    educationPage: {
+      eyebrow: 'Guide',
+      home: 'Home',
+      meaningTitle: 'What it means',
+      whoTitle: 'Who it may apply to',
+      reviewTitle: 'What lenders may review',
+      documentsTitle: 'Documents you may need',
+      nextTitle: 'Your next step',
+      faqTitle: 'Common questions',
+      ctaStart: 'Start Mortgage Path',
+      ctaReview: 'Request Private Review',
+      guidesTitle: 'More guides',
+      areasTitle: 'Local areas',
+      disclaimer: 'Educational information only. Not a quote, pre-approval, Loan Estimate, or commitment to lend. All loans are subject to borrower qualification, credit, income, assets, property review, lender guidelines, and underwriting approval.',
     },
 
     strategy: {
@@ -524,8 +595,8 @@ export const translations = {
           body: 'Investors weighing DSCR, cash-out, and portfolio strategies for qualifying properties, subject to lender guidelines.',
         },
         {
-          title: 'Chinese-Speaking Buyer / International Family',
-          body: 'Bilingual guidance with clear explanation of the U.S. mortgage process, help understanding documentation, and support with purchase, refinance, and investment property decisions.',
+          title: 'English + 中文 Guidance',
+          body: 'Clear explanation of the U.S. mortgage process, documentation, and next steps in the language you prefer — English or Simplified Chinese — for purchase, refinance, and investment decisions.',
         },
       ],
     },
@@ -605,6 +676,7 @@ export const translations = {
       title: 'Request a Private Mortgage Review',
       intro:
         'Share a few details and a licensed mortgage professional will review your information and follow up. Your information is treated with discretion.',
+      trustLine: 'Confidential review. No obligation. Licensed mortgage guidance.',
       fields: {
         name: 'Name',
         phone: 'Phone',
@@ -649,6 +721,7 @@ export const translations = {
       direct: 'Direct',
       email: 'Email',
       linksTitle: 'Related',
+      guidesTitle: 'Guides',
       areasTitle: 'Service Areas',
       licensingTitle: 'Licensing',
       verifyNote: 'verify before publishing',
@@ -663,8 +736,8 @@ export const translations = {
     langLabel: '中文',
 
     startHere: {
-      eyebrow: '从这里开始',
-      title: '不确定从哪里开始？',
+      eyebrow: '策略工作室',
+      title: '私人房贷策略工作室',
       copy: '购买或再融资高价值住宅可能会涉及许多贷款规则。您可以先回答几个简单问题，了解哪些贷款路径可能需要进一步评估。',
       cta: '开始了解贷款路径',
       hint: '6 个简短问题 · 约一分钟',
@@ -920,32 +993,71 @@ export const translations = {
 
     nav: {
       start: '从这里开始',
-      strategy: '贷款策略',
-      guide: '贷款指南',
+      paths: '路径',
       estimate: '费用估算',
       about: '关于我们',
-      markets: '本地市场',
-      programs: '贷款项目',
-      process: '服务流程',
-      faq: '常见问题',
+      guides: '贷款指南',
+      areas: '本地区域',
       contact: '联系我们',
       cta: '预约评估',
     },
 
     hero: {
       eyebrow: '私人房贷咨询',
-      headline: '露娜达湾及洛杉矶海岸私人房贷策略',
+      headline: '帕洛斯弗迪斯与露娜达湾购房私人房贷策略',
       headlineLines: [
-        [{ text: '露娜达湾及洛杉矶海岸' }],
-        [{ text: '私人' }, { text: '房贷策略', accent: true }],
+        [{ text: '帕洛斯弗迪斯与露娜达湾' }],
+        [{ text: '购房' }, { text: '私人房贷策略', accent: true }],
       ],
       scrollCue: '下滑浏览',
       subhead:
-        '为购买、再融资或投资高价值住宅的客户提供专业、私密、清晰的房贷方案指导。',
-      primaryCta: '预约私人贷款评估',
-      secondaryCta: '了解贷款方案',
+        '为高价值住宅决策提供本地指导——房产、融资、结构，以及下一步。',
+      primaryCta: '开始了解贷款路径',
+      secondaryCta: '预约私人评估',
       trustLine:
-        '服务露娜达湾、帕洛斯弗迪斯、南湾、洛杉矶县及加州精选高端住宅市场。',
+        '您将直接与 Anatoliy Kanevsky 沟通。他是帕洛斯弗迪斯本地的房贷与房地产专业人士，而不是呼叫中心。',
+    },
+
+    trustBlock: {
+      eyebrow: '为何选择我们',
+      title: '本地 · 持牌 · 一对一',
+      copy: '重大的置业决策需要的不只是一份利率报价。在您继续之前，Anatoliy 会帮助您理解房产、融资与策略。',
+      points: [
+        '熟悉帕洛斯弗迪斯 / 露娜达湾的本地指导',
+        '持牌房贷与房地产专业人士',
+        '熟悉大额贷款与复杂借款人情况',
+        '提供英文与中文双语指导',
+      ],
+    },
+
+    paths: {
+      eyebrow: '从哪里开始',
+      title: '三条简单路径',
+      intro: '选择最符合您情况的一条——每条都用简单语言说明关键要点。',
+      cta: '了解更多',
+      items: [
+        {
+          title: '我在考虑买房。',
+          body: '了解购买价格、贷款金额、首付、所需文件，以及是否可能需要大额贷款。',
+          to: '/jumbo-loans',
+        },
+        {
+          title: '我已经看中了房子。',
+          body: '在出价之前，先了解房产背后的融资结构。',
+          to: '/before-you-make-an-offer',
+        },
+        {
+          title: '我想再融资或动用房产净值。',
+          body: '了解再融资、套现、还款策略或替代性文件方案。',
+          to: '/cash-out-refinance',
+        },
+      ],
+    },
+
+    bilingual: {
+      eyebrow: '双语服务',
+      title: '英文与中文双语房贷指导',
+      copy: '房贷术语、贷款文件、收入审核、资产审核以及下一步流程，都可以用您更方便的语言清楚说明。',
     },
 
     localPositioning: '为露娜达湾、帕洛斯弗迪斯及洛杉矶海岸地区提供私人房贷策略。',
@@ -999,9 +1111,41 @@ export const translations = {
       ctaTitle: '预约私人贷款评估',
       ctaBody: '请留下部分信息，持牌房贷专业人士将审核您的资料并与您联系。',
       ctaButton: '提交私人评估申请',
+      ctaStart: '开始了解贷款路径',
+      faqTitle: '常见问题',
+      faq: [
+        {
+          q: '联系之前我需要准备好吗？',
+          a: '不需要。开始时无需任何材料——第一步只是一次清晰、私密的沟通。',
+        },
+        {
+          q: '你们提供中文指导吗？',
+          a: '提供。我们提供中英双语指导，并清晰讲解每一个步骤。',
+        },
+        {
+          q: '这构成贷款承诺吗？',
+          a: '不构成。所有贷款均需符合借款人资格、贷款机构规定及承保审批。',
+        },
+      ],
       disclaimerShort:
         '仅供参考，不构成贷款承诺。所有贷款均需符合借款人资格、贷款机构规定及承保审批。',
       backHome: '← 返回首页',
+    },
+
+    educationPage: {
+      eyebrow: '指南',
+      home: '首页',
+      meaningTitle: '这是什么意思',
+      whoTitle: '可能适用于谁',
+      reviewTitle: '贷款机构可能审阅哪些方面',
+      documentsTitle: '您可能需要的文件',
+      nextTitle: '您的下一步',
+      faqTitle: '常见问题',
+      ctaStart: '开始了解贷款路径',
+      ctaReview: '预约私人评估',
+      guidesTitle: '更多指南',
+      areasTitle: '本地区域',
+      disclaimer: '仅供教育参考。并非报价、预批、贷款估算书或贷款承诺。所有贷款均需符合借款人资格、信用、收入、资产、房产审核、贷款机构规定及承保审批。',
     },
 
     strategy: {
@@ -1099,8 +1243,8 @@ export const translations = {
           body: '在符合机构规定的前提下，权衡 DSCR、套现及资产组合策略的投资者。',
         },
         {
-          title: '华语买家 / 国际家庭',
-          body: '提供中英双语指导，清晰讲解美国房贷流程，协助理解所需文件，并在购房、再融资及投资房产决策方面提供支持。',
+          title: '英文与中文双语指导',
+          body: '用您更方便的语言——英文或简体中文——清晰讲解美国房贷流程、所需文件及下一步流程，涵盖购房、再融资及投资决策。',
         },
       ],
     },
@@ -1180,6 +1324,7 @@ export const translations = {
       title: '预约私人贷款评估',
       intro:
         '请留下部分信息，持牌房贷专业人士将审核您的资料并与您联系。您的信息将被审慎对待。',
+      trustLine: '保密评估。无强制义务。由持牌房贷专业人士提供指导。',
       fields: {
         name: '姓名',
         phone: '电话',
@@ -1224,6 +1369,7 @@ export const translations = {
       direct: '直线',
       email: '邮箱',
       linksTitle: '相关网站',
+      guidesTitle: '贷款指南',
       areasTitle: '服务区域',
       licensingTitle: '牌照信息',
       verifyNote: '发布前请核实',
