@@ -9,6 +9,7 @@ import {
   faqSchema,
   breadcrumbSchema,
 } from '../lib/schema.js'
+import { withLang } from '../lib/href.js'
 import Seo from '../components/Seo.jsx'
 import ContactForm from '../components/ContactForm.jsx'
 
@@ -78,7 +79,7 @@ export default function LocalPage() {
         <div className="section-shell">
           {/* Breadcrumb */}
           <nav aria-label="Breadcrumb" className="mb-6 text-xs tracking-wide text-ivory/50">
-            <Link to="/" className="hover:text-gold-soft">
+            <Link to={withLang('/', lang)} className="hover:text-gold-soft">
               {lp.home}
             </Link>
             <span className="mx-2 text-ivory/30">/</span>
@@ -98,7 +99,7 @@ export default function LocalPage() {
             ))}
           </div>
           <div className="mt-9 flex flex-col gap-4 sm:flex-row">
-            <a href="/#start-here" className="btn-gold">
+            <a href={withLang('/#start-here', lang)} className="btn-gold">
               {lp.ctaStart}
             </a>
             <a
@@ -193,7 +194,7 @@ export default function LocalPage() {
                   {others.map((p) => (
                     <li key={p.slug}>
                       <Link
-                        to={p.path}
+                        to={withLang(p.path, lang)}
                         className="group inline-flex items-center gap-2 text-[0.92rem] text-navy/70 transition-colors hover:text-gold-muted"
                       >
                         <span className="h-px w-4 bg-gold/50 transition-all group-hover:w-6" />
@@ -203,7 +204,7 @@ export default function LocalPage() {
                   ))}
                 </ul>
                 <Link
-                  to="/"
+                  to={withLang('/', lang)}
                   className="mt-6 inline-block text-sm text-navy/50 transition-colors hover:text-navy"
                 >
                   {lp.backHome}

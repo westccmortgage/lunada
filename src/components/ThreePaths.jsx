@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom'
 import SectionHead from './SectionHead.jsx'
+import { withLang } from '../lib/href.js'
 
-export default function ThreePaths({ t }) {
+export default function ThreePaths({ t, lang }) {
   const p = t.paths
   return (
     <section id="paths" className="scroll-mt-20 bg-sand-soft py-16 sm:py-24">
@@ -12,7 +13,7 @@ export default function ThreePaths({ t }) {
           {p.items.map((item, i) => (
             <Link
               key={i}
-              to={item.to}
+              to={withLang(item.to, lang)}
               className="group flex flex-col rounded-sm border border-sand-deep/70 bg-white p-8 transition-all duration-300 hover:-translate-y-1 hover:border-gold/60 hover:shadow-[0_20px_50px_-32px_rgba(15,32,53,0.5)]"
             >
               <span className="sec-index text-sm" aria-hidden="true">

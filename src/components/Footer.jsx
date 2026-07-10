@@ -1,13 +1,7 @@
 import { Link } from 'react-router-dom'
 import { localPages } from '../data/localPages.js'
 import { educationPages } from '../data/educationPages.js'
-
-const NmlsLine = ({ label, number, verify, verifyNote }) => (
-  <p className="text-[0.82rem] leading-relaxed text-ivory/55">
-    {label} NMLS #{number}
-    {verify && <span className="ml-1 text-gold-soft/70">— {verifyNote}</span>}
-  </p>
-)
+import { withLang } from '../lib/href.js'
 
 const areaLabel = (page, lang) => (lang === 'zh' ? page.cityZh : page.city).replace(/^the /, '')
 
@@ -69,34 +63,25 @@ export default function Footer({ t, config, lang = 'en' }) {
             </ul>
           </div>
 
-          {/* Licensing */}
+          {/* Licensing — two distinct entities, NMLS numbers kept separate */}
           <div className="lg:col-span-3">
             <p className="text-xs font-medium uppercase tracking-widest text-ivory/40">
               {f.licensingTitle}
             </p>
-            <div className="mt-5 space-y-1.5">
-              <p className="text-sm text-ivory/75">{config.company}</p>
-              <p className="text-[0.82rem] text-ivory/55">{config.founderName}</p>
+            <div className="mt-5 space-y-1">
+              <p className="text-sm text-ivory/75">{config.company.name}</p>
               <p className="text-[0.82rem] text-ivory/55">
-                California Real Estate Broker DRE #{config.broker.dreBrokerLicense}
+                CA DRE Corporation License #{config.company.dreCorporationLicense}
               </p>
+              <p className="text-[0.82rem] text-ivory/55">NMLS #{config.company.nmls}</p>
+            </div>
+            <div className="mt-4 space-y-1">
+              <p className="text-sm text-ivory/75">{config.founder.name}</p>
+              <p className="text-[0.82rem] text-ivory/55">{config.founder.title}</p>
               <p className="text-[0.82rem] text-ivory/55">
-                CA DRE Corporation License #{config.broker.corporationDreLicense}
+                CA DRE Broker License #{config.founder.dreBrokerLicense}
               </p>
-              <div className="pt-2">
-                <NmlsLine
-                  label={config.company}
-                  number={config.nmls.company.number}
-                  verify={config.nmls.company.verifyBeforePublishing}
-                  verifyNote={f.verifyNote}
-                />
-                <NmlsLine
-                  label={config.founderName}
-                  number={config.nmls.individual.number}
-                  verify={config.nmls.individual.verifyBeforePublishing}
-                  verifyNote={f.verifyNote}
-                />
-              </div>
+              <p className="text-[0.82rem] text-ivory/55">NMLS #{config.founder.nmls}</p>
             </div>
           </div>
         </div>
@@ -110,7 +95,7 @@ export default function Footer({ t, config, lang = 'en' }) {
             {educationPages.map((p) => (
               <li key={p.slug}>
                 <Link
-                  to={p.path}
+                  to={withLang(p.path, lang)}
                   className="text-[0.82rem] text-ivory/55 transition-colors hover:text-gold-soft"
                 >
                   {p[lang].h1}
@@ -129,7 +114,7 @@ export default function Footer({ t, config, lang = 'en' }) {
             {localPages.map((p) => (
               <li key={p.slug}>
                 <Link
-                  to={p.path}
+                  to={withLang(p.path, lang)}
                   className="text-[0.82rem] text-ivory/55 transition-colors hover:text-gold-soft"
                 >
                   {areaLabel(p, lang)}

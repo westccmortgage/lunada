@@ -2,33 +2,29 @@
  * ============================================================================
  *  SITE CONFIG — EDIT ALL LICENSE, NMLS & CONTACT DETAILS HERE
  * ----------------------------------------------------------------------------
- *  This is the single source of truth for compliance-sensitive information.
- *  Items marked `verifyBeforePublishing: true` render a small reminder in the
- *  footer during development. Verify each one, then set the flag to false.
+ *  Single source of truth for compliance-sensitive information. Two distinct
+ *  entities — never mix their NMLS numbers:
+ *    • Company    — West Coast Capital Mortgage Inc.  DRE Corp #02440065 · NMLS #2817729
+ *    • Individual — Anatoliy Kanevsky  CA Real Estate Broker · DRE #01385024 · NMLS #2775380
  * ============================================================================
  */
 export const siteConfig = {
   brandName: 'Lunada Bay Mortgage',
   domain: 'lunadabaymortgage.com',
-  company: 'West Coast Capital Mortgage Inc.',
-  founderName: 'Anatoliy Kanevsky',
 
-  // --- Licensing ---
-  broker: {
-    dreBrokerLicense: '01385024', // CA DRE Broker License (individual)
-    corporationDreLicense: '02440065', // West Coast Capital Mortgage Inc. CA DRE Corporation License
+  // --- Company (corporate entity) ---
+  company: {
+    name: 'West Coast Capital Mortgage Inc.',
+    dreCorporationLicense: '02440065', // CA DRE Corporation License
+    nmls: '2817729', // Company NMLS
   },
 
-  // --- NMLS (VERIFY before going live) ---
-  nmls: {
-    company: {
-      number: '2817729',
-      verifyBeforePublishing: true, // West Coast Capital Mortgage Inc. NMLS
-    },
-    individual: {
-      number: '2775380',
-      verifyBeforePublishing: true, // Anatoliy Kanevsky MLO / NMLS
-    },
+  // --- Individual (founder / broker) ---
+  founder: {
+    name: 'Anatoliy Kanevsky',
+    title: 'California Real Estate Broker',
+    dreBrokerLicense: '01385024', // CA DRE Broker License (individual)
+    nmls: '2775380', // Individual MLO NMLS
   },
 
   // --- Contact (placeholders — confirm before publishing) ---
@@ -372,7 +368,7 @@ export const translations = {
         },
         {
           title: 'I want to refinance or access equity.',
-          body: 'Review refinance, cash-out, payment strategy, or alternative documentation options.',
+          body: 'Review refinance, cash-out, payment strategy, or ways to document income when tax returns do not tell the full story.',
           to: '/cash-out-refinance',
         },
       ],
@@ -1048,7 +1044,7 @@ export const translations = {
         },
         {
           title: '我想再融资或动用房产净值。',
-          body: '了解再融资、套现、还款策略或替代性文件方案。',
+          body: '了解再融资、套现、还款策略，或在税表无法完整反映收入时的其他收入证明方式。',
           to: '/cash-out-refinance',
         },
       ],

@@ -24,7 +24,7 @@ export default function Home() {
       <Seo
         title="Lunada Bay Mortgage | Private Mortgage Strategy for Palos Verdes & Coastal LA"
         description="Local, licensed, personal mortgage guidance for buying, refinancing, and high-value home decisions in Lunada Bay, Palos Verdes, and coastal Los Angeles. English and 中文."
-        keywords="Lunada Bay mortgage, Palos Verdes mortgage, jumbo loans Palos Verdes, private mortgage advisor, Anatoliy Kanevsky, West Coast Capital Mortgage, bilingual mortgage guidance, 帕洛斯弗迪斯房贷, 大额房贷, 洛杉矶房贷"
+        keywords="Lunada Bay mortgage, Palos Verdes mortgage, jumbo loans Palos Verdes, private mortgage advisor, Anatoliy Kanevsky, West Coast Capital Mortgage, bilingual mortgage guidance Los Angeles, English Chinese mortgage guidance, 帕洛斯弗迪斯房贷, 大额房贷, 洛杉矶房贷指导, 中文房贷说明, 英文与中文双语房贷指导"
         path="/"
         jsonLd={[organizationSchema(), personSchema(), websiteSchema(), faqSchema(t.faq.items)]}
       />
@@ -32,7 +32,7 @@ export default function Home() {
       <Hero t={t} />
       <TrustBlock t={t} />
       <StartHere t={t} />
-      <ThreePaths t={t} />
+      <ThreePaths t={t} lang={lang} />
       <EstimateCalculator t={t} lang={lang} />
       <AboutFounder t={t} config={siteConfig} />
       <BilingualGuidance t={t} lang={lang} setLang={setLang} />

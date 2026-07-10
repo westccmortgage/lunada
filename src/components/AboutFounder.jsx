@@ -32,7 +32,7 @@ export default function AboutFounder({ t, config }) {
                   AK
                 </div>
                 <div>
-                  <p className="font-serif text-xl text-ivory">{config.founderName}</p>
+                  <p className="font-serif text-xl text-ivory">{config.founder.name}</p>
                   <p className="text-xs uppercase tracking-widest text-gold-soft/80">
                     Founder &amp; Mortgage Advisor
                   </p>
@@ -57,20 +57,20 @@ export default function AboutFounder({ t, config }) {
 
               <dl className="space-y-2 text-[0.82rem] text-ivory/55">
                 <div className="flex justify-between gap-4">
-                  <dt>CA DRE Broker</dt>
-                  <dd className="text-ivory/75">#{config.broker.dreBrokerLicense}</dd>
+                  <dt>{config.founder.title}</dt>
+                  <dd className="text-ivory/75">DRE #{config.founder.dreBrokerLicense}</dd>
                 </div>
                 <div className="flex justify-between gap-4">
-                  <dt>CA DRE Corp.</dt>
-                  <dd className="text-ivory/75">#{config.broker.corporationDreLicense}</dd>
+                  <dt>Individual NMLS</dt>
+                  <dd className="text-ivory/75">#{config.founder.nmls}</dd>
+                </div>
+                <div className="flex justify-between gap-4">
+                  <dt>{config.company.name}</dt>
+                  <dd className="text-ivory/75">DRE #{config.company.dreCorporationLicense}</dd>
                 </div>
                 <div className="flex justify-between gap-4">
                   <dt>Company NMLS</dt>
-                  <dd className="text-ivory/75">#{config.nmls.company.number}</dd>
-                </div>
-                <div className="flex justify-between gap-4">
-                  <dt>MLO NMLS</dt>
-                  <dd className="text-ivory/75">#{config.nmls.individual.number}</dd>
+                  <dd className="text-ivory/75">#{config.company.nmls}</dd>
                 </div>
               </dl>
             </div>

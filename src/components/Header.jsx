@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import LanguageToggle from './LanguageToggle.jsx'
+import { withLang } from '../lib/href.js'
 
 export default function Header({ t, lang, setLang }) {
   const [scrolled, setScrolled] = useState(false)
@@ -12,13 +13,14 @@ export default function Header({ t, lang, setLang }) {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
+  const L = (href) => withLang(href, lang)
   const navItems = [
-    { key: 'start', href: '/#start-here' },
-    { key: 'paths', href: '/#paths' },
-    { key: 'estimate', href: '/#estimate' },
-    { key: 'about', href: '/#about' },
-    { key: 'guides', href: '/jumbo-loans' },
-    { key: 'areas', href: '/lunada-bay-mortgage' },
+    { key: 'start', href: L('/#start-here') },
+    { key: 'paths', href: L('/#paths') },
+    { key: 'estimate', href: L('/#estimate') },
+    { key: 'about', href: L('/#about') },
+    { key: 'guides', href: L('/jumbo-loans') },
+    { key: 'areas', href: L('/lunada-bay-mortgage') },
   ]
 
   return (
@@ -31,7 +33,7 @@ export default function Header({ t, lang, setLang }) {
     >
       <div className="flex w-full items-center justify-between px-5 py-4 sm:px-8 lg:px-10">
         {/* Brand — studio wordmark */}
-        <a href="/#top" className="group flex items-baseline gap-3 leading-none">
+        <a href={L('/#top')} className="group flex items-baseline gap-3 leading-none">
           <span className="font-display text-lg font-semibold uppercase tracking-[0.08em] text-navy sm:text-xl">
             Lunada&nbsp;Bay
           </span>
@@ -56,7 +58,7 @@ export default function Header({ t, lang, setLang }) {
 
         <div className="flex items-center gap-3 sm:gap-5">
           <LanguageToggle lang={lang} setLang={setLang} />
-          <a href="/#contact" className="hidden btn-primary whitespace-nowrap sm:inline-flex !px-5 !py-2.5 !text-[0.8rem]">
+          <a href={L('/#contact')} className="hidden btn-primary whitespace-nowrap sm:inline-flex !px-5 !py-2.5 !text-[0.8rem]">
             {t.nav.cta}
           </a>
 
@@ -94,7 +96,7 @@ export default function Header({ t, lang, setLang }) {
               </a>
             ))}
             <a
-              href="/#contact"
+              href={L('/#contact')}
               onClick={() => setMenuOpen(false)}
               className="btn-primary mt-4 w-full"
             >

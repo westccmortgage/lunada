@@ -1,132 +1,322 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://lunadabaymortgage.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lunadabaymortgage.com/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lunadabaymortgage.com/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lunadabaymortgage.com/"/>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://lunadabaymortgage.com/zh</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lunadabaymortgage.com/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lunadabaymortgage.com/zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lunadabaymortgage.com/"/>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://lunadabaymortgage.com/jumbo-loans</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lunadabaymortgage.com/jumbo-loans"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lunadabaymortgage.com/zh/jumbo-loans"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lunadabaymortgage.com/jumbo-loans"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lunadabaymortgage.com/zh/jumbo-loans</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lunadabaymortgage.com/jumbo-loans"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lunadabaymortgage.com/zh/jumbo-loans"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lunadabaymortgage.com/jumbo-loans"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lunadabaymortgage.com/self-employed-mortgage</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lunadabaymortgage.com/self-employed-mortgage"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lunadabaymortgage.com/zh/self-employed-mortgage"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lunadabaymortgage.com/self-employed-mortgage"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lunadabaymortgage.com/zh/self-employed-mortgage</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lunadabaymortgage.com/self-employed-mortgage"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lunadabaymortgage.com/zh/self-employed-mortgage"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lunadabaymortgage.com/self-employed-mortgage"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lunadabaymortgage.com/bank-statement-loans</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lunadabaymortgage.com/bank-statement-loans"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lunadabaymortgage.com/zh/bank-statement-loans"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lunadabaymortgage.com/bank-statement-loans"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lunadabaymortgage.com/zh/bank-statement-loans</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lunadabaymortgage.com/bank-statement-loans"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lunadabaymortgage.com/zh/bank-statement-loans"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lunadabaymortgage.com/bank-statement-loans"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lunadabaymortgage.com/dscr-loans</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lunadabaymortgage.com/dscr-loans"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lunadabaymortgage.com/zh/dscr-loans"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lunadabaymortgage.com/dscr-loans"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lunadabaymortgage.com/zh/dscr-loans</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lunadabaymortgage.com/dscr-loans"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lunadabaymortgage.com/zh/dscr-loans"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lunadabaymortgage.com/dscr-loans"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lunadabaymortgage.com/interest-only-jumbo</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lunadabaymortgage.com/interest-only-jumbo"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lunadabaymortgage.com/zh/interest-only-jumbo"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lunadabaymortgage.com/interest-only-jumbo"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lunadabaymortgage.com/zh/interest-only-jumbo</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lunadabaymortgage.com/interest-only-jumbo"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lunadabaymortgage.com/zh/interest-only-jumbo"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lunadabaymortgage.com/interest-only-jumbo"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lunadabaymortgage.com/cash-out-refinance</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lunadabaymortgage.com/cash-out-refinance"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lunadabaymortgage.com/zh/cash-out-refinance"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lunadabaymortgage.com/cash-out-refinance"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lunadabaymortgage.com/zh/cash-out-refinance</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lunadabaymortgage.com/cash-out-refinance"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lunadabaymortgage.com/zh/cash-out-refinance"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lunadabaymortgage.com/cash-out-refinance"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lunadabaymortgage.com/non-qm-mortgage</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lunadabaymortgage.com/non-qm-mortgage"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lunadabaymortgage.com/zh/non-qm-mortgage"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lunadabaymortgage.com/non-qm-mortgage"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lunadabaymortgage.com/zh/non-qm-mortgage</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lunadabaymortgage.com/non-qm-mortgage"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lunadabaymortgage.com/zh/non-qm-mortgage"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lunadabaymortgage.com/non-qm-mortgage"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lunadabaymortgage.com/mortgage-documents</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lunadabaymortgage.com/mortgage-documents"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lunadabaymortgage.com/zh/mortgage-documents"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lunadabaymortgage.com/mortgage-documents"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lunadabaymortgage.com/zh/mortgage-documents</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lunadabaymortgage.com/mortgage-documents"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lunadabaymortgage.com/zh/mortgage-documents"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lunadabaymortgage.com/mortgage-documents"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lunadabaymortgage.com/before-you-make-an-offer</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lunadabaymortgage.com/before-you-make-an-offer"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lunadabaymortgage.com/zh/before-you-make-an-offer"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lunadabaymortgage.com/before-you-make-an-offer"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lunadabaymortgage.com/zh/before-you-make-an-offer</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lunadabaymortgage.com/before-you-make-an-offer"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lunadabaymortgage.com/zh/before-you-make-an-offer"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lunadabaymortgage.com/before-you-make-an-offer"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lunadabaymortgage.com/lunada-bay-mortgage</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://lunadabaymortgage.com/palos-verdes-jumbo-loans</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://lunadabaymortgage.com/palos-verdes-estates-mortgage</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://lunadabaymortgage.com/rancho-palos-verdes-mortgage</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://lunadabaymortgage.com/rolling-hills-mortgage</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://lunadabaymortgage.com/rolling-hills-estates-mortgage</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://lunadabaymortgage.com/manhattan-beach-jumbo-loans</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://lunadabaymortgage.com/redondo-beach-mortgage</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://lunadabaymortgage.com/torrance-mortgage</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://lunadabaymortgage.com/south-bay-jumbo-mortgage</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lunadabaymortgage.com/lunada-bay-mortgage"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lunadabaymortgage.com/zh/lunada-bay-mortgage"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lunadabaymortgage.com/lunada-bay-mortgage"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://lunadabaymortgage.com/zh/lunada-bay-mortgage</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lunadabaymortgage.com/lunada-bay-mortgage"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lunadabaymortgage.com/zh/lunada-bay-mortgage"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lunadabaymortgage.com/lunada-bay-mortgage"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lunadabaymortgage.com/palos-verdes-jumbo-loans</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lunadabaymortgage.com/palos-verdes-jumbo-loans"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lunadabaymortgage.com/zh/palos-verdes-jumbo-loans"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lunadabaymortgage.com/palos-verdes-jumbo-loans"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://lunadabaymortgage.com/zh/palos-verdes-jumbo-loans</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lunadabaymortgage.com/palos-verdes-jumbo-loans"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lunadabaymortgage.com/zh/palos-verdes-jumbo-loans"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lunadabaymortgage.com/palos-verdes-jumbo-loans"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://lunadabaymortgage.com/zh/jumbo-loans</loc>
+    <loc>https://lunadabaymortgage.com/palos-verdes-estates-mortgage</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lunadabaymortgage.com/palos-verdes-estates-mortgage"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lunadabaymortgage.com/zh/palos-verdes-estates-mortgage"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lunadabaymortgage.com/palos-verdes-estates-mortgage"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lunadabaymortgage.com/zh/palos-verdes-estates-mortgage</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lunadabaymortgage.com/palos-verdes-estates-mortgage"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lunadabaymortgage.com/zh/palos-verdes-estates-mortgage"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lunadabaymortgage.com/palos-verdes-estates-mortgage"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://lunadabaymortgage.com/zh/mortgage-documents</loc>
+    <loc>https://lunadabaymortgage.com/rancho-palos-verdes-mortgage</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lunadabaymortgage.com/rancho-palos-verdes-mortgage"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lunadabaymortgage.com/zh/rancho-palos-verdes-mortgage"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lunadabaymortgage.com/rancho-palos-verdes-mortgage"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lunadabaymortgage.com/zh/rancho-palos-verdes-mortgage</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lunadabaymortgage.com/rancho-palos-verdes-mortgage"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lunadabaymortgage.com/zh/rancho-palos-verdes-mortgage"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lunadabaymortgage.com/rancho-palos-verdes-mortgage"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://lunadabaymortgage.com/zh/before-you-make-an-offer</loc>
+    <loc>https://lunadabaymortgage.com/rolling-hills-mortgage</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lunadabaymortgage.com/rolling-hills-mortgage"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lunadabaymortgage.com/zh/rolling-hills-mortgage"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lunadabaymortgage.com/rolling-hills-mortgage"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lunadabaymortgage.com/zh/rolling-hills-mortgage</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lunadabaymortgage.com/rolling-hills-mortgage"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lunadabaymortgage.com/zh/rolling-hills-mortgage"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lunadabaymortgage.com/rolling-hills-mortgage"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lunadabaymortgage.com/rolling-hills-estates-mortgage</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lunadabaymortgage.com/rolling-hills-estates-mortgage"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lunadabaymortgage.com/zh/rolling-hills-estates-mortgage"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lunadabaymortgage.com/rolling-hills-estates-mortgage"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lunadabaymortgage.com/zh/rolling-hills-estates-mortgage</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lunadabaymortgage.com/rolling-hills-estates-mortgage"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lunadabaymortgage.com/zh/rolling-hills-estates-mortgage"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lunadabaymortgage.com/rolling-hills-estates-mortgage"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lunadabaymortgage.com/manhattan-beach-jumbo-loans</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lunadabaymortgage.com/manhattan-beach-jumbo-loans"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lunadabaymortgage.com/zh/manhattan-beach-jumbo-loans"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lunadabaymortgage.com/manhattan-beach-jumbo-loans"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lunadabaymortgage.com/zh/manhattan-beach-jumbo-loans</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lunadabaymortgage.com/manhattan-beach-jumbo-loans"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lunadabaymortgage.com/zh/manhattan-beach-jumbo-loans"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lunadabaymortgage.com/manhattan-beach-jumbo-loans"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lunadabaymortgage.com/redondo-beach-mortgage</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lunadabaymortgage.com/redondo-beach-mortgage"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lunadabaymortgage.com/zh/redondo-beach-mortgage"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lunadabaymortgage.com/redondo-beach-mortgage"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lunadabaymortgage.com/zh/redondo-beach-mortgage</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lunadabaymortgage.com/redondo-beach-mortgage"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lunadabaymortgage.com/zh/redondo-beach-mortgage"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lunadabaymortgage.com/redondo-beach-mortgage"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lunadabaymortgage.com/torrance-mortgage</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lunadabaymortgage.com/torrance-mortgage"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lunadabaymortgage.com/zh/torrance-mortgage"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lunadabaymortgage.com/torrance-mortgage"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lunadabaymortgage.com/zh/torrance-mortgage</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lunadabaymortgage.com/torrance-mortgage"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lunadabaymortgage.com/zh/torrance-mortgage"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lunadabaymortgage.com/torrance-mortgage"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lunadabaymortgage.com/south-bay-jumbo-mortgage</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lunadabaymortgage.com/south-bay-jumbo-mortgage"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lunadabaymortgage.com/zh/south-bay-jumbo-mortgage"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lunadabaymortgage.com/south-bay-jumbo-mortgage"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lunadabaymortgage.com/zh/south-bay-jumbo-mortgage</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lunadabaymortgage.com/south-bay-jumbo-mortgage"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lunadabaymortgage.com/zh/south-bay-jumbo-mortgage"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lunadabaymortgage.com/south-bay-jumbo-mortgage"/>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

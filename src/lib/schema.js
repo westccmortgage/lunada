@@ -27,12 +27,12 @@ export function organizationSchema() {
     '@type': ['Organization', 'FinancialService'],
     '@id': `${SITE_URL}/#organization`,
     name: siteConfig.brandName,
-    legalName: siteConfig.company,
+    legalName: siteConfig.company.name,
     url: SITE_URL,
     email: siteConfig.contact.email,
     telephone: siteConfig.contact.officePhone,
     description:
-      'Local jumbo mortgage strategy for Lunada Bay, Palos Verdes, and coastal Los Angeles. Bilingual English and Chinese guidance for luxury homebuyers, investors, business owners, and self-employed borrowers.',
+      'Local, licensed, bilingual mortgage guidance for buying, refinancing, and high-value home decisions in Lunada Bay, Palos Verdes, and coastal Los Angeles. Guidance in English and 中文.',
     address: {
       '@type': 'PostalAddress',
       addressLocality: 'Palos Verdes',
@@ -48,6 +48,11 @@ export function organizationSchema() {
       'DSCR investment loans',
       'Cash-out refinance',
     ],
+    // Company identifiers — company NMLS and corporate DRE license
+    identifier: [
+      { '@type': 'PropertyValue', propertyID: 'NMLS', value: siteConfig.company.nmls },
+      { '@type': 'PropertyValue', propertyID: 'CA DRE Corporation License', value: siteConfig.company.dreCorporationLicense },
+    ],
     founder: { '@id': `${SITE_URL}/#founder` },
     knowsLanguage: ['en', 'zh'],
   }
@@ -59,7 +64,7 @@ export function personSchema() {
     '@context': 'https://schema.org',
     '@type': 'Person',
     '@id': `${SITE_URL}/#founder`,
-    name: siteConfig.founderName,
+    name: siteConfig.founder.name,
     jobTitle: 'Founder & Mortgage Advisor',
     worksFor: { '@id': `${SITE_URL}/#organization` },
     knowsLanguage: ['en', 'zh'],
@@ -72,8 +77,8 @@ export function personSchema() {
       'California real estate brokerage',
     ],
     identifier: [
-      { '@type': 'PropertyValue', propertyID: 'CA DRE Broker License', value: siteConfig.broker.dreBrokerLicense },
-      { '@type': 'PropertyValue', propertyID: 'NMLS', value: siteConfig.nmls.individual.number },
+      { '@type': 'PropertyValue', propertyID: 'CA DRE Broker License', value: siteConfig.founder.dreBrokerLicense },
+      { '@type': 'PropertyValue', propertyID: 'NMLS', value: siteConfig.founder.nmls },
     ],
   }
 }
