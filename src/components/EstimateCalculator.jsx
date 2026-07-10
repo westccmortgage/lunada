@@ -146,7 +146,7 @@ export default function EstimateCalculator({ t, lang }) {
   const isPurchase = purpose === 'purchase'
 
   return (
-    <section id="estimate" className="scroll-mt-20 bg-sand-soft py-32 sm:py-44">
+    <section id="estimate" className="scroll-mt-20 bg-sand-soft py-20 sm:py-28">
       <div className="section-shell">
         <SectionHead no="07" eyebrow={cx.eyebrow} title={cx.title} intro={cx.intro} />
 
@@ -339,17 +339,13 @@ export default function EstimateCalculator({ t, lang }) {
           </div>
         </div>
 
-        {/* Explanations */}
-        <div className="mt-16 grid grid-cols-1 gap-10 lg:grid-cols-12">
-          <div className="lg:col-span-4">
-            <h3 className="font-display text-2xl font-semibold tracking-tight text-navy">{cx.explainTitle}</h3>
-          </div>
-          <div className="lg:col-span-8">
-            <div className="border-t border-sand-deep/60">
-              {cx.explain.map((e, i) => (
-                <Explain key={i} q={e.q} a={e.a} />
-              ))}
-            </div>
+        {/* Explanations — two-column accordion under a full-width heading */}
+        <div className="mt-12">
+          <h3 className="font-display text-2xl font-semibold tracking-tight text-navy">{cx.explainTitle}</h3>
+          <div className="mt-6 grid grid-cols-1 gap-x-12 border-t border-sand-deep/60 md:grid-cols-2">
+            {cx.explain.map((e, i) => (
+              <Explain key={i} q={e.q} a={e.a} />
+            ))}
           </div>
         </div>
 

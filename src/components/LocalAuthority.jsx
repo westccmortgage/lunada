@@ -3,7 +3,7 @@ import SectionHead from './SectionHead.jsx'
 export default function LocalAuthority({ t }) {
   const la = t.localAuthority
   return (
-    <section id="local-authority" className="scroll-mt-20 bg-ivory py-32 sm:py-44">
+    <section id="local-authority" className="scroll-mt-20 bg-ivory py-20 sm:py-28">
       <div className="section-shell">
         <SectionHead no="02" eyebrow={la.eyebrow} title={la.title} intro={la.intro} />
 

@@ -7,7 +7,7 @@ export default function DocumentsNeeded({ t }) {
   const tab = d.tabs[active]
 
   return (
-    <section id="documents" className="scroll-mt-20 bg-ivory py-32 sm:py-44">
+    <section id="documents" className="scroll-mt-20 bg-ivory py-20 sm:py-28">
       <div className="section-shell">
         <SectionHead no="06" eyebrow={d.eyebrow} title={d.title} intro={d.intro} />
 

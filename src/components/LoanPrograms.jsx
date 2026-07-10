@@ -3,11 +3,11 @@ import SectionHead from './SectionHead.jsx'
 export default function LoanPrograms({ t }) {
   const p = t.programs
   return (
-    <section id="programs" className="scroll-mt-20 bg-ivory py-32 sm:py-44">
+    <section id="programs" className="scroll-mt-20 bg-ivory py-20 sm:py-28">
       <div className="section-shell">
         <SectionHead no="10" eyebrow={p.eyebrow} title={p.title} intro={p.intro} />
 
-        <div className="mt-16 grid grid-cols-1 gap-px overflow-hidden border border-navy/15 bg-navy/15 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid grid-cols-1 gap-px overflow-hidden border border-navy/15 bg-navy/15 sm:grid-cols-2 lg:grid-cols-3">
           {p.items.map((item, i) => (
             <div
               key={i}

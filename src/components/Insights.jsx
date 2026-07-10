@@ -5,12 +5,12 @@ import SectionHead from './SectionHead.jsx'
 export default function Insights({ t, lang }) {
   const s = t.insights
   return (
-    <section id="insights" className="scroll-mt-20 bg-ivory py-32 sm:py-44">
+    <section id="insights" className="scroll-mt-20 bg-ivory py-20 sm:py-28">
       <div className="section-shell">
         <SectionHead no="13" eyebrow={s.eyebrow} title={s.title} intro={s.intro} />
 
         {/* Editorial article index */}
-        <div className="mt-16 border-t border-navy/10">
+        <div className="mt-12 border-t border-navy/10">
           {insights.map((article, i) => {
             const a = article[lang]
             return (

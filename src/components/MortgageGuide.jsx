@@ -32,8 +32,8 @@ export default function MortgageGuide({ t }) {
   const lr = g.lenderReview
 
   return (
-    <section id="guide" className="scroll-mt-20 bg-sand-soft py-32 sm:py-44">
-      <div className="section-shell space-y-24">
+    <section id="guide" className="scroll-mt-20 bg-sand-soft py-20 sm:py-28">
+      <div className="section-shell space-y-16">
         {/* What makes a loan jumbo */}
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-6">

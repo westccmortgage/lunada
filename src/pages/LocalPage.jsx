@@ -41,7 +41,7 @@ export default function LocalPage() {
       />
 
       {/* Header offset */}
-      <div className="bg-navy pt-32 pb-20 text-ivory sm:pt-40 sm:pb-24">
+      <div className="bg-navy pt-28 pb-16 text-ivory sm:pt-32 sm:pb-20">
         <div className="section-shell">
           {/* Breadcrumb */}
           <nav aria-label="Breadcrumb" className="mb-6 text-xs tracking-wide text-ivory/50">
@@ -73,7 +73,7 @@ export default function LocalPage() {
       </div>
 
       {/* Body */}
-      <div className="bg-ivory py-28 sm:py-32">
+      <div className="bg-ivory py-20 sm:py-24">
         <div className="section-shell grid grid-cols-1 gap-14 lg:grid-cols-12 lg:gap-16">
           {/* Main content */}
           <article className="lg:col-span-8">

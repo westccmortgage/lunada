@@ -3,12 +3,12 @@ import SectionHead from './SectionHead.jsx'
 export default function JumboStrategy({ t }) {
   const s = t.strategy
   return (
-    <section id="strategy" className="scroll-mt-20 bg-ivory py-32 sm:py-44">
+    <section id="strategy" className="scroll-mt-20 bg-ivory py-20 sm:py-28">
       <div className="section-shell">
         <SectionHead no="03" eyebrow={s.eyebrow} title={s.title} intro={s.intro} />
 
         {/* Editorial index — each strategy as a ruled row */}
-        <div className="mt-16 border-t border-navy/10">
+        <div className="mt-12 border-t border-navy/10">
           {s.cards.map((card, i) => (
             <div
               key={i}
