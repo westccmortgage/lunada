@@ -1,7 +1,7 @@
 export default function AboutFounder({ t, config }) {
   const a = t.about
   return (
-    <section id="about" className="scroll-mt-20 bg-navy py-20 text-ivory sm:py-28">
+    <section id="about" className="scroll-mt-20 bg-navy py-16 text-ivory sm:py-24">
       <div className="section-shell">
         <div className="grid grid-cols-1 gap-14 lg:grid-cols-12 lg:gap-16">
           {/* Left — narrative */}

@@ -3,7 +3,7 @@ import SectionHead from './SectionHead.jsx'
 export default function ClientProfiles({ t }) {
   const c = t.clients
   return (
-    <section id="clients" className="scroll-mt-20 bg-sand-soft py-20 sm:py-28">
+    <section id="clients" className="scroll-mt-20 bg-sand-soft py-16 sm:py-24">
       <div className="section-shell">
         <SectionHead no="11" eyebrow={c.eyebrow} title={c.title} intro={c.intro} />
 

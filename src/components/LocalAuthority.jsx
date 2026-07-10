@@ -3,7 +3,7 @@ import SectionHead from './SectionHead.jsx'
 export default function LocalAuthority({ t }) {
   const la = t.localAuthority
   return (
-    <section id="local-authority" className="scroll-mt-20 bg-ivory py-20 sm:py-28">
+    <section id="local-authority" className="scroll-mt-20 bg-ivory py-16 sm:py-24">
       <div className="section-shell">
         <SectionHead no="02" eyebrow={la.eyebrow} title={la.title} intro={la.intro} />
 
@@ -12,16 +12,14 @@ export default function LocalAuthority({ t }) {
           <p className="text-[0.98rem] leading-relaxed text-navy/75">{t.localTrust}</p>
         </div>
 
-        <div className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid grid-cols-1 gap-px overflow-hidden rounded-sm border border-navy/15 bg-navy/15 sm:grid-cols-2 lg:grid-cols-3">
           {la.cards.map((card, i) => (
-            <div key={i} className="card card-hover">
-              <div className="flex h-9 w-9 items-center justify-center rounded-full border border-gold/40 text-gold-muted">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
-                  <path d="M20 6L9 17l-5-5" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </div>
-              <h3 className="mt-4 font-serif text-xl text-navy">{card.title}</h3>
-              <p className="mt-2.5 text-[0.95rem] leading-relaxed text-navy/60">{card.body}</p>
+            <div key={i} className="group bg-ivory p-6 transition-colors duration-300 hover:bg-white">
+              <span className="sec-index text-sm" aria-hidden="true">
+                {String(i + 1).padStart(2, '0')}
+              </span>
+              <h3 className="mt-2 font-display text-lg font-medium tracking-tight text-navy">{card.title}</h3>
+              <p className="mt-2 text-[0.9rem] leading-relaxed text-navy/60">{card.body}</p>
             </div>
           ))}
         </div>

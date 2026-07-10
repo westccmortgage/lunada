@@ -146,7 +146,7 @@ export default function EstimateCalculator({ t, lang }) {
   const isPurchase = purpose === 'purchase'
 
   return (
-    <section id="estimate" className="scroll-mt-20 bg-sand-soft py-20 sm:py-28">
+    <section id="estimate" className="scroll-mt-20 bg-sand-soft py-16 sm:py-24">
       <div className="section-shell">
         <SectionHead no="07" eyebrow={cx.eyebrow} title={cx.title} intro={cx.intro} />
 

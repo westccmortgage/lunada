@@ -39,7 +39,7 @@ function Item({ q, a }) {
 export default function FAQ({ t }) {
   const f = t.faq
   return (
-    <section id="faq" className="scroll-mt-20 bg-sand-soft py-20 sm:py-28">
+    <section id="faq" className="scroll-mt-20 bg-sand-soft py-16 sm:py-24">
       <div className="section-shell">
         <SectionHead no="14" eyebrow={f.eyebrow} title={f.title} />
 

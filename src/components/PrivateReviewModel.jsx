@@ -1,7 +1,7 @@
 export default function PrivateReviewModel({ t }) {
   const p = t.privateReview
   return (
-    <section id="private-review" className="scroll-mt-20 bg-navy-deep py-20 text-ivory sm:py-28">
+    <section id="private-review" className="scroll-mt-20 bg-navy-deep py-16 text-ivory sm:py-24">
       <div className="section-shell">
         <div className="mx-auto max-w-4xl rounded-sm border border-ivory/12 bg-navy/60 p-8 sm:p-12">
           <div className="text-center">

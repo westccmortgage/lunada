@@ -5,31 +5,26 @@ import SectionHead from './SectionHead.jsx'
 export default function Insights({ t, lang }) {
   const s = t.insights
   return (
-    <section id="insights" className="scroll-mt-20 bg-ivory py-20 sm:py-28">
+    <section id="insights" className="scroll-mt-20 bg-ivory py-16 sm:py-24">
       <div className="section-shell">
         <SectionHead no="13" eyebrow={s.eyebrow} title={s.title} intro={s.intro} />
 
-        {/* Editorial article index */}
-        <div className="mt-12 border-t border-navy/10">
-          {insights.map((article, i) => {
+        {/* Compact two-column guide index */}
+        <div className="mt-10 grid grid-cols-1 gap-px overflow-hidden rounded-sm border border-navy/15 bg-navy/15 md:grid-cols-2">
+          {insights.map((article) => {
             const a = article[lang]
             return (
               <Link
                 key={article.id}
                 to={article.to}
-                className="group grid grid-cols-12 items-baseline gap-x-4 gap-y-1.5 border-b border-navy/10 py-6 transition-colors duration-300 hover:bg-white"
+                className="group flex items-start justify-between gap-5 bg-ivory p-6 transition-colors duration-300 hover:bg-white"
               >
-                <span className="sec-index col-span-2 text-lg sm:col-span-1" aria-hidden="true">
-                  {String(i + 1).padStart(2, '0')}
-                </span>
-                <h3 className="col-span-10 font-display text-xl font-medium tracking-tight text-navy transition-transform duration-300 group-hover:translate-x-2 sm:col-span-5 sm:text-[1.35rem]">
-                  {a.title}
-                </h3>
-                <p className="col-span-10 col-start-3 text-[0.9rem] leading-relaxed text-navy/55 sm:col-span-5 sm:col-start-7">
-                  {a.excerpt}
-                </p>
+                <div>
+                  <h3 className="font-display text-lg font-medium tracking-tight text-navy">{a.title}</h3>
+                  <p className="mt-1.5 text-[0.9rem] leading-relaxed text-navy/55">{a.excerpt}</p>
+                </div>
                 <span
-                  className="col-span-1 hidden justify-self-end text-navy/25 transition-all duration-300 group-hover:translate-x-1 group-hover:text-gold sm:block"
+                  className="mt-1 flex-shrink-0 text-navy/25 transition-all duration-300 group-hover:translate-x-1 group-hover:text-gold"
                   aria-hidden="true"
                 >
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
