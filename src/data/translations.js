@@ -524,7 +524,7 @@ export const translations = {
       eyebrow: 'About Anatoliy',
       title: 'Guidance Beyond the Rate',
       lead:
-        'Lunada Bay Mortgage is led by Anatoliy Kanevsky, founder of West Coast Capital Mortgage Inc. and a California real estate and mortgage professional with experience across lending, brokerage, luxury residential development, and complex borrower strategy. Anatoliy’s background allows him to look beyond the rate and help clients understand structure, documentation, timing, property value, loan purpose, and long-term financing options.',
+        'Lunada Bay Mortgage is led by Anatoliy Kanevsky, founder of West Coast Capital Mortgage Inc. and a California real estate and mortgage professional with experience across lending, brokerage, luxury residential development, and complex borrower strategy. Anatoliy’s background allows him to look beyond the rate and help clients understand structure, documentation, timing, property value, loan purpose, and long-term financing options.',
       body:
         'Clients are not simply receiving a loan quote. They are receiving guidance from someone who understands lending, real estate, development, and complex property decisions — and who can translate that experience into a clear, considered plan.',
       credentialsTitle: 'Credentials & Background',
@@ -1174,7 +1174,7 @@ export const translations = {
       eyebrow: '关于 Anatoliy',
       title: '超越利率的专业指导',
       lead:
-        'Lunada Bay Mortgage 由 West Coast Capital Mortgage Inc. 创始人 Anatoliy Kanevsky 负责。Anatoliy 是加州房地产及房贷专业人士，拥有房地产经纪、住宅贷款、高端住宅开发以及复杂贷款方案分析经验。他的服务不仅仅是提供利率报价，而是帮助客户从贷款结构、资产文件、收入情况、房产价值、贷款目的和长期策略等角度，清楚理解适合自己的融资路径。',
+        'Lunada Bay Mortgage 由 West Coast Capital Mortgage Inc. 创始人 Anatoliy Kanevsky 负责。Anatoliy 是加州房地产及房贷专业人士，拥有房地产经纪、住宅贷款、高端住宅开发以及复杂贷款方案分析经验。他的服务不仅仅是提供利率报价，而是帮助客户从贷款结构、资产文件、收入情况、房产价值、贷款目的和长期策略等角度，清楚理解适合自己的融资路径。',
       body:
         '客户获得的不仅是一份贷款报价，而是来自一位同时精通贷款、房地产、开发及复杂房产决策专业人士的指导——并能将这些经验转化为清晰、周全的方案。',
       credentialsTitle: '资历与背景',
