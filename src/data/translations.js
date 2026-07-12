@@ -322,7 +322,7 @@ export const translations = {
       guides: 'Guides',
       areas: 'Areas',
       contact: 'Contact',
-      reviewScenario: 'Review Scenario',
+      reviewScenario: 'Review My Scenario',
       cta: 'Request a Review',
     },
 
@@ -1001,7 +1001,7 @@ export const translations = {
       guides: '贷款指南',
       areas: '本地区域',
       contact: '联系我们',
-      reviewScenario: '在线预审',
+      reviewScenario: '在线预审我的情况',
       cta: '预约评估',
     },
 
