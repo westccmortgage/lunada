@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import LanguageToggle from './LanguageToggle.jsx'
 import { withLang } from '../lib/href.js'
+import { siteConfig } from '../data/translations.js'
 
 export default function Header({ t, lang, setLang }) {
   const [scrolled, setScrolled] = useState(false)
@@ -58,6 +59,14 @@ export default function Header({ t, lang, setLang }) {
 
         <div className="flex items-center gap-3 sm:gap-5">
           <LanguageToggle lang={lang} setLang={setLang} />
+          <a
+            href={siteConfig.assistantUrl}
+            target="_blank"
+            rel="noopener"
+            className="hidden whitespace-nowrap text-[0.72rem] font-medium uppercase tracking-[0.14em] text-navy/60 transition-colors hover:text-gold-muted lg:inline-flex"
+          >
+            {t.nav.reviewScenario}
+          </a>
           <a href={L('/#contact')} className="hidden btn-primary whitespace-nowrap sm:inline-flex !px-5 !py-2.5 !text-[0.8rem]">
             {t.nav.cta}
           </a>
@@ -95,6 +104,18 @@ export default function Header({ t, lang, setLang }) {
                 {t.nav[item.key]}
               </a>
             ))}
+            <a
+              href={siteConfig.assistantUrl}
+              target="_blank"
+              rel="noopener"
+              onClick={() => setMenuOpen(false)}
+              className="flex items-center justify-between border-b border-sand-deep/30 py-3 text-sm text-navy/80"
+            >
+              <span>{t.nav.reviewScenario}</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden="true">
+                <path d="M7 17L17 7M9 7h8v8" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </a>
             <a
               href={L('/#contact')}
               onClick={() => setMenuOpen(false)}

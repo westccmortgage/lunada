@@ -35,6 +35,9 @@ export const siteConfig = {
     email: 'westccmortgage@gmail.com',
   },
 
+  // --- Scenario-review assistant (opens in a new tab) ---
+  assistantUrl: 'https://wcci.online',
+
   // --- Related web properties ---
   links: [
     { label: 'westcoastcapitalmortgage.com', href: 'https://westcoastcapitalmortgage.com' },
@@ -319,6 +322,7 @@ export const translations = {
       guides: 'Guides',
       areas: 'Areas',
       contact: 'Contact',
+      reviewScenario: 'Review Scenario',
       cta: 'Request a Review',
     },
 
@@ -335,6 +339,7 @@ export const translations = {
         'Local guidance for high-value home decisions — the property, the financing, the structure, and the next step.',
       primaryCta: 'Start Mortgage Path',
       secondaryCta: 'Request Private Review',
+      scenarioCta: 'Review My Scenario',
       trustLine:
         'You will speak with Anatoliy Kanevsky — a local Palos Verdes mortgage and real estate professional, not a call center.',
     },
@@ -996,6 +1001,7 @@ export const translations = {
       guides: '贷款指南',
       areas: '本地区域',
       contact: '联系我们',
+      reviewScenario: '在线预审',
       cta: '预约评估',
     },
 
@@ -1011,6 +1017,7 @@ export const translations = {
         '为高价值住宅决策提供本地指导——房产、融资、结构，以及下一步。',
       primaryCta: '开始了解贷款路径',
       secondaryCta: '预约私人评估',
+      scenarioCta: '在线预审我的情况',
       trustLine:
         '您将直接与 Anatoliy Kanevsky 沟通。他是帕洛斯弗迪斯本地的房贷与房地产专业人士，而不是呼叫中心。',
     },

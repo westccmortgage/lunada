@@ -1,3 +1,5 @@
+import { siteConfig } from '../data/translations.js'
+
 /**
  * Editorial hero — ivory field, oversized display type, coastal contour art.
  * Coordinates are Lunada Bay's public geography, used as a design element.
@@ -80,9 +82,20 @@ export default function Hero({ t }) {
                 {t.hero.subhead}
               </p>
             </div>
-            <div className="flex flex-col gap-5 sm:flex-row sm:items-center md:col-span-6 lg:col-span-7 lg:justify-end">
+            <div className="flex flex-col gap-5 sm:flex-row sm:flex-wrap sm:items-center md:col-span-6 lg:col-span-7 lg:justify-end">
               <a href="#contact" className="btn-primary">
                 {t.hero.primaryCta}
+              </a>
+              <a
+                href={siteConfig.assistantUrl}
+                target="_blank"
+                rel="noopener"
+                className="btn-secondary"
+              >
+                {t.hero.scenarioCta}
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" aria-hidden="true" className="ml-2">
+                  <path d="M7 17L17 7M9 7h8v8" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
               </a>
               <a href="#strategy" className="link-editorial">
                 {t.hero.secondaryCta}
