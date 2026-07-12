@@ -4,7 +4,6 @@ import { organizationSchema, personSchema, websiteSchema, faqSchema } from '../l
 import Seo from '../components/Seo.jsx'
 import Hero from '../components/Hero.jsx'
 import TrustBlock from '../components/TrustBlock.jsx'
-import StartHere from '../components/StartHere.jsx'
 import ThreePaths from '../components/ThreePaths.jsx'
 import EstimateCalculator from '../components/EstimateCalculator.jsx'
 import AboutFounder from '../components/AboutFounder.jsx'
@@ -31,7 +30,6 @@ export default function Home() {
 
       <Hero t={t} />
       <TrustBlock t={t} />
-      <StartHere t={t} />
       <ThreePaths t={t} lang={lang} />
       <EstimateCalculator t={t} lang={lang} />
       <AboutFounder t={t} config={siteConfig} />

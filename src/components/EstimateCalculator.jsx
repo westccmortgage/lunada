@@ -148,7 +148,7 @@ export default function EstimateCalculator({ t, lang }) {
   return (
     <section id="estimate" className="scroll-mt-20 bg-sand-soft py-16 sm:py-24">
       <div className="section-shell">
-        <SectionHead no="04" eyebrow={cx.eyebrow} title={cx.title} intro={cx.intro} />
+        <SectionHead no="03" eyebrow={cx.eyebrow} title={cx.title} intro={cx.intro} />
 
         {/* Visible, up-front estimate-only disclaimer */}
         <div className="mt-8 max-w-3xl rounded-sm border-l-2 border-gold bg-white px-6 py-4">

@@ -16,7 +16,6 @@ export default function Header({ t, lang, setLang }) {
 
   const L = (href) => withLang(href, lang)
   const navItems = [
-    { key: 'start', href: L('/#start-here') },
     { key: 'paths', href: L('/#paths') },
     { key: 'estimate', href: L('/#estimate') },
     { key: 'about', href: L('/#about') },

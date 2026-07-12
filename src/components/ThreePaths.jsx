@@ -7,7 +7,7 @@ export default function ThreePaths({ t, lang }) {
   return (
     <section id="paths" className="scroll-mt-20 bg-sand-soft py-16 sm:py-24">
       <div className="section-shell">
-        <SectionHead no="03" eyebrow={p.eyebrow} title={p.title} intro={p.intro} />
+        <SectionHead no="02" eyebrow={p.eyebrow} title={p.title} intro={p.intro} />
 
         <div className="mt-10 grid grid-cols-1 gap-5 md:grid-cols-3">
           {p.items.map((item, i) => (

@@ -35,7 +35,7 @@ export default function AboutFounder({ t, config }) {
           {/* Left — narrative */}
           <div className="lg:col-span-7">
             <div className="flex items-baseline gap-4">
-              <span className="sec-index text-lg text-gold-soft" aria-hidden="true">( 05 )</span>
+              <span className="sec-index text-lg text-gold-soft" aria-hidden="true">( 04 )</span>
               <span className="meta-label !text-ivory/50">{a.eyebrow}</span>
               <span className="h-px flex-1 bg-ivory/15" aria-hidden="true" />
             </div>

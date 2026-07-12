@@ -108,7 +108,7 @@ export default function Hero({ t }) {
         >
           <p className="max-w-xl text-sm leading-relaxed text-navy/50">{t.hero.trustLine}</p>
           <a
-            href="#start-here"
+            href="#paths"
             className="group hidden items-center gap-3 whitespace-nowrap sm:flex"
             aria-label={t.hero.scrollCue}
           >

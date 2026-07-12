@@ -99,7 +99,7 @@ export default function LocalPage() {
             ))}
           </div>
           <div className="mt-9 flex flex-col gap-4 sm:flex-row">
-            <a href={withLang('/#start-here', lang)} className="btn-gold">
+            <a href={withLang('/#contact', lang)} className="btn-gold">
               {lp.ctaStart}
             </a>
             <a

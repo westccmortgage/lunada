@@ -115,7 +115,7 @@ export default function EducationPage({ slug: slugProp }) {
             ))}
           </div>
           <div className="mt-9 flex flex-col gap-4 sm:flex-row">
-            <a href={withLang('/#start-here', lang)} className="btn-gold">
+            <a href={withLang('/#contact', lang)} className="btn-gold">
               {ep.ctaStart}
             </a>
             <a
@@ -201,7 +201,7 @@ export default function EducationPage({ slug: slugProp }) {
               <div className="rounded-sm border border-navy/15 bg-navy p-7 text-ivory">
                 <h3 className="font-display text-xl font-medium tracking-tight">{ep.ctaReview}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-ivory/70">{t.contact.trustLine}</p>
-                <a href={withLang('/#start-here', lang)} className="btn-gold mt-5 w-full">
+                <a href={withLang('/#contact', lang)} className="btn-gold mt-5 w-full">
                   {ep.ctaStart}
                 </a>
                 <a href="#page-contact" className="btn-outline-light mt-3 w-full">
