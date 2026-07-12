@@ -33,14 +33,13 @@ export default function Header({ t, lang, setLang }) {
       }`}
     >
       <div className="flex w-full items-center justify-between px-5 py-4 sm:px-8 lg:px-10">
-        {/* Brand — studio wordmark */}
-        <a href={L('/#top')} className="group flex items-baseline gap-3 leading-none">
+        {/* Brand — studio wordmark over the licensed company name */}
+        <a href={L('/#top')} className="group flex flex-col leading-none">
           <span className="font-display text-lg font-semibold uppercase tracking-[0.08em] text-navy sm:text-xl">
             Lunada&nbsp;Bay
           </span>
-          <span className="hidden h-3 w-px bg-navy/25 sm:block" aria-hidden="true" />
-          <span className="hidden text-[0.6rem] font-semibold uppercase tracking-[0.3em] text-gold-muted sm:block">
-            Mortgage
+          <span className="mt-1.5 text-[0.55rem] font-semibold uppercase tracking-[0.2em] text-gold-muted sm:text-[0.62rem] sm:tracking-[0.22em]">
+            West Coast Capital Mortgage
           </span>
         </a>
 
