@@ -387,6 +387,7 @@ export const translations = {
     },
 
     localPositioning: 'Private mortgage strategy for Lunada Bay, Palos Verdes, and coastal Los Angeles.',
+    localPositioningForeign: 'Foreign national & international buyer financing — California and Florida.',
     localTrust:
       'Guidance from a mortgage professional who lives in the Palos Verdes community and understands the local luxury residential market.',
 
@@ -1065,6 +1066,7 @@ export const translations = {
     },
 
     localPositioning: '为露娜达湾、帕洛斯弗迪斯及洛杉矶海岸地区提供私人房贷策略。',
+    localPositioningForeign: '外国买家与国际买家融资——加州与佛罗里达。',
     localTrust:
       '由居住在帕洛斯弗迪斯本地社区的房贷专业人士提供指导，了解当地高端住宅市场及大额贷款需求。',
 

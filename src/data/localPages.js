@@ -78,6 +78,68 @@ const sharedZh = (cityZh) => [
   },
 ]
 
+// ---- Foreign-buyer educational sections (English), for Florida pages ----
+const flForeignEn = (city) => [
+  {
+    heading: `Foreign national financing in ${city}`,
+    paras: [
+      `Many buyers in ${city} are foreign nationals — buyers who are not U.S. citizens or permanent residents. Financing may be available even without a U.S. credit score, a Social Security number, or a green card. Instead, lenders offering foreign national programs may review income and assets from your home country, your source of funds, and international credit reference letters from your bank.`,
+      `These programs typically expect a larger down payment and verified reserves in exchange for that flexibility, subject to lender guidelines and underwriting approval. See our Foreign National Financing guide for how the review works.`,
+    ],
+  },
+  {
+    heading: `Jumbo and luxury financing in ${city}`,
+    paras: [
+      `Luxury homes and waterfront condominiums in ${city} often exceed county conforming loan limits, which places many purchases into jumbo loan territory. A jumbo loan involves closer review of assets, reserves, and how the file is structured against the property.`,
+      `Jumbo financing may be available depending on borrower qualification, credit, income, assets, property type, occupancy, and lender guidelines.`,
+    ],
+  },
+  {
+    heading: `Second homes and investment property in ${city}`,
+    paras: [
+      `International buyers frequently purchase a vacation home, second home, or rental property in ${city}. For an investment property, a DSCR loan may qualify based on the property’s rental income rather than personal income — a useful path when income is earned abroad.`,
+      `Whether a purchase is a primary home, second home, or investment shapes the documentation and structure, subject to lender guidelines.`,
+    ],
+  },
+  {
+    heading: 'Guidance in English and 中文',
+    paras: [
+      `The entire process — mortgage terms, lender documents, income and asset review, and next steps — can be explained clearly in English or Simplified Chinese (中文), so international buyers can move forward with confidence.`,
+    ],
+  },
+]
+
+// ---- Foreign-buyer educational sections (Chinese), for Florida pages ----
+const flForeignZh = (cityZh) => [
+  {
+    heading: `${cityZh}的外国买家融资`,
+    paras: [
+      `许多在${cityZh}置业的买家是外国买家（Foreign National）——即并非美国公民或永久居民的买家。即使没有美国信用分数、社会安全号码（SSN）或绿卡，也可能可以获得融资。贷款机构在提供外国买家项目时，可能审阅您在本国的收入与资产、资金来源，以及来自您银行的国际信用参考函。`,
+      `作为这种灵活性的交换，这类项目通常要求更高的首付与经核实的储备金，具体视贷款机构规定及承保审批而定。审阅方式请参见我们的《外国买家融资》指南。`,
+    ],
+  },
+  {
+    heading: `${cityZh}的大额与高端住宅融资`,
+    paras: [
+      `${cityZh}的高端住宅与海景公寓，价值常常超过所在县的合规贷款上限，使许多购房进入大额贷款范畴。大额贷款需要对资产、储备金以及文件如何与房产相匹配进行更细致的审阅。`,
+      `是否可提供大额融资，取决于借款人资格、信用、收入、资产、房产类型、居住性质及贷款机构规定。`,
+    ],
+  },
+  {
+    heading: `${cityZh}的第二套住宅与投资房产`,
+    paras: [
+      `国际买家常常在${cityZh}购买度假屋、第二套住宅或出租房产。对于投资房产，DSCR 贷款可能以房产的租金收入（而非个人收入）审核资格——当收入来自海外时，这是一条实用的路径。`,
+      `购房属于自住、第二套还是投资，会影响文件与结构，具体视贷款机构规定而定。`,
+    ],
+  },
+  {
+    heading: '英文与中文双语指导',
+    paras: [
+      `整个流程——房贷术语、贷款文件、收入与资产审核以及下一步——都可以用英文或简体中文（中文）清楚说明，让国际买家能够自信地前行。`,
+    ],
+  },
+]
+
 // ---- Per-page unique content ----
 const PAGES = [
   {
@@ -619,14 +681,179 @@ const PAGES = [
       },
     },
   },
+
+  {
+    slug: 'florida-foreign-national-mortgage',
+    city: 'Florida',
+    cityZh: '佛罗里达',
+    foreign: true,
+    keywords:
+      'Florida foreign national mortgage, foreign buyer financing Florida, Florida non-resident mortgage, buy property in Florida as a foreign national, Miami foreign national loan, 佛罗里达外国买家房贷, 佛罗里达房贷',
+    en: {
+      title: 'Florida Foreign National Mortgage | Financing for International Buyers',
+      description:
+        'Financing for foreign national and international buyers purchasing a home or investment property in Florida — often without a U.S. credit score or green card. Bilingual English and 中文.',
+      h1: 'Florida Foreign National Mortgage',
+      intro: [
+        'Florida is one of the most active markets in the country for international buyers — drawn by its coastline, its cities, and its appeal for a second home or investment. For buyers who are not U.S. citizens or permanent residents, the question is usually the same: can I finance a Florida home as a foreign national? In many cases, yes.',
+        'We help qualified foreign nationals finance property across Florida — from Miami and the Gulf Coast to Orlando — often without a U.S. credit score, Social Security number, or green card. The focus is on clarity: understanding the down payment, the source of funds, the documentation, and the structure, explained in English or 中文.',
+      ],
+      highlights: [
+        'Financing for buyers without a U.S. credit score, SSN, or green card',
+        'Luxury, waterfront, and condominium purchases that often require jumbo financing',
+        'Second-home and investment options, including DSCR for rental property',
+        'Bilingual English and 中文 guidance from first question to closing',
+      ],
+      localContext: {
+        heading: 'Buying in Florida from abroad',
+        paras: [
+          'International purchases have a few more moving parts — proof of funds, documents that may be issued in another country, and reserves — but with the right preparation the path can be straightforward. The key is understanding what a lender will review before you make an offer.',
+          'Whether you are buying a primary residence, a vacation home, or an income property, the goal is a financing strategy matched to the property and to how your income and assets are actually held — subject to lender guidelines and underwriting approval.',
+        ],
+      },
+    },
+    zh: {
+      title: '佛罗里达外国买家房贷 | 面向国际买家的融资',
+      description:
+        '为在佛罗里达购买住宅或投资房产的外国买家及国际买家提供融资——在许多情况下无需美国信用分数或绿卡。提供中英双语指导。',
+      h1: '佛罗里达外国买家房贷',
+      intro: [
+        '佛罗里达是全美国际买家最活跃的市场之一——其海岸线、城市，以及作为第二套住宅或投资地的吸引力，令众多海外买家青睐。对于并非美国公民或永久居民的买家，问题往往相同：我能否作为外国买家为佛罗里达的房产融资？在许多情况下，答案是可以。',
+        '我们帮助符合条件的外国买家在佛罗里达各地购房融资——从迈阿密、墨西哥湾沿岸到奥兰多——在许多情况下无需美国信用分数、社会安全号码（SSN）或绿卡。我们的重点是清晰：理解首付、资金来源、文件与结构，并以英文或中文说明。',
+      ],
+      highlights: [
+        '为没有美国信用分数、SSN 或绿卡的买家提供融资',
+        '常需大额融资的高端、海景及公寓房产',
+        '第二套住宅与投资方案，包括用于出租房产的 DSCR',
+        '从第一个问题到交割，全程中英双语指导',
+      ],
+      localContext: {
+        heading: '从海外购买佛罗里达房产',
+        paras: [
+          '国际购房会多出几个环节——资金证明、可能由他国签发的文件，以及储备金——但只要准备得当，流程可以很顺畅。关键在于：在出价之前，先了解贷款机构会审阅哪些内容。',
+          '无论您购买的是自住房、度假屋还是收益型房产，目标都是一套与房产、以及与您收入和资产实际持有方式相匹配的融资策略——具体视贷款机构规定及承保审批而定。',
+        ],
+      },
+    },
+  },
+
+  {
+    slug: 'miami-mortgage',
+    city: 'Miami',
+    cityZh: '迈阿密',
+    foreign: true,
+    keywords:
+      'Miami mortgage, Miami foreign national loan, Miami foreign buyer financing, Miami jumbo loan, buy condo in Miami foreign national, 迈阿密房贷, 迈阿密外国买家房贷',
+    en: {
+      title: 'Miami Mortgage for International Buyers | Foreign National Loans',
+      description:
+        'Mortgage guidance for foreign national and international buyers purchasing in Miami — luxury condos, waterfront homes, and investment property. Bilingual English and 中文.',
+      h1: 'Miami Mortgage for International Buyers',
+      intro: [
+        'Miami is the gateway city for international real estate in the United States — a global market of waterfront condominiums, luxury homes, and investment property that draws buyers from around the world. Many of these buyers are foreign nationals without a U.S. credit history, and financing may still be available to them.',
+        'We help qualified international buyers finance a Miami purchase as a foreign national — reviewing income and assets from your home country, your source of funds, and international credit references, subject to lender guidelines. Guidance is available in English and 中文.',
+      ],
+      highlights: [
+        'Foreign national financing without a U.S. credit score or green card',
+        'Waterfront condos and luxury homes that frequently require jumbo loans',
+        'Investment and rental property options, including DSCR',
+        'Bilingual English and 中文 support',
+      ],
+      localContext: {
+        heading: 'Financing a Miami condo or home',
+        paras: [
+          'Condominium financing in Miami carries its own considerations — building approval, occupancy, and how the unit will be used all matter to a lender. For a foreign national buyer, documentation of funds and income from abroad is just as important.',
+          'We help position the file early and compare options that may fit your situation, so a Miami purchase can move forward with fewer surprises — subject to lender guidelines and underwriting review.',
+        ],
+      },
+    },
+    zh: {
+      title: '迈阿密房贷 | 面向国际买家与外国买家',
+      description:
+        '为在迈阿密购房的外国买家及国际买家提供房贷指导——高端公寓、海景住宅及投资房产。提供中英双语指导。',
+      h1: '迈阿密房贷 · 面向国际买家',
+      intro: [
+        '迈阿密是美国国际房地产的门户城市——海景公寓、高端住宅与投资房产汇聚于此，吸引着来自世界各地的买家。这些买家中许多是没有美国信用记录的外国买家，而他们依然可能获得融资。',
+        '我们帮助符合条件的国际买家以外国买家身份为迈阿密的置业融资——审阅您在本国的收入与资产、资金来源，以及国际信用参考函，具体视贷款机构规定而定。我们提供中英双语指导。',
+      ],
+      highlights: [
+        '无需美国信用分数或绿卡的外国买家融资',
+        '常需大额贷款的海景公寓与高端住宅',
+        '投资与出租房产方案，包括 DSCR',
+        '中英双语支持',
+      ],
+      localContext: {
+        heading: '为迈阿密的公寓或住宅融资',
+        paras: [
+          '迈阿密的公寓融资有其独特考量——楼盘审批、居住性质，以及单元的用途，都会影响贷款机构的判断。对于外国买家而言，来自海外的资金与收入文件同样重要。',
+          '我们帮助尽早整理文件，并比较可能契合您情况的方案，让迈阿密的置业能够更少意外地推进——具体视贷款机构规定及承保审核而定。',
+        ],
+      },
+    },
+  },
+
+  {
+    slug: 'orlando-mortgage',
+    city: 'Orlando',
+    cityZh: '奥兰多',
+    foreign: true,
+    keywords:
+      'Orlando mortgage, Orlando foreign national loan, Orlando vacation home financing, Orlando investment property foreign buyer, buy home in Orlando foreign national, 奥兰多房贷, 奥兰多外国买家房贷',
+    en: {
+      title: 'Orlando Mortgage for International Buyers | Vacation & Investment',
+      description:
+        'Financing for foreign national and international buyers purchasing a vacation home or investment property in Orlando, Florida. Bilingual English and 中文 guidance.',
+      h1: 'Orlando Mortgage for International Buyers',
+      intro: [
+        'Orlando is one of the most popular destinations in Florida for vacation homes and investment property, attracting international buyers looking for a second home or a rental near central Florida’s attractions. For buyers who are not U.S. citizens or residents, foreign national financing may make the purchase possible.',
+        'We help qualified foreign nationals finance an Orlando home — whether a vacation property or an income-producing rental — often without a U.S. credit score or green card. The process is explained clearly in English or 中文.',
+      ],
+      highlights: [
+        'Foreign national financing for buyers without U.S. credit or a green card',
+        'Vacation and second-home purchases',
+        'Rental and investment property, including DSCR based on rental income',
+        'Bilingual English and 中文 guidance',
+      ],
+      localContext: {
+        heading: 'Vacation and investment homes in Orlando',
+        paras: [
+          'Many Orlando purchases are second homes or short-term rentals, which changes how a lender views occupancy and income. For an international buyer, pairing the right program with the property’s intended use is what makes the plan work.',
+          'We review the full picture — funds, documentation, and how the property will be used — before recommending a path, subject to lender guidelines and underwriting approval.',
+        ],
+      },
+    },
+    zh: {
+      title: '奥兰多房贷 | 面向国际买家 · 度假与投资',
+      description:
+        '为在佛罗里达奥兰多购买度假屋或投资房产的外国买家及国际买家提供融资。提供中英双语指导。',
+      h1: '奥兰多房贷 · 面向国际买家',
+      intro: [
+        '奥兰多是佛罗里达最受欢迎的度假屋与投资房产目的地之一，吸引着希望在中佛罗里达景点附近购置第二套住宅或出租房的国际买家。对于并非美国公民或居民的买家，外国买家融资可能让购房成为可能。',
+        '我们帮助符合条件的外国买家为奥兰多的住宅融资——无论是度假房产还是产生租金收益的出租房——在许多情况下无需美国信用分数或绿卡。整个流程都会以英文或中文清楚说明。',
+      ],
+      highlights: [
+        '为没有美国信用或绿卡的买家提供外国买家融资',
+        '度假屋与第二套住宅购置',
+        '出租与投资房产，包括以租金收入审核的 DSCR',
+        '中英双语指导',
+      ],
+      localContext: {
+        heading: '奥兰多的度假与投资住宅',
+        paras: [
+          '奥兰多的许多购房属于第二套住宅或短期出租，这会改变贷款机构对居住性质与收入的看法。对于国际买家而言，将合适的项目与房产的用途相匹配，正是让方案可行的关键。',
+          '在建议方案之前，我们会全面审阅——资金、文件，以及房产的使用方式——具体视贷款机构规定及承保审批而定。',
+        ],
+      },
+    },
+  },
 ]
 
 // Compose each page with its shared, city-interpolated educational sections.
 export const localPages = PAGES.map((p) => ({
   ...p,
   path: `/${p.slug}`,
-  en: { ...p.en, sections: sharedEn(p.city) },
-  zh: { ...p.zh, sections: sharedZh(p.cityZh) },
+  en: { ...p.en, sections: p.foreign ? flForeignEn(p.city) : sharedEn(p.city) },
+  zh: { ...p.zh, sections: p.foreign ? flForeignZh(p.cityZh) : sharedZh(p.cityZh) },
 }))
 
 export const localPageSlugs = localPages.map((p) => p.slug)

@@ -336,4 +336,52 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://lunadabaymortgage.com/florida-foreign-national-mortgage</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lunadabaymortgage.com/florida-foreign-national-mortgage"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lunadabaymortgage.com/zh/florida-foreign-national-mortgage"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lunadabaymortgage.com/florida-foreign-national-mortgage"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lunadabaymortgage.com/zh/florida-foreign-national-mortgage</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lunadabaymortgage.com/florida-foreign-national-mortgage"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lunadabaymortgage.com/zh/florida-foreign-national-mortgage"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lunadabaymortgage.com/florida-foreign-national-mortgage"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lunadabaymortgage.com/miami-mortgage</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lunadabaymortgage.com/miami-mortgage"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lunadabaymortgage.com/zh/miami-mortgage"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lunadabaymortgage.com/miami-mortgage"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lunadabaymortgage.com/zh/miami-mortgage</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lunadabaymortgage.com/miami-mortgage"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lunadabaymortgage.com/zh/miami-mortgage"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lunadabaymortgage.com/miami-mortgage"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lunadabaymortgage.com/orlando-mortgage</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lunadabaymortgage.com/orlando-mortgage"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lunadabaymortgage.com/zh/orlando-mortgage"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lunadabaymortgage.com/orlando-mortgage"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lunadabaymortgage.com/zh/orlando-mortgage</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lunadabaymortgage.com/orlando-mortgage"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lunadabaymortgage.com/zh/orlando-mortgage"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lunadabaymortgage.com/orlando-mortgage"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
 </urlset>

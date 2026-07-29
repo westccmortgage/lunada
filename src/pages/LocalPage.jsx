@@ -87,7 +87,9 @@ export default function LocalPage() {
             <span className="text-ivory/70">{page.city}</span>
           </nav>
 
-          <p className="eyebrow text-gold-soft">{t.localPositioning}</p>
+          <p className="eyebrow text-gold-soft">
+            {page.foreign ? t.localPositioningForeign : t.localPositioning}
+          </p>
           <div className="mt-4 mb-6 hairline bg-gold/70" />
           <h1 className="max-w-4xl font-display font-medium text-4xl leading-[1.05] tracking-tight text-ivory sm:text-6xl">
             {c.h1}
