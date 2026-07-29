@@ -74,6 +74,9 @@ export default function Footer({ t, config, lang = 'en' }) {
                 CA DRE Corporation License #{config.company.dreCorporationLicense}
               </p>
               <p className="text-[0.82rem] text-ivory/55">NMLS #{config.company.nmls}</p>
+              <p className="text-[0.82rem] text-ivory/55">
+                {f.licensedIn} {config.company.statesLicensed}
+              </p>
             </div>
             <div className="mt-4 space-y-1">
               <p className="text-sm text-ivory/75">{config.founder.name}</p>

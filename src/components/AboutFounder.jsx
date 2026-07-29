@@ -98,6 +98,10 @@ export default function AboutFounder({ t, config }) {
                   <dt>Company NMLS</dt>
                   <dd className="text-ivory/75">#{config.company.nmls}</dd>
                 </div>
+                <div className="flex justify-between gap-4">
+                  <dt>Licensed in</dt>
+                  <dd className="text-ivory/75">{config.company.statesLicensed}</dd>
+                </div>
               </dl>
             </div>
           </div>

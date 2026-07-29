@@ -15,8 +15,9 @@ export const siteConfig = {
   // --- Company (corporate entity) ---
   company: {
     name: 'West Coast Capital Mortgage Inc.',
-    dreCorporationLicense: '02440065', // CA DRE Corporation License
-    nmls: '2817729', // Company NMLS
+    dreCorporationLicense: '02440065', // CA DRE Corporation License (California only)
+    nmls: '2817729', // Company NMLS (national ID; carries across licensed states)
+    statesLicensed: 'California & Florida', // states the company originates in
   },
 
   // --- Individual (founder / broker) ---
@@ -727,10 +728,11 @@ export const translations = {
       guidesTitle: 'Guides',
       areasTitle: 'Service Areas',
       licensingTitle: 'Licensing',
+      licensedIn: 'Licensed in',
       verifyNote: 'verify before publishing',
       equalHousing: 'Equal Housing Opportunity',
       disclosure:
-        'Lunada Bay Mortgage is a marketing website operated by West Coast Capital Mortgage Inc. Equal Housing Opportunity. This is not a commitment to lend. All loans are subject to borrower qualification, credit approval, income, assets, property review, lender guidelines, and underwriting approval. Loan programs, rates, terms, and conditions are subject to change without notice.',
+        'Lunada Bay Mortgage is a marketing website operated by West Coast Capital Mortgage Inc., licensed to conduct mortgage business in California and Florida. Equal Housing Opportunity. This is not a commitment to lend. All loans are subject to borrower qualification, credit approval, income, assets, property review, lender guidelines, and underwriting approval. Loan programs, rates, terms, and conditions are subject to change without notice.',
       rights: 'All rights reserved.',
     },
   },
@@ -1378,10 +1380,11 @@ export const translations = {
       guidesTitle: '贷款指南',
       areasTitle: '服务区域',
       licensingTitle: '牌照信息',
+      licensedIn: '持牌州：',
       verifyNote: '发布前请核实',
       equalHousing: 'Equal Housing Opportunity（平等住房机会）',
       disclosure:
-        'Lunada Bay Mortgage 是由 West Coast Capital Mortgage Inc. 运营的市场推广网站。Equal Housing Opportunity。本网站内容不构成贷款承诺。所有贷款均需符合借款人资格、信用审批、收入、资产、房产审核、贷款机构规定及最终承保审批。贷款项目、利率、条款和条件可能随时变更，恕不另行通知。',
+        'Lunada Bay Mortgage 是由 West Coast Capital Mortgage Inc. 运营的市场推广网站；该公司持牌在加州与佛罗里达开展房贷业务。Equal Housing Opportunity。本网站内容不构成贷款承诺。所有贷款均需符合借款人资格、信用审批、收入、资产、房产审核、贷款机构规定及最终承保审批。贷款项目、利率、条款和条件可能随时变更，恕不另行通知。',
       rights: '版权所有。',
     },
   },

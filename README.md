@@ -30,15 +30,17 @@ The site is organized around a simple principle:
 
 Detailed, card-heavy education was **moved off the homepage** into dedicated pages (below).
 
-### Local area pages (10)
+### Local area pages (13)
 
-`/lunada-bay-mortgage` · `/palos-verdes-jumbo-loans` · `/palos-verdes-estates-mortgage` · `/rancho-palos-verdes-mortgage` · `/rolling-hills-mortgage` · `/rolling-hills-estates-mortgage` · `/manhattan-beach-jumbo-loans` · `/redondo-beach-mortgage` · `/torrance-mortgage` · `/south-bay-jumbo-mortgage`
+**California / South Bay:** `/lunada-bay-mortgage` · `/palos-verdes-jumbo-loans` · `/palos-verdes-estates-mortgage` · `/rancho-palos-verdes-mortgage` · `/rolling-hills-mortgage` · `/rolling-hills-estates-mortgage` · `/manhattan-beach-jumbo-loans` · `/redondo-beach-mortgage` · `/torrance-mortgage` · `/south-bay-jumbo-mortgage`
 
-Each: local intro, why financing matters there, jumbo considerations, buying/refinancing notes, self-employed notes, a simple FAQ, and CTAs to Start Mortgage Path + Request Private Review.
+**Florida (foreign-buyer focused):** `/florida-foreign-national-mortgage` · `/miami-mortgage` · `/orlando-mortgage`
 
-### Loan education pages (9)
+Each: local intro, why financing matters there, jumbo considerations, buying/refinancing notes, a simple FAQ, and CTAs to Review My Scenario (wcci.online) + Request Private Review. Florida pages carry foreign-buyer educational sections (foreign national financing → jumbo/luxury → second-home & investment/DSCR → bilingual guidance) and a `foreign: true` flag.
 
-`/jumbo-loans` · `/self-employed-mortgage` · `/bank-statement-loans` · `/dscr-loans` · `/interest-only-jumbo` · `/cash-out-refinance` · `/non-qm-mortgage` · `/mortgage-documents` · `/before-you-make-an-offer`
+### Loan education pages (10)
+
+`/jumbo-loans` · `/foreign-national-mortgage` · `/self-employed-mortgage` · `/bank-statement-loans` · `/dscr-loans` · `/interest-only-jumbo` · `/cash-out-refinance` · `/non-qm-mortgage` · `/mortgage-documents` · `/before-you-make-an-offer`
 
 Each explains one topic in plain language: what it means, who it may apply to, what lenders may review, documents, next step, a short FAQ, and a compliance disclaimer. Every mortgage term is explained the first time it appears.
 
@@ -100,8 +102,9 @@ All license/NMLS values live in **`src/data/translations.js → siteConfig`**, s
 ```
 company: {
   name: 'West Coast Capital Mortgage Inc.',
-  dreCorporationLicense: '02440065',   // CA DRE Corporation License
-  nmls: '2817729',                     // Company NMLS
+  dreCorporationLicense: '02440065',   // CA DRE Corporation License (California only)
+  nmls: '2817729',                     // Company NMLS (national ID; carries across states)
+  statesLicensed: 'California & Florida',
 },
 founder: {
   name: 'Anatoliy Kanevsky',
@@ -117,12 +120,15 @@ Public display (footer, About, disclosures, schema):
 West Coast Capital Mortgage Inc.
 CA DRE Corporation License #02440065
 NMLS #2817729
+Licensed in California & Florida
 
 Anatoliy Kanevsky
 California Real Estate Broker
 CA DRE Broker License #01385024
 NMLS #2775380
 ```
+
+The company originates in **California and Florida** under company NMLS #2817729 (the NMLS ID is national and carries across licensed states). The CA DRE Corporation License is California-specific. `areaServed` in the JSON-LD lists both states plus the California and Florida markets.
 
 Contact placeholders (also in `siteConfig`): Office 310-654-1577 · Direct 310-686-5053 · westccmortgage@gmail.com.
 
