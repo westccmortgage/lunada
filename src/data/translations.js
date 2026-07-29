@@ -438,7 +438,7 @@ export const translations = {
       ctaBody:
         'Share a few details and a licensed mortgage professional will review your information and follow up.',
       ctaButton: 'Request a Private Review',
-      ctaStart: 'Start Mortgage Path',
+      ctaStart: 'Review My Scenario',
       faqTitle: 'Common questions',
       faq: [
         {
@@ -468,7 +468,7 @@ export const translations = {
       documentsTitle: 'Documents you may need',
       nextTitle: 'Your next step',
       faqTitle: 'Common questions',
-      ctaStart: 'Start Mortgage Path',
+      ctaStart: 'Review My Scenario',
       ctaReview: 'Request Private Review',
       guidesTitle: 'More guides',
       areasTitle: 'Local areas',
@@ -1115,7 +1115,7 @@ export const translations = {
       ctaTitle: '预约私人贷款评估',
       ctaBody: '请留下部分信息，持牌房贷专业人士将审核您的资料并与您联系。',
       ctaButton: '提交私人评估申请',
-      ctaStart: '开始了解贷款路径',
+      ctaStart: '在线预审我的情况',
       faqTitle: '常见问题',
       faq: [
         {
@@ -1145,7 +1145,7 @@ export const translations = {
       documentsTitle: '您可能需要的文件',
       nextTitle: '您的下一步',
       faqTitle: '常见问题',
-      ctaStart: '开始了解贷款路径',
+      ctaStart: '在线预审我的情况',
       ctaReview: '预约私人评估',
       guidesTitle: '更多指南',
       areasTitle: '本地区域',

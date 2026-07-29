@@ -10,6 +10,7 @@ import {
   breadcrumbSchema,
 } from '../lib/schema.js'
 import { withLang } from '../lib/href.js'
+import { siteConfig } from '../data/translations.js'
 import Seo from '../components/Seo.jsx'
 import ContactForm from '../components/ContactForm.jsx'
 
@@ -99,7 +100,7 @@ export default function LocalPage() {
             ))}
           </div>
           <div className="mt-9 flex flex-col gap-4 sm:flex-row">
-            <a href={withLang('/#contact', lang)} className="btn-gold">
+            <a href={siteConfig.assistantUrl} target="_blank" rel="noopener" className="btn-gold">
               {lp.ctaStart}
             </a>
             <a

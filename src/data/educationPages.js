@@ -96,14 +96,14 @@ const P = [
 
   {
     slug: 'foreign-national-mortgage',
-    keywords: 'foreign national mortgage, foreign buyer financing, non-resident mortgage, international buyer home loan California, ITIN mortgage, buy US property as a foreign national, 外国买家房贷',
+    keywords: 'foreign national mortgage, foreign buyer financing, non-resident mortgage, international buyer home loan California, foreign national loan Florida, buy property in California and Florida, ITIN mortgage, buy US property as a foreign national, 外国买家房贷',
     en: {
       title: 'Foreign National Financing | Lunada Bay Mortgage',
-      description: 'How international buyers may finance a U.S. home as a foreign national — often without a U.S. credit score or green card. Guidance in English and 中文.',
+      description: 'How international buyers may finance a home in California or Florida as a foreign national — often without a U.S. credit score or green card. Guidance in English and 中文.',
       h1: 'Financing for Foreign National Buyers',
       intro: [
         'A “foreign national” loan is a mortgage for a buyer who is not a U.S. citizen or permanent resident — often someone living abroad who wants to own property in the United States. You do not always need a U.S. credit score, a Social Security number, or a green card to be considered.',
-        'International buyers are among the most active purchasers in California and Florida, and coastal Los Angeles — including Palos Verdes and the South Bay — has long been a destination for them. Financing may be available to qualified foreign buyers, subject to lender guidelines and underwriting approval.',
+        'International buyers are among the most active purchasers in California and Florida — two of the most sought-after U.S. markets. We help qualified foreign nationals finance a home in either state: from coastal Los Angeles near Palos Verdes and the South Bay to a purchase in Florida, subject to lender guidelines and underwriting approval.',
       ],
       meaning: [
         'Instead of relying on a U.S. credit report, lenders offering foreign national programs may review your income and assets from your home country, your source of funds, and international credit reference letters from your bank. In exchange for that flexibility, these programs typically expect a larger down payment and verified reserves.',
@@ -132,6 +132,7 @@ const P = [
         'International purchases benefit from clear guidance from the very start. Request a private review — or use Review My Scenario — and a licensed professional will explain, in English or 中文, what may be possible for your situation, subject to lender guidelines and underwriting approval.',
       ],
       faq: [
+        { q: 'Which states can you help me buy in?', a: 'We work with foreign national buyers purchasing in California and Florida — two of the markets international buyers ask about most. Program availability still depends on the lender, the property, and underwriting.' },
         { q: 'Do I need a U.S. credit score or Social Security number?', a: 'Not always. Some foreign national programs use an ITIN or international credit reference letters from your bank instead of a U.S. credit score, subject to lender guidelines and underwriting review.' },
         { q: 'Can I buy without living in the United States?', a: 'Yes. Many programs allow non-resident foreign nationals to purchase a second home, vacation home, or investment property in the U.S.' },
         { q: 'How much down payment will I need?', a: 'Foreign national programs generally expect a larger down payment than standard loans. The exact amount depends on the lender, program, property, and your profile. We do not quote figures here.' },
@@ -142,11 +143,11 @@ const P = [
     },
     zh: {
       title: '外国买家（Foreign National）融资 | Lunada Bay Mortgage',
-      description: '海外买家如何作为外国买家（Foreign National）为美国房产融资——在许多情况下无需美国信用分数或绿卡。提供中英双语指导。',
+      description: '海外买家如何作为外国买家（Foreign National）在加州或佛罗里达购房融资——在许多情况下无需美国信用分数或绿卡。提供中英双语指导。',
       h1: '外国买家融资方案',
       intro: [
         '“外国买家（Foreign National）”贷款，是为并非美国公民或永久居民的买家提供的房贷——通常是居住在海外、希望在美国拥有房产的人。在许多情况下，您不一定需要美国信用分数、社会安全号码（SSN）或绿卡。',
-        '国际买家是加州与佛罗里达最活跃的购房群体之一；而洛杉矶沿海地区——包括帕洛斯弗迪斯与南湾（South Bay）——一直是他们青睐的置业目的地。符合条件的外国买家可能可以获得融资，具体视贷款机构规定及承保审批而定。',
+        '国际买家是加州与佛罗里达最活跃的购房群体之一——这两地都是最受青睐的美国置业市场。我们可以帮助符合条件的外国买家在这两个州购房融资：从帕洛斯弗迪斯与南湾（South Bay）所在的洛杉矶沿海地区，到佛罗里达的置业，具体视贷款机构规定及承保审批而定。',
       ],
       meaning: [
         '贷款机构在提供外国买家项目时，可能不依赖美国信用报告，而是审阅您在本国的收入与资产、资金来源，以及来自您银行的国际信用参考函。作为这种灵活性的交换，这类项目通常要求更高的首付与经核实的储备金。',
@@ -175,6 +176,7 @@ const P = [
         '国际购房若从一开始就获得清晰的指导，会很有帮助。预约私人评估——或使用“在线预审我的情况”——持牌专业人士会以中文或英文，说明在您的情况下可能可行的方案，具体视机构规定及承保审批而定。',
       ],
       faq: [
+        { q: '你们可以帮助我在哪些州购房？', a: '我们为在加州与佛罗里达购房的外国买家提供服务——这两地是国际买家询问最多的市场。具体项目能否提供，仍取决于贷款机构、房产与承保。' },
         { q: '我需要美国信用分数或社会安全号码（SSN）吗？', a: '不一定。部分外国买家项目会以 ITIN 或来自您银行的国际信用参考函，替代美国信用分数，具体视机构规定及承保审核而定。' },
         { q: '我可以在不居住于美国的情况下购房吗？', a: '可以。许多项目允许非居民外国买家在美国购买第二套住宅、度假屋或投资房产。' },
         { q: '我需要多少首付？', a: '外国买家项目通常要求高于标准贷款的首付。具体金额取决于贷款机构、项目、房产及您的情况。我们不在此给出具体数字。' },
