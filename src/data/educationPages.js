@@ -95,6 +95,97 @@ const P = [
   },
 
   {
+    slug: 'foreign-national-mortgage',
+    keywords: 'foreign national mortgage, foreign buyer financing, non-resident mortgage, international buyer home loan California, ITIN mortgage, buy US property as a foreign national, 外国买家房贷',
+    en: {
+      title: 'Foreign National Financing | Lunada Bay Mortgage',
+      description: 'How international buyers may finance a U.S. home as a foreign national — often without a U.S. credit score or green card. Guidance in English and 中文.',
+      h1: 'Financing for Foreign National Buyers',
+      intro: [
+        'A “foreign national” loan is a mortgage for a buyer who is not a U.S. citizen or permanent resident — often someone living abroad who wants to own property in the United States. You do not always need a U.S. credit score, a Social Security number, or a green card to be considered.',
+        'International buyers are among the most active purchasers in California and Florida, and coastal Los Angeles — including Palos Verdes and the South Bay — has long been a destination for them. Financing may be available to qualified foreign buyers, subject to lender guidelines and underwriting approval.',
+      ],
+      meaning: [
+        'Instead of relying on a U.S. credit report, lenders offering foreign national programs may review your income and assets from your home country, your source of funds, and international credit reference letters from your bank. In exchange for that flexibility, these programs typically expect a larger down payment and verified reserves.',
+      ],
+      who: [
+        'Non-resident buyers purchasing a second home, vacation home, or investment property',
+        'Buyers with no U.S. credit history, SSN, or green card (an ITIN or foreign documentation may be used)',
+        'International investors seeking U.S. rental property — sometimes paired with a DSCR loan that qualifies on the property’s rent',
+        'Visa holders and non-permanent residents who work or study in the U.S.',
+      ],
+      review: [
+        'Down payment and equity — foreign national programs generally expect more money down',
+        'Proof of funds and a clear source of funds for the purchase and reserves',
+        'Income documentation from your home country, translated where needed',
+        'International credit reference letters from your bank when a U.S. score is not available',
+        'The property — its type, value, and how it will be used',
+      ],
+      documents: [
+        'A valid passport, and a visa if you have one',
+        'Proof of funds for the down payment, closing, and reserves (bank statements)',
+        'Income documentation, which may be foreign and, where needed, translated',
+        'Credit reference letters from your bank if you have no U.S. credit score',
+        'Details on the property you plan to buy',
+      ],
+      next: [
+        'International purchases benefit from clear guidance from the very start. Request a private review — or use Review My Scenario — and a licensed professional will explain, in English or 中文, what may be possible for your situation, subject to lender guidelines and underwriting approval.',
+      ],
+      faq: [
+        { q: 'Do I need a U.S. credit score or Social Security number?', a: 'Not always. Some foreign national programs use an ITIN or international credit reference letters from your bank instead of a U.S. credit score, subject to lender guidelines and underwriting review.' },
+        { q: 'Can I buy without living in the United States?', a: 'Yes. Many programs allow non-resident foreign nationals to purchase a second home, vacation home, or investment property in the U.S.' },
+        { q: 'How much down payment will I need?', a: 'Foreign national programs generally expect a larger down payment than standard loans. The exact amount depends on the lender, program, property, and your profile. We do not quote figures here.' },
+        { q: 'Can I finance a rental or investment property?', a: 'Possibly. A foreign national purchase can sometimes be paired with a DSCR loan, which qualifies based on the property’s rental income rather than personal income — subject to guidelines.' },
+        { q: 'Is guidance available in Chinese?', a: 'Yes. The entire process can be explained in English and 中文, with each step made clear.' },
+      ],
+      related: ['dscr-loans', 'jumbo-loans', 'mortgage-documents'],
+    },
+    zh: {
+      title: '外国买家（Foreign National）融资 | Lunada Bay Mortgage',
+      description: '海外买家如何作为外国买家（Foreign National）为美国房产融资——在许多情况下无需美国信用分数或绿卡。提供中英双语指导。',
+      h1: '外国买家融资方案',
+      intro: [
+        '“外国买家（Foreign National）”贷款，是为并非美国公民或永久居民的买家提供的房贷——通常是居住在海外、希望在美国拥有房产的人。在许多情况下，您不一定需要美国信用分数、社会安全号码（SSN）或绿卡。',
+        '国际买家是加州与佛罗里达最活跃的购房群体之一；而洛杉矶沿海地区——包括帕洛斯弗迪斯与南湾（South Bay）——一直是他们青睐的置业目的地。符合条件的外国买家可能可以获得融资，具体视贷款机构规定及承保审批而定。',
+      ],
+      meaning: [
+        '贷款机构在提供外国买家项目时，可能不依赖美国信用报告，而是审阅您在本国的收入与资产、资金来源，以及来自您银行的国际信用参考函。作为这种灵活性的交换，这类项目通常要求更高的首付与经核实的储备金。',
+      ],
+      who: [
+        '购买第二套住宅、度假屋或投资房产的非居民买家',
+        '没有美国信用记录、SSN 或绿卡的买家（可使用 ITIN 或外国文件）',
+        '寻求美国出租房产的国际投资者——有时可与以房产租金审核资格的 DSCR 贷款结合',
+        '在美国工作或学习的签证持有人与非永久居民',
+      ],
+      review: [
+        '首付与净值——外国买家项目通常要求更高的首付',
+        '资金证明，以及购房与储备金清晰的资金来源',
+        '来自本国的收入文件，必要时附翻译件',
+        '当无法提供美国信用分数时，来自您银行的国际信用参考函',
+        '房产——其类型、价值及用途',
+      ],
+      documents: [
+        '有效护照；如持有签证，还需签证',
+        '首付、交割及储备金的资金证明（银行流水）',
+        '收入文件，可能为外国文件，必要时附翻译件',
+        '如无美国信用分数，则需银行出具的信用参考函',
+        '您计划购买房产的相关信息',
+      ],
+      next: [
+        '国际购房若从一开始就获得清晰的指导，会很有帮助。预约私人评估——或使用“在线预审我的情况”——持牌专业人士会以中文或英文，说明在您的情况下可能可行的方案，具体视机构规定及承保审批而定。',
+      ],
+      faq: [
+        { q: '我需要美国信用分数或社会安全号码（SSN）吗？', a: '不一定。部分外国买家项目会以 ITIN 或来自您银行的国际信用参考函，替代美国信用分数，具体视机构规定及承保审核而定。' },
+        { q: '我可以在不居住于美国的情况下购房吗？', a: '可以。许多项目允许非居民外国买家在美国购买第二套住宅、度假屋或投资房产。' },
+        { q: '我需要多少首付？', a: '外国买家项目通常要求高于标准贷款的首付。具体金额取决于贷款机构、项目、房产及您的情况。我们不在此给出具体数字。' },
+        { q: '我可以为出租或投资房产融资吗？', a: '有可能。外国买家购房有时可与 DSCR 贷款结合——DSCR 以房产的租金收入（而非个人收入）审核资格，具体视规定而定。' },
+        { q: '是否提供中文指导？', a: '提供。整个流程都可以用中英双语讲解，并让每一步都清晰明了。' },
+      ],
+      related: ['dscr-loans', 'jumbo-loans', 'mortgage-documents'],
+    },
+  },
+
+  {
     slug: 'self-employed-mortgage',
     keywords: 'self-employed mortgage, business owner home loan, self-employed jumbo, income documentation',
     en: {
@@ -295,7 +386,7 @@ const P = [
         { q: 'Can I use an LLC?', a: 'Often yes. Many DSCR programs allow property to be held in an entity — entity documents are typically required.' },
         { q: 'What property types qualify?', a: 'It varies by lender and program. Single-family and small multi-unit rentals are common, subject to review.' },
       ],
-      related: ['non-qm-mortgage', 'cash-out-refinance', 'jumbo-loans'],
+      related: ['non-qm-mortgage', 'jumbo-loans', 'foreign-national-mortgage'],
     },
     zh: {
       title: 'DSCR 投资房产贷款 | Lunada Bay Mortgage',
@@ -333,7 +424,7 @@ const P = [
         { q: '我可以用 LLC 吗？', a: '通常可以。许多 DSCR 项目允许以实体持有房产——一般需要提供实体文件。' },
         { q: '哪些房产类型符合条件？', a: '因机构与项目而异。独立屋及小型多单元出租房较为常见，具体视审核而定。' },
       ],
-      related: ['non-qm-mortgage', 'cash-out-refinance', 'jumbo-loans'],
+      related: ['non-qm-mortgage', 'jumbo-loans', 'foreign-national-mortgage'],
     },
   },
 

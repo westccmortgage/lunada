@@ -33,6 +33,22 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://lunadabaymortgage.com/foreign-national-mortgage</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lunadabaymortgage.com/foreign-national-mortgage"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lunadabaymortgage.com/zh/foreign-national-mortgage"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lunadabaymortgage.com/foreign-national-mortgage"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lunadabaymortgage.com/zh/foreign-national-mortgage</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lunadabaymortgage.com/foreign-national-mortgage"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lunadabaymortgage.com/zh/foreign-national-mortgage"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lunadabaymortgage.com/foreign-national-mortgage"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://lunadabaymortgage.com/self-employed-mortgage</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://lunadabaymortgage.com/self-employed-mortgage"/>
     <xhtml:link rel="alternate" hreflang="zh" href="https://lunadabaymortgage.com/zh/self-employed-mortgage"/>
