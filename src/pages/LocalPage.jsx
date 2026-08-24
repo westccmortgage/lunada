@@ -69,12 +69,16 @@ export default function LocalPage() {
         body: 'For a one-unit property, a loan amount above $1,249,125 is jumbo territory. Actual eligibility, down payment, reserves, and terms depend on the borrower, property, occupancy, and lender guidelines.',
         source: 'See the official FHFA 2026 loan limits',
       }
+  const seoTitle = isLosAngelesCountyLocal ? c.title.replace(' | ', ' 2026 | ') : c.title
+  const seoDescription = isLosAngelesCountyLocal
+    ? `${c.description} 2026 Los Angeles County one-unit conforming limit: $1,249,125.`
+    : c.description
 
   return (
     <>
       <Seo
-        title={c.title}
-        description={c.description}
+        title={seoTitle}
+        description={seoDescription}
         keywords={page.keywords}
         path={page.path}
         jsonLd={[
