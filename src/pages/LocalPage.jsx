@@ -55,6 +55,20 @@ export default function LocalPage() {
   const c = page[lang]
   const lp = t.localPage
   const others = localPages.filter((p) => p.slug !== slug).slice(0, 8)
+  const isLosAngelesCountyLocal = !page.foreign
+  const limitCopy = lang === 'zh'
+    ? {
+        label: '2026 年洛杉矶县一单元合规贷款上限',
+        amount: '$1,249,125',
+        body: '对于一单元房产，贷款金额超过 $1,249,125 即进入大额贷款（Jumbo）范围。实际资格、首付、储备金及条款取决于借款人情况、房产、占用性质和贷款机构规定。',
+        source: '查看 FHFA 2026 官方贷款上限',
+      }
+    : {
+        label: '2026 Los Angeles County one-unit conforming limit',
+        amount: '$1,249,125',
+        body: 'For a one-unit property, a loan amount above $1,249,125 is jumbo territory. Actual eligibility, down payment, reserves, and terms depend on the borrower, property, occupancy, and lender guidelines.',
+        source: 'See the official FHFA 2026 loan limits',
+      }
 
   return (
     <>
@@ -132,6 +146,23 @@ export default function LocalPage() {
                 </li>
               ))}
             </ul>
+
+            {/* Fresh, authoritative jumbo threshold for the LA County service pages. */}
+            {isLosAngelesCountyLocal && (
+              <div className="mt-8 rounded-sm border border-gold/35 bg-white p-6 sm:p-7">
+                <p className="text-xs font-medium uppercase tracking-widest text-gold-muted">{limitCopy.label}</p>
+                <p className="mt-2 font-display text-4xl font-medium tracking-tight text-navy">{limitCopy.amount}</p>
+                <p className="mt-3 max-w-3xl text-[0.95rem] leading-relaxed text-navy/70">{limitCopy.body}</p>
+                <a
+                  href="https://www.fhfa.gov/data/conforming-loan-limit"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-4 inline-flex text-sm font-medium text-navy underline decoration-gold/50 underline-offset-4 transition-colors hover:text-gold-muted"
+                >
+                  {limitCopy.source}
+                </a>
+              </div>
+            )}
 
             {/* Local context */}
             <div className="mt-12">
