@@ -89,7 +89,43 @@ export function fireLeadConversion(formName = 'private-mortgage-review') {
   })
 }
 
+function installNetlifyLeadHook() {
+  if (typeof window === 'undefined' || window.__lunadaLeadFetchHook || typeof window.fetch !== 'function') return
+  window.__lunadaLeadFetchHook = true
+  const originalFetch = window.fetch.bind(window)
+
+  window.fetch = async function trackedFetch(input, init = {}) {
+    let nextInit = init
+    let isLead = false
+
+    try {
+      const method = String(init.method || 'GET').toUpperCase()
+      if (method === 'POST' && typeof init.body === 'string') {
+        const params = new URLSearchParams(init.body)
+        if (params.get('form-name') === 'private-mortgage-review') {
+          isLead = true
+          const enriched = new FormData()
+          params.forEach((value, key) => enriched.append(key, value))
+          appendAttribution(enriched)
+          const encoded = new URLSearchParams()
+          enriched.forEach((value, key) => encoded.append(key, String(value)))
+          nextInit = { ...init, body: encoded.toString() }
+        }
+      }
+    } catch {
+      isLead = false
+    }
+
+    const response = await originalFetch(input, nextInit)
+    if (isLead && response && response.ok) {
+      fireLeadConversion('private-mortgage-review')
+    }
+    return response
+  }
+}
+
 if (typeof window !== 'undefined') {
   captureAttribution()
   initGoogleAds()
+  installNetlifyLeadHook()
 }
