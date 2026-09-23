@@ -7,6 +7,12 @@ const areaLabel = (page, lang) => (lang === 'zh' ? page.cityZh : page.city).repl
 
 export default function Footer({ t, config, lang = 'en' }) {
   const f = t.footer
+  const relatedLinks = config.links.map((link) =>
+    link.href === 'https://wcci.online' || link.label === 'wcci.online'
+      ? { ...link, label: 'WWCCM.ai', href: 'https://wwccm.ai' }
+      : link,
+  )
+
   return (
     <footer className="overflow-hidden bg-navy-deep text-ivory">
       <div className="section-shell py-16">
@@ -53,7 +59,7 @@ export default function Footer({ t, config, lang = 'en' }) {
               {f.linksTitle}
             </p>
             <ul className="mt-5 space-y-2 text-sm text-ivory/70">
-              {config.links.map((l) => (
+              {relatedLinks.map((l) => (
                 <li key={l.href}>
                   <a href={l.href} target="_blank" rel="noopener noreferrer" className="break-all hover:text-gold-soft">
                     {l.label}
