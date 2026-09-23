@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react'
 import LanguageToggle from './LanguageToggle.jsx'
 import { withLang } from '../lib/href.js'
-import { siteConfig } from '../data/translations.js'
+
+const AI_REVIEW_URL = 'https://wwccm.ai'
 
 export default function Header({ t, lang, setLang }) {
   const [scrolled, setScrolled] = useState(false)
@@ -58,7 +59,7 @@ export default function Header({ t, lang, setLang }) {
         <div className="flex items-center gap-3 sm:gap-5">
           <LanguageToggle lang={lang} setLang={setLang} />
           <a
-            href={siteConfig.assistantUrl}
+            href={AI_REVIEW_URL}
             target="_blank"
             rel="noopener"
             className="hidden whitespace-nowrap text-[0.72rem] font-medium uppercase tracking-[0.14em] text-navy/60 transition-colors hover:text-gold-muted lg:inline-flex"
@@ -103,7 +104,7 @@ export default function Header({ t, lang, setLang }) {
               </a>
             ))}
             <a
-              href={siteConfig.assistantUrl}
+              href={AI_REVIEW_URL}
               target="_blank"
               rel="noopener"
               onClick={() => setMenuOpen(false)}
