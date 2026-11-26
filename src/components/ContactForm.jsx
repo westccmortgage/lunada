@@ -29,7 +29,7 @@ const inputCls =
 // US number with 10 digits (optional leading 1), or an international number that starts with "+" and has 10-15 digits.
 // The same pattern is used by the browser (pattern attribute) and by the JS check below.
 // Keep it free of numbers the host's spam filter drops (no "+" with 12+ digits, 11 digits not starting with 1).
-export const PHONE_PATTERN = '\\+[^0-9]*([0-9][^0-9]*){10,15}|[^0-9+]*(1[^0-9]*)?([0-9][^0-9]*){10}'
+export const PHONE_PATTERN = '\\+[^0-9A-Za-z]*([0-9][^0-9A-Za-z]*){10,15}|[^0-9A-Za-z+]*(1[^0-9A-Za-z]*)?([0-9][^0-9A-Za-z]*){10}'
 const PHONE_RE = new RegExp(`^(?:${PHONE_PATTERN})$`)
 
 const EMPTY = {
