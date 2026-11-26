@@ -1,5 +1,6 @@
-import { useEffect, useState } from 'react'
-import { Link, Navigate, useParams } from 'react-router-dom'
+import { useState } from 'react'
+import { Link, useParams } from 'react-router-dom'
+import NotFound from './NotFound.jsx'
 import { useLang } from '../context/LanguageContext.jsx'
 import { getEducationPage, educationPages } from '../data/educationPages.js'
 import { localPages } from '../data/localPages.js'
@@ -60,11 +61,7 @@ export default function EducationPage({ slug: slugProp }) {
   const { t, lang } = useLang()
   const page = getEducationPage(slug)
 
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [slug])
-
-  if (!page) return <Navigate to="/" replace />
+  if (!page) return <NotFound />
 
   const c = page[lang]
   const ep = t.educationPage
@@ -254,7 +251,7 @@ export default function EducationPage({ slug: slugProp }) {
         </div>
       </div>
 
-      <div id="page-contact" className="scroll-mt-20">
+      <div id="page-contact" className="scroll-mt-24">
         <ContactForm t={t} />
       </div>
     </>

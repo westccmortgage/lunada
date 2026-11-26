@@ -22,9 +22,6 @@ const SERVICE_AREAS = [
   'Orlando',
 ]
 
-// States where the company is licensed to originate.
-const SERVICE_STATES = ['California', 'Florida']
-
 /** Organization + FinancialService (combined) describing the business. */
 export function organizationSchema() {
   return {
@@ -37,7 +34,7 @@ export function organizationSchema() {
     email: siteConfig.contact.email,
     telephone: siteConfig.contact.officePhone,
     description:
-      'Local, licensed, bilingual mortgage guidance for buying, refinancing, and high-value home decisions in Lunada Bay, Palos Verdes, and coastal Los Angeles, plus foreign national financing for international buyers in California and Florida. Guidance in English and 中文.',
+      'Local, licensed, bilingual mortgage guidance for buying, refinancing, and high-value home decisions in Lunada Bay, Palos Verdes, and coastal Los Angeles, plus foreign national financing for international buyers. Guidance in English and 中文.',
     address: {
       '@type': 'PostalAddress',
       addressLocality: 'Palos Verdes',
@@ -45,7 +42,7 @@ export function organizationSchema() {
       addressCountry: 'US',
     },
     areaServed: [
-      ...SERVICE_STATES.map((name) => ({ '@type': 'State', name })),
+      { '@type': 'Country', name: 'United States' },
       ...SERVICE_AREAS.map((name) => ({ '@type': 'City', name })),
     ],
     serviceType: [

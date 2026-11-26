@@ -1,7 +1,7 @@
 export default function TrustBlock({ t }) {
   const b = t.trustBlock
   return (
-    <section id="trust" className="scroll-mt-20 bg-ivory py-16 sm:py-24">
+    <section id="trust" className="scroll-mt-24 bg-ivory py-16 sm:py-24">
       <div className="section-shell">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-5">

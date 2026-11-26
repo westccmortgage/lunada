@@ -5,7 +5,7 @@ import { translations } from '../data/translations.js'
  */
 export default function LanguageToggle({ lang, setLang, className = '' }) {
   const base =
-    'px-2.5 py-1 text-sm tracking-wide transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold rounded-sm'
+    'inline-flex min-h-[40px] items-center whitespace-nowrap px-2 text-sm tracking-wide min-[360px]:px-2.5 transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold rounded-sm'
   const active = 'text-navy font-medium'
   const inactive = 'text-navy/45 hover:text-navy'
 

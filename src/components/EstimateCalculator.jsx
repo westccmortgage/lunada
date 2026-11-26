@@ -19,11 +19,12 @@ function NumField({ label, value, onChange, prefix, suffix, step = 1, min = 0 })
         <input
           type="number"
           inputMode="decimal"
+          autoComplete="off"
           min={min}
           step={step}
           value={value}
           onChange={(e) => onChange(e.target.value === '' ? '' : Number(e.target.value))}
-          className="w-full bg-transparent px-3 py-3 text-[0.95rem] text-navy focus:outline-none"
+          className="w-full bg-transparent px-3 py-3 text-base text-navy focus:outline-none"
         />
         {suffix && <span className="pr-3.5 text-sm text-navy/45">{suffix}</span>}
       </div>
@@ -146,7 +147,7 @@ export default function EstimateCalculator({ t, lang }) {
   const isPurchase = purpose === 'purchase'
 
   return (
-    <section id="estimate" className="scroll-mt-20 bg-sand-soft py-16 sm:py-24">
+    <section id="estimate" className="scroll-mt-24 bg-sand-soft py-16 sm:py-24">
       <div className="section-shell">
         <SectionHead no="03" eyebrow={cx.eyebrow} title={cx.title} intro={cx.intro} />
 

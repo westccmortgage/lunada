@@ -5,9 +5,11 @@ import { WizardPrefillProvider } from './context/WizardPrefillContext.jsx'
 import { siteConfig } from './data/translations.js'
 import Header from './components/Header.jsx'
 import Footer from './components/Footer.jsx'
-import ForceLang from './components/ForceLang.jsx'
+import ScrollManager from './components/ScrollManager.jsx'
 import Home from './pages/Home.jsx'
 import SlugPage from './pages/SlugPage.jsx'
+import LegalPage from './pages/LegalPage.jsx'
+import NotFound from './pages/NotFound.jsx'
 
 /**
  * Subtle scroll-reveal for sections below the fold.
@@ -50,30 +52,21 @@ function Shell() {
 
   return (
     <div className="min-h-screen bg-ivory">
+      <ScrollManager />
       <Header t={t} lang={lang} setLang={setLang} />
       <main>
         <Routes>
+          {/* English = every path without a /zh prefix; Chinese = /zh and /zh/* (language follows the URL) */}
           <Route path="/" element={<Home />} />
-          {/* Chinese language layer — same content, forced to 中文 on load */}
-          <Route
-            path="/zh"
-            element={
-              <ForceLang>
-                <Home />
-              </ForceLang>
-            }
-          />
-          <Route
-            path="/zh/:slug"
-            element={
-              <ForceLang>
-                <SlugPage />
-              </ForceLang>
-            }
-          />
-          {/* Local area + loan-education pages; SlugPage resolves or redirects home */}
+          <Route path="/zh" element={<Home />} />
+          <Route path="/privacy" element={<LegalPage kind="privacy" />} />
+          <Route path="/terms" element={<LegalPage kind="terms" />} />
+          <Route path="/zh/privacy" element={<LegalPage kind="privacy" />} />
+          <Route path="/zh/terms" element={<LegalPage kind="terms" />} />
+          {/* Local area + loan-education pages; SlugPage renders NotFound for unknown slugs */}
+          <Route path="/zh/:slug" element={<SlugPage />} />
           <Route path="/:slug" element={<SlugPage />} />
-          <Route path="*" element={<Home />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
       <Footer t={t} config={siteConfig} lang={lang} />
@@ -83,12 +76,12 @@ function Shell() {
 
 export default function App() {
   return (
-    <LanguageProvider>
-      <WizardPrefillProvider>
-        <BrowserRouter>
+    <BrowserRouter>
+      <LanguageProvider>
+        <WizardPrefillProvider>
           <Shell />
-        </BrowserRouter>
-      </WizardPrefillProvider>
-    </LanguageProvider>
+        </WizardPrefillProvider>
+      </LanguageProvider>
+    </BrowserRouter>
   )
 }

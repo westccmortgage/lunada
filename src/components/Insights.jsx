@@ -5,7 +5,7 @@ import SectionHead from './SectionHead.jsx'
 export default function Insights({ t, lang }) {
   const s = t.insights
   return (
-    <section id="insights" className="scroll-mt-20 bg-ivory py-16 sm:py-24">
+    <section id="insights" className="scroll-mt-24 bg-ivory py-16 sm:py-24">
       <div className="section-shell">
         <SectionHead no="13" eyebrow={s.eyebrow} title={s.title} intro={s.intro} />
 

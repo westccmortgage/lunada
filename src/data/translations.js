@@ -4,7 +4,7 @@
  * ----------------------------------------------------------------------------
  *  Single source of truth for compliance-sensitive information. Two distinct
  *  entities — never mix their NMLS numbers:
- *    • Company    — West Coast Capital Mortgage Inc.  DRE Corp #02440065 · NMLS #2817729
+ *    • Company    — West Coast Capital Mortgage  DRE Corp #02440065 · NMLS #2817729
  *    • Individual — Anatoliy Kanevsky  CA Real Estate Broker · DRE #01385024 · NMLS #2775380
  * ============================================================================
  */
@@ -14,7 +14,7 @@ export const siteConfig = {
 
   // --- Company (corporate entity) ---
   company: {
-    name: 'West Coast Capital Mortgage Inc.',
+    name: 'West Coast Capital Mortgage',
     dreCorporationLicense: '02440065', // CA DRE Corporation License (California only)
     nmls: '2817729', // Company NMLS (national ID; carries across licensed states)
     statesLicensed: 'California & Florida', // states the company originates in
@@ -54,6 +54,20 @@ export const siteConfig = {
 export const translations = {
   en: {
     langLabel: 'EN',
+
+    seo: {
+      homeTitle: 'Lunada Bay Mortgage | Private Mortgage Strategy for Palos Verdes & Coastal LA',
+      homeDescription:
+        'Local, licensed, personal mortgage guidance for buying, refinancing, and high-value home decisions in Lunada Bay, Palos Verdes, and coastal Los Angeles. English and 中文.',
+    },
+
+    notFound: {
+      title: 'Page not found | Lunada Bay Mortgage',
+      heading: 'This page could not be found',
+      body: 'The link may be old or mistyped. You can go back to the home page or browse our mortgage guides.',
+      home: 'Back to home',
+      guides: 'Browse mortgage guides',
+    },
 
     startHere: {
       eyebrow: 'Strategy Studio',
@@ -338,7 +352,7 @@ export const translations = {
       scrollCue: 'Scroll',
       subhead:
         'Local guidance for high-value home decisions — the property, the financing, the structure, and the next step.',
-      primaryCta: 'Start Mortgage Path',
+      primaryCta: 'Request a Private Review',
       secondaryCta: 'Request Private Review',
       scenarioCta: 'Review My Scenario',
       trustLine:
@@ -388,7 +402,7 @@ export const translations = {
     },
 
     localPositioning: 'Private mortgage strategy for Lunada Bay, Palos Verdes, and coastal Los Angeles.',
-    localPositioningForeign: 'Foreign national & international buyer financing — California and Florida.',
+    localPositioningForeign: 'Foreign national & international buyer financing across the U.S.',
     localTrust:
       'Guidance from a mortgage professional who lives in the Palos Verdes community and understands the local luxury residential market.',
 
@@ -526,14 +540,14 @@ export const translations = {
       eyebrow: 'About Anatoliy',
       title: 'Guidance Beyond the Rate',
       lead:
-        'Lunada Bay Mortgage is led by Anatoliy Kanevsky, founder of West Coast Capital Mortgage Inc. and a California real estate and mortgage professional with experience across lending, brokerage, luxury residential development, and complex borrower strategy. Anatoliy’s background allows him to look beyond the rate and help clients understand structure, documentation, timing, property value, loan purpose, and long-term financing options.',
+        'Lunada Bay Mortgage is led by Anatoliy Kanevsky, founder of West Coast Capital Mortgage and a California real estate and mortgage professional with experience across lending, brokerage, luxury residential development, and complex borrower strategy. Anatoliy’s background allows him to look beyond the rate and help clients understand structure, documentation, timing, property value, loan purpose, and long-term financing options.',
       body:
         'Clients are not simply receiving a loan quote. They are receiving guidance from someone who understands lending, real estate, development, and complex property decisions — and who can translate that experience into a clear, considered plan.',
       credentialsTitle: 'Credentials & Background',
       credentials: [
-        'Founder, West Coast Capital Mortgage Inc.',
+        'Founder, West Coast Capital Mortgage',
         'California Real Estate Broker',
-        'Designated Officer, West Coast Capital Mortgage Inc.',
+        'Designated Officer, West Coast Capital Mortgage',
         'CEO / Principal, California Residential Development Partners',
         'Decades of experience across residential lending and real estate brokerage',
         'Experience with jumbo, Non-QM, DSCR, bank statement, and self-employed borrowers',
@@ -695,7 +709,7 @@ export const translations = {
       },
       placeholders: {
         name: 'Full name',
-        phone: '(310) 000-0000',
+        phone: '+1 (310) 000-0000',
         email: 'you@email.com',
         location: 'e.g. Lunada Bay or 90274',
         purchasePrice: 'Optional',
@@ -716,6 +730,10 @@ export const translations = {
       error:
         'Something went wrong while sending your request. Please try again, or reach us directly:',
       required: 'Required',
+      requiredNote: '* Required field',
+      phoneHint: 'US number with 10 digits, or an international number starting with + (e.g. +86 …)',
+      consent: 'By sending, you agree we may contact you about your request.',
+      privacyLink: 'Privacy Policy',
     },
 
     footer: {
@@ -732,13 +750,29 @@ export const translations = {
       verifyNote: 'verify before publishing',
       equalHousing: 'Equal Housing Opportunity',
       disclosure:
-        'Lunada Bay Mortgage is a marketing website operated by West Coast Capital Mortgage Inc., licensed to conduct mortgage business in California and Florida. Equal Housing Opportunity. This is not a commitment to lend. All loans are subject to borrower qualification, credit approval, income, assets, property review, lender guidelines, and underwriting approval. Loan programs, rates, terms, and conditions are subject to change without notice.',
+        'Lunada Bay Mortgage is a marketing website operated by West Coast Capital Mortgage, licensed to conduct mortgage business in California and Florida. Equal Housing Opportunity. This is not a commitment to lend. All loans are subject to borrower qualification, credit approval, income, assets, property review, lender guidelines, and underwriting approval. Loan programs, rates, terms, and conditions are subject to change without notice.',
       rights: 'All rights reserved.',
+      privacy: 'Privacy Policy',
+      terms: 'Terms of Use',
     },
   },
 
   zh: {
     langLabel: '中文',
+
+    seo: {
+      homeTitle: 'Lunada Bay Mortgage | 帕洛斯弗迪斯与洛杉矶海岸私人房贷策略',
+      homeDescription:
+        '为露娜达湾、帕洛斯弗迪斯及洛杉矶海岸地区的购房、再融资与高价值住宅决策，提供本地、持牌、一对一的房贷指导。提供中文与英文服务。',
+    },
+
+    notFound: {
+      title: '页面未找到 | Lunada Bay Mortgage',
+      heading: '找不到该页面',
+      body: '链接可能已过期或输入有误。您可以返回首页，或浏览我们的贷款指南。',
+      home: '返回首页',
+      guides: '浏览贷款指南',
+    },
 
     startHere: {
       eyebrow: '策略工作室',
@@ -1018,7 +1052,7 @@ export const translations = {
       scrollCue: '下滑浏览',
       subhead:
         '为高价值住宅决策提供本地指导——房产、融资、结构，以及下一步。',
-      primaryCta: '开始了解贷款路径',
+      primaryCta: '预约私人评估',
       secondaryCta: '预约私人评估',
       scenarioCta: '在线预审我的情况',
       trustLine:
@@ -1068,7 +1102,7 @@ export const translations = {
     },
 
     localPositioning: '为露娜达湾、帕洛斯弗迪斯及洛杉矶海岸地区提供私人房贷策略。',
-    localPositioningForeign: '外国买家与国际买家融资——加州与佛罗里达。',
+    localPositioningForeign: '外国买家与国际买家融资——服务美国各地。',
     localTrust:
       '由居住在帕洛斯弗迪斯本地社区的房贷专业人士提供指导，了解当地高端住宅市场及大额贷款需求。',
 
@@ -1178,14 +1212,14 @@ export const translations = {
       eyebrow: '关于 Anatoliy',
       title: '超越利率的专业指导',
       lead:
-        'Lunada Bay Mortgage 由 West Coast Capital Mortgage Inc. 创始人 Anatoliy Kanevsky 负责。Anatoliy 是加州房地产及房贷专业人士，拥有房地产经纪、住宅贷款、高端住宅开发以及复杂贷款方案分析经验。他的服务不仅仅是提供利率报价，而是帮助客户从贷款结构、资产文件、收入情况、房产价值、贷款目的和长期策略等角度，清楚理解适合自己的融资路径。',
+        'Lunada Bay Mortgage 由 West Coast Capital Mortgage 创始人 Anatoliy Kanevsky 负责。Anatoliy 是加州房地产及房贷专业人士，拥有房地产经纪、住宅贷款、高端住宅开发以及复杂贷款方案分析经验。他的服务不仅仅是提供利率报价，而是帮助客户从贷款结构、资产文件、收入情况、房产价值、贷款目的和长期策略等角度，清楚理解适合自己的融资路径。',
       body:
         '客户获得的不仅是一份贷款报价，而是来自一位同时精通贷款、房地产、开发及复杂房产决策专业人士的指导——并能将这些经验转化为清晰、周全的方案。',
       credentialsTitle: '资历与背景',
       credentials: [
-        'West Coast Capital Mortgage Inc. 创始人',
+        'West Coast Capital Mortgage 创始人',
         '加州房地产经纪人（Broker）',
-        'West Coast Capital Mortgage Inc. 指定负责人（Designated Officer）',
+        'West Coast Capital Mortgage 指定负责人（Designated Officer）',
         'California Residential Development Partners 首席执行官 / 负责人',
         '数十年住宅贷款与房地产经纪经验',
         '熟悉大额贷款、Non-QM、DSCR、银行流水及自雇借款人方案',
@@ -1347,7 +1381,7 @@ export const translations = {
       },
       placeholders: {
         name: '您的姓名',
-        phone: '(310) 000-0000',
+        phone: '+1 (310) 000-0000',
         email: 'you@email.com',
         location: '例如：露娜达湾 或 90274',
         purchasePrice: '选填',
@@ -1368,6 +1402,10 @@ export const translations = {
       error:
         '提交时出现问题。请重试，或直接与我们联系：',
       required: '必填',
+      requiredNote: '* 为必填项',
+      phoneHint: '10 位美国号码，或以 + 开头的国际号码（例如 +86 …）',
+      consent: '提交即表示您同意我们就您的申请与您联系。',
+      privacyLink: '隐私政策',
     },
 
     footer: {
@@ -1384,8 +1422,10 @@ export const translations = {
       verifyNote: '发布前请核实',
       equalHousing: 'Equal Housing Opportunity（平等住房机会）',
       disclosure:
-        'Lunada Bay Mortgage 是由 West Coast Capital Mortgage Inc. 运营的市场推广网站；该公司持牌在加州与佛罗里达开展房贷业务。Equal Housing Opportunity。本网站内容不构成贷款承诺。所有贷款均需符合借款人资格、信用审批、收入、资产、房产审核、贷款机构规定及最终承保审批。贷款项目、利率、条款和条件可能随时变更，恕不另行通知。',
+        'Lunada Bay Mortgage 是由 West Coast Capital Mortgage 运营的市场推广网站；该公司持牌在加州与佛罗里达开展房贷业务。Equal Housing Opportunity。本网站内容不构成贷款承诺。所有贷款均需符合借款人资格、信用审批、收入、资产、房产审核、贷款机构规定及最终承保审批。贷款项目、利率、条款和条件可能随时变更，恕不另行通知。',
       rights: '版权所有。',
+      privacy: '隐私政策',
+      terms: '使用条款',
     },
   },
 }

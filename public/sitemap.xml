@@ -384,4 +384,40 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://lunadabaymortgage.com/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lunadabaymortgage.com/privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lunadabaymortgage.com/zh/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lunadabaymortgage.com/privacy"/>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://lunadabaymortgage.com/zh/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lunadabaymortgage.com/privacy"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lunadabaymortgage.com/zh/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lunadabaymortgage.com/privacy"/>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://lunadabaymortgage.com/terms</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lunadabaymortgage.com/terms"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lunadabaymortgage.com/zh/terms"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lunadabaymortgage.com/terms"/>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://lunadabaymortgage.com/zh/terms</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lunadabaymortgage.com/terms"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://lunadabaymortgage.com/zh/terms"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lunadabaymortgage.com/terms"/>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
 </urlset>

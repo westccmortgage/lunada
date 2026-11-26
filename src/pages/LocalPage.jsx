@@ -1,5 +1,6 @@
-import { useEffect, useState } from 'react'
-import { Link, Navigate, useParams } from 'react-router-dom'
+import { useState } from 'react'
+import { Link, useParams } from 'react-router-dom'
+import NotFound from './NotFound.jsx'
 import { useLang } from '../context/LanguageContext.jsx'
 import { getLocalPage, localPages } from '../data/localPages.js'
 import {
@@ -45,33 +46,31 @@ export default function LocalPage() {
   const { t, lang } = useLang()
   const page = getLocalPage(slug)
 
-  // Scroll to top on navigation between local pages
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [slug])
-
-  if (!page) return <Navigate to="/" replace />
+  if (!page) return <NotFound />
 
   const c = page[lang]
   const lp = t.localPage
   const others = localPages.filter((p) => p.slug !== slug).slice(0, 8)
   const isLosAngelesCountyLocal = !page.foreign
+  const FHFA_MAP_URL = 'https://www.fhfa.gov/data/dashboard/conforming-loan-limits'
   const limitCopy = lang === 'zh'
     ? {
-        label: '2026 年洛杉矶县一单元合规贷款上限',
-        amount: '$1,249,125',
-        body: '对于一单元房产，贷款金额超过 $1,249,125 即进入大额贷款（Jumbo）范围。实际资格、首付、储备金及条款取决于借款人情况、房产、占用性质和贷款机构规定。',
-        source: '查看 FHFA 2026 官方贷款上限',
+        label: '2027 年高成本地区贷款上限',
+        amount: '$1,283,100',
+        body: 'FHFA 于 2026 年 11 月 24 日公布 2027 年合规贷款上限：基准上限 $855,400，高成本地区上限 $1,283,100。洛杉矶县在 2026 年处于高成本上限（$1,249,125）；该县 2027 年的具体上限请在 FHFA 地图上核实。一单元房产的贷款金额超过该县的合规贷款上限（2027 年高成本地区最高为 $1,283,100）即进入大额贷款（Jumbo）范围。实际资格、首付、储备金及条款取决于借款人情况、房产、占用性质和贷款机构规定。',
+        source: '在 FHFA 地图上查看合规贷款上限',
       }
     : {
-        label: '2026 Los Angeles County one-unit conforming limit',
-        amount: '$1,249,125',
-        body: 'For a one-unit property, a loan amount above $1,249,125 is jumbo territory. Actual eligibility, down payment, reserves, and terms depend on the borrower, property, occupancy, and lender guidelines.',
-        source: 'See the official FHFA 2026 loan limits',
+        label: '2027 high-cost ceiling',
+        amount: '$1,283,100',
+        body: 'FHFA, announced Nov 24, 2026: the 2027 baseline limit is $855,400 and the high-cost ceiling is $1,283,100. Los Angeles County was at the high-cost ceiling in 2026 ($1,249,125); confirm the county’s 2027 limit on FHFA’s map. A loan above the county’s conforming limit (up to $1,283,100 in 2027 in high-cost areas) is jumbo territory. Actual eligibility, down payment, reserves, and terms depend on the borrower, property, occupancy, and lender guidelines.',
+        source: 'FHFA conforming loan limits map',
       }
-  const seoTitle = isLosAngelesCountyLocal ? c.title.replace(' | ', ' 2026 | ') : c.title
+  const seoTitle = c.title
   const seoDescription = isLosAngelesCountyLocal
-    ? `${c.description} 2026 Los Angeles County one-unit conforming limit: $1,249,125.`
+    ? lang === 'zh'
+      ? `${c.description} 2027 年高成本地区上限：$1,283,100（FHFA，2026 年 11 月 24 日公布）。`
+      : `${c.description} 2027 high-cost ceiling: $1,283,100 (FHFA, announced Nov 24, 2026).`
     : c.description
 
   return (
@@ -158,7 +157,7 @@ export default function LocalPage() {
                 <p className="mt-2 font-display text-4xl font-medium tracking-tight text-navy">{limitCopy.amount}</p>
                 <p className="mt-3 max-w-3xl text-[0.95rem] leading-relaxed text-navy/70">{limitCopy.body}</p>
                 <a
-                  href="https://www.fhfa.gov/data/conforming-loan-limit"
+                  href={FHFA_MAP_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-4 inline-flex text-sm font-medium text-navy underline decoration-gold/50 underline-offset-4 transition-colors hover:text-gold-muted"
@@ -254,7 +253,7 @@ export default function LocalPage() {
       </div>
 
       {/* Contact form */}
-      <div id="page-contact" className="scroll-mt-20">
+      <div id="page-contact" className="scroll-mt-24">
         <ContactForm t={t} />
       </div>
     </>

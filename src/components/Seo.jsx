@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 import { SITE_URL } from '../lib/schema.js'
+import { isZhPathname } from '../context/LanguageContext.jsx'
 
 /**
  * Lightweight document-head manager (no external dependency).
@@ -48,11 +49,11 @@ function setAlternates(alts) {
   })
 }
 
-export default function Seo({ title, description, keywords, path = '/', jsonLd = [] }) {
+export default function Seo({ title, description, keywords, path = '/', jsonLd = [], noindex = false }) {
   const { pathname } = useLocation()
 
   useEffect(() => {
-    const isZh = pathname.startsWith('/zh')
+    const isZh = isZhPathname(pathname)
     const enUrl = `${SITE_URL}${path}`
     const zhUrl = `${SITE_URL}${path === '/' ? '/zh' : `/zh${path}`}`
     const canonical = isZh ? zhUrl : enUrl
@@ -60,17 +61,26 @@ export default function Seo({ title, description, keywords, path = '/', jsonLd =
     if (title) document.title = title
     upsertMeta('name', 'description', description)
     upsertMeta('name', 'keywords', keywords)
-    upsertLink('canonical', canonical)
+    upsertMeta('name', 'robots', noindex ? 'noindex, follow' : 'index, follow')
 
-    setAlternates([
-      { hreflang: 'en', href: enUrl },
-      { hreflang: 'zh', href: zhUrl },
-      { hreflang: 'x-default', href: enUrl },
-    ])
-
-    upsertMeta('property', 'og:title', title)
-    upsertMeta('property', 'og:description', description)
-    upsertMeta('property', 'og:url', canonical)
+    if (noindex) {
+      // A page that must not be indexed carries no canonical and no language alternates
+      document.head.querySelectorAll('link[rel="canonical"]').forEach((n) => n.remove())
+      setAlternates([])
+      upsertMeta('property', 'og:title', title)
+      upsertMeta('property', 'og:description', description)
+      document.head.querySelectorAll('meta[property="og:url"]').forEach((n) => n.remove())
+    } else {
+      upsertLink('canonical', canonical)
+      setAlternates([
+        { hreflang: 'en', href: enUrl },
+        { hreflang: 'zh', href: zhUrl },
+        { hreflang: 'x-default', href: enUrl },
+      ])
+      upsertMeta('property', 'og:title', title)
+      upsertMeta('property', 'og:description', description)
+      upsertMeta('property', 'og:url', canonical)
+    }
     upsertMeta('property', 'og:type', 'website')
     upsertMeta('property', 'og:locale', isZh ? 'zh_CN' : 'en_US')
 
@@ -88,7 +98,7 @@ export default function Seo({ title, description, keywords, path = '/', jsonLd =
     return () => {
       document.head.querySelectorAll('script[data-seo-jsonld]').forEach((n) => n.remove())
     }
-  }, [title, description, keywords, path, jsonLd, pathname])
+  }, [title, description, keywords, path, jsonLd, pathname, noindex])
 
   return null
 }

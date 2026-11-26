@@ -3,6 +3,11 @@ import { localPages } from '../data/localPages.js'
 import { educationPages } from '../data/educationPages.js'
 import { withLang } from '../lib/href.js'
 
+// Florida pages are not listed under Service Areas; the Miami / Orlando city pages stay linked under Guides.
+const FLORIDA_STATE_SLUG = 'florida-foreign-national-mortgage'
+const CITY_GUIDE_SLUGS = ['miami-mortgage', 'orlando-mortgage']
+const linkTap = 'inline-flex min-h-[40px] items-center'
+
 const areaLabel = (page, lang) => (lang === 'zh' ? page.cityZh : page.city).replace(/^the /, '')
 
 export default function Footer({ t, config, lang = 'en' }) {
@@ -13,6 +18,9 @@ export default function Footer({ t, config, lang = 'en' }) {
       : link,
   )
 
+  const areaPages = localPages.filter((p) => p.slug !== FLORIDA_STATE_SLUG && !CITY_GUIDE_SLUGS.includes(p.slug))
+  const cityGuidePages = localPages.filter((p) => CITY_GUIDE_SLUGS.includes(p.slug))
+
   return (
     <footer className="overflow-hidden bg-navy-deep text-ivory">
       <div className="section-shell py-16">
@@ -20,7 +28,7 @@ export default function Footer({ t, config, lang = 'en' }) {
           {/* Brand + tagline */}
           <div className="lg:col-span-4">
             <div className="text-xl font-semibold uppercase tracking-[0.08em] text-ivory">Lunada Bay</div>
-            <div className="mt-0.5 text-[0.62rem] font-medium uppercase tracking-widest text-gold-soft">
+            <div className="mt-0.5 text-[0.6875rem] font-medium uppercase tracking-widest text-gold-soft">
               Mortgage
             </div>
             <p className="mt-5 max-w-xs text-sm leading-relaxed text-ivory/55">{f.tagline}</p>
@@ -31,22 +39,22 @@ export default function Footer({ t, config, lang = 'en' }) {
             <p className="text-xs font-medium uppercase tracking-widest text-ivory/40">
               {f.contactTitle}
             </p>
-            <ul className="mt-5 space-y-2 text-sm text-ivory/70">
-              <li>
-                {f.office}:{' '}
-                <a href={`tel:${config.contact.officePhone}`} className="hover:text-gold-soft">
+            <ul className="mt-4 text-sm text-ivory/70">
+              <li className="flex min-h-[40px] items-center">
+                {f.office}:
+                <a href={`tel:${config.contact.officePhone}`} className={`${linkTap} ml-1.5 hover:text-gold-soft`}>
                   {config.contact.officePhone}
                 </a>
               </li>
-              <li>
-                {f.direct}:{' '}
-                <a href={`tel:${config.contact.directPhone}`} className="hover:text-gold-soft">
+              <li className="flex min-h-[40px] items-center">
+                {f.direct}:
+                <a href={`tel:${config.contact.directPhone}`} className={`${linkTap} ml-1.5 hover:text-gold-soft`}>
                   {config.contact.directPhone}
                 </a>
               </li>
-              <li>
-                {f.email}:{' '}
-                <a href={`mailto:${config.contact.email}`} className="hover:text-gold-soft">
+              <li className="flex min-h-[40px] items-center">
+                {f.email}:
+                <a href={`mailto:${config.contact.email}`} className={`${linkTap} ml-1.5 hover:text-gold-soft`}>
                   {config.contact.email}
                 </a>
               </li>
@@ -58,10 +66,10 @@ export default function Footer({ t, config, lang = 'en' }) {
             <p className="text-xs font-medium uppercase tracking-widest text-ivory/40">
               {f.linksTitle}
             </p>
-            <ul className="mt-5 space-y-2 text-sm text-ivory/70">
+            <ul className="mt-4 text-sm text-ivory/70">
               {relatedLinks.map((l) => (
                 <li key={l.href}>
-                  <a href={l.href} target="_blank" rel="noopener noreferrer" className="break-all hover:text-gold-soft">
+                  <a href={l.href} target="_blank" rel="noopener noreferrer" className={`${linkTap} break-all hover:text-gold-soft`}>
                     {l.label}
                   </a>
                 </li>
@@ -100,14 +108,24 @@ export default function Footer({ t, config, lang = 'en' }) {
           <p className="text-xs font-medium uppercase tracking-widest text-ivory/40">
             {f.guidesTitle}
           </p>
-          <ul className="mt-5 flex flex-wrap gap-x-7 gap-y-2.5">
+          <ul className="mt-3 flex flex-wrap gap-x-7">
             {educationPages.map((p) => (
               <li key={p.slug}>
                 <Link
                   to={withLang(p.path, lang)}
-                  className="text-[0.82rem] text-ivory/55 transition-colors hover:text-gold-soft"
+                  className={`${linkTap} text-[0.82rem] text-ivory/55 transition-colors hover:text-gold-soft`}
                 >
                   {p[lang].h1}
+                </Link>
+              </li>
+            ))}
+            {cityGuidePages.map((p) => (
+              <li key={p.slug}>
+                <Link
+                  to={withLang(p.path, lang)}
+                  className={`${linkTap} text-[0.82rem] text-ivory/55 transition-colors hover:text-gold-soft`}
+                >
+                  {areaLabel(p, lang)}
                 </Link>
               </li>
             ))}
@@ -119,12 +137,12 @@ export default function Footer({ t, config, lang = 'en' }) {
           <p className="text-xs font-medium uppercase tracking-widest text-ivory/40">
             {f.areasTitle}
           </p>
-          <ul className="mt-5 flex flex-wrap gap-x-7 gap-y-2.5">
-            {localPages.map((p) => (
+          <ul className="mt-3 flex flex-wrap gap-x-7">
+            {areaPages.map((p) => (
               <li key={p.slug}>
                 <Link
                   to={withLang(p.path, lang)}
-                  className="text-[0.82rem] text-ivory/55 transition-colors hover:text-gold-soft"
+                  className={`${linkTap} text-[0.82rem] text-ivory/55 transition-colors hover:text-gold-soft`}
                 >
                   {areaLabel(p, lang)}
                 </Link>
@@ -142,7 +160,19 @@ export default function Footer({ t, config, lang = 'en' }) {
             {f.equalHousing}
           </div>
           <p className="max-w-4xl text-[0.78rem] leading-relaxed text-ivory/45">{f.disclosure}</p>
-          <p className="mt-6 text-[0.78rem] text-ivory/40">
+          <ul className="mt-5 flex flex-wrap gap-x-7">
+            <li>
+              <Link to={withLang('/privacy', lang)} className={`${linkTap} text-[0.82rem] text-ivory/65 transition-colors hover:text-gold-soft`}>
+                {f.privacy}
+              </Link>
+            </li>
+            <li>
+              <Link to={withLang('/terms', lang)} className={`${linkTap} text-[0.82rem] text-ivory/65 transition-colors hover:text-gold-soft`}>
+                {f.terms}
+              </Link>
+            </li>
+          </ul>
+          <p className="mt-3 text-[0.78rem] text-ivory/50">
             © {config.brandName}. {f.rights}
           </p>
         </div>

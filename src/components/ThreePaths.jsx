@@ -5,7 +5,7 @@ import { withLang } from '../lib/href.js'
 export default function ThreePaths({ t, lang }) {
   const p = t.paths
   return (
-    <section id="paths" className="scroll-mt-20 bg-sand-soft py-16 sm:py-24">
+    <section id="paths" className="scroll-mt-24 bg-sand-soft py-16 sm:py-24">
       <div className="section-shell">
         <SectionHead no="02" eyebrow={p.eyebrow} title={p.title} intro={p.intro} />
 

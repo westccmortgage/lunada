@@ -1,6 +1,6 @@
 # Lunada Bay Mortgage
 
-A premium, bilingual (English / 简体中文) marketing website for **Lunada Bay Mortgage**, operated by **West Coast Capital Mortgage Inc.** and led by founder **Anatoliy Kanevsky** — a local, licensed Palos Verdes mortgage and real estate professional.
+A premium, bilingual (English / 简体中文) marketing website for **Lunada Bay Mortgage**, operated by **West Coast Capital Mortgage** and led by founder **Anatoliy Kanevsky** — a local, licensed Palos Verdes mortgage and real estate professional.
 
 > Local guidance for high-value home decisions in Lunada Bay, Palos Verdes, and coastal Los Angeles — the property, the financing, the structure, and the next step.
 
@@ -101,7 +101,7 @@ All license/NMLS values live in **`src/data/translations.js → siteConfig`**, s
 
 ```
 company: {
-  name: 'West Coast Capital Mortgage Inc.',
+  name: 'West Coast Capital Mortgage',
   dreCorporationLicense: '02440065',   // CA DRE Corporation License (California only)
   nmls: '2817729',                     // Company NMLS (national ID; carries across states)
   statesLicensed: 'California & Florida',
@@ -117,7 +117,7 @@ founder: {
 Public display (footer, About, disclosures, schema):
 
 ```
-West Coast Capital Mortgage Inc.
+West Coast Capital Mortgage
 CA DRE Corporation License #02440065
 NMLS #2817729
 Licensed in California & Florida

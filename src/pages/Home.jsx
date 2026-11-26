@@ -1,6 +1,6 @@
 import { useLang } from '../context/LanguageContext.jsx'
 import { siteConfig } from '../data/translations.js'
-import { organizationSchema, personSchema, websiteSchema, faqSchema } from '../lib/schema.js'
+import { organizationSchema, personSchema, websiteSchema } from '../lib/schema.js'
 import Seo from '../components/Seo.jsx'
 import Hero from '../components/Hero.jsx'
 import TrustBlock from '../components/TrustBlock.jsx'
@@ -21,11 +21,11 @@ export default function Home() {
   return (
     <>
       <Seo
-        title="Lunada Bay Mortgage | Private Mortgage Strategy for Palos Verdes & Coastal LA"
-        description="Local, licensed, personal mortgage guidance for buying, refinancing, and high-value home decisions in Lunada Bay, Palos Verdes, and coastal Los Angeles. English and 中文."
+        title={t.seo.homeTitle}
+        description={t.seo.homeDescription}
         keywords="Lunada Bay mortgage, Palos Verdes mortgage, jumbo loans Palos Verdes, private mortgage advisor, Anatoliy Kanevsky, West Coast Capital Mortgage, bilingual mortgage guidance Los Angeles, English Chinese mortgage guidance, 帕洛斯弗迪斯房贷, 大额房贷, 洛杉矶房贷指导, 中文房贷说明, 英文与中文双语房贷指导"
         path="/"
-        jsonLd={[organizationSchema(), personSchema(), websiteSchema(), faqSchema(t.faq.items)]}
+        jsonLd={[organizationSchema(), personSchema(), websiteSchema()]}
       />
 
       <Hero t={t} />

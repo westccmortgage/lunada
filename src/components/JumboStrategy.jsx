@@ -3,7 +3,7 @@ import SectionHead from './SectionHead.jsx'
 export default function JumboStrategy({ t }) {
   const s = t.strategy
   return (
-    <section id="strategy" className="scroll-mt-20 bg-ivory py-16 sm:py-24">
+    <section id="strategy" className="scroll-mt-24 bg-ivory py-16 sm:py-24">
       <div className="section-shell">
         <SectionHead no="03" eyebrow={s.eyebrow} title={s.title} intro={s.intro} />
 

@@ -1,33 +1,39 @@
-import { createContext, useContext, useEffect, useMemo, useState } from 'react'
+import { createContext, useCallback, useContext, useEffect, useMemo } from 'react'
+import { useLocation, useNavigate } from 'react-router-dom'
 import { translations } from '../data/translations.js'
 
-const STORAGE_KEY = 'lbm-lang'
 const LanguageContext = createContext(null)
 
-// A /zh* URL is a Chinese entry point — it always wins over a saved preference,
-// so a direct load renders Chinese immediately (good for SEO and for sharing).
-const isZhPath = () => typeof window !== 'undefined' && window.location.pathname.startsWith('/zh')
+/** /zh and /zh/* are Chinese; every other path is English. The URL is the only source of truth. */
+export const isZhPathname = (pathname = '') => pathname === '/zh' || pathname.startsWith('/zh/')
+
+/** Same page in the other language: /x <-> /zh/x, / <-> /zh */
+export function switchPathLang(pathname, lang) {
+  const clean = pathname.length > 1 ? pathname.replace(/\/+$/, '') : pathname
+  const base = isZhPathname(clean) ? clean.slice(3) || '/' : clean
+  if (lang === 'zh') return base === '/' ? '/zh' : `/zh${base}`
+  return base || '/'
+}
 
 export function LanguageProvider({ children }) {
-  const [lang, setLang] = useState(() => (isZhPath() ? 'zh' : 'en'))
+  const { pathname, search, hash } = useLocation()
+  const navigate = useNavigate()
+  const lang = isZhPathname(pathname) ? 'zh' : 'en'
 
-  // Restore a previously chosen language — unless the URL is a /zh route.
-  useEffect(() => {
-    if (isZhPath()) {
-      setLang('zh')
-      return
-    }
-    const saved = typeof window !== 'undefined' ? window.localStorage.getItem(STORAGE_KEY) : null
-    if (saved === 'en' || saved === 'zh') setLang(saved)
-  }, [])
+  const setLang = useCallback(
+    (next) => {
+      if (next === lang) return
+      navigate(`${switchPathLang(pathname, next)}${search}${hash}`, { state: { langSwitch: true } })
+    },
+    [lang, pathname, search, hash, navigate],
+  )
 
-  // Persist choice and reflect it on <html lang> for typography + accessibility
+  // Reflect the active language on <html lang> for typography + accessibility
   useEffect(() => {
-    if (typeof window !== 'undefined') window.localStorage.setItem(STORAGE_KEY, lang)
     document.documentElement.lang = lang === 'zh' ? 'zh' : 'en'
   }, [lang])
 
-  const value = useMemo(() => ({ lang, setLang, t: translations[lang] }), [lang])
+  const value = useMemo(() => ({ lang, setLang, t: translations[lang] }), [lang, setLang])
 
   return <LanguageContext.Provider value={value}>{children}</LanguageContext.Provider>
 }

@@ -11,6 +11,14 @@
     scroll-behavior: smooth;
   }
 
+  /* Anchor targets sit below the fixed header (hash links, #contact etc.) */
+  [id] {
+    scroll-margin-top: 5.5rem;
+  }
+  #top {
+    scroll-margin-top: 0;
+  }
+
   body {
     @apply bg-ivory text-navy font-sans antialiased;
     text-rendering: optimizeLegibility;
@@ -45,7 +53,7 @@
 
   /* Editorial micro-label — wide-tracked studio caption */
   .meta-label {
-    @apply text-[0.65rem] font-semibold uppercase tracking-[0.3em] text-navy/50;
+    @apply text-[0.6875rem] font-semibold uppercase tracking-[0.3em] text-navy/50;
   }
 
   /* Display headline scale — precise, restrained, Apple-like discipline */

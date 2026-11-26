@@ -1,7 +1,7 @@
 export default function BilingualGuidance({ t, lang, setLang }) {
   const b = t.bilingual
   return (
-    <section id="bilingual" className="scroll-mt-20 bg-navy-deep py-16 text-ivory sm:py-24">
+    <section id="bilingual" className="scroll-mt-24 bg-navy-deep py-16 text-ivory sm:py-24">
       <div className="section-shell">
         <div className="mx-auto max-w-3xl text-center">
           <p className="eyebrow-rule justify-center text-gold-soft">

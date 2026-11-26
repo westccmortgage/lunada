@@ -45,7 +45,7 @@ const P = [
         'Details on the property and, for a refinance, your current mortgage statement',
       ],
       next: [
-        'The clearest first step is a short, private conversation. Start Mortgage Path to answer a few simple questions, or request a private review and a licensed professional will follow up.',
+        'The clearest first step is a short, private conversation. Request a private review and a licensed professional will follow up.',
       ],
       faq: [
         { q: 'Do jumbo loans require 20% down?', a: 'Not necessarily. Down payment requirements vary by lender, program, property, and borrower profile. Some scenarios may allow different structures, subject to lender guidelines and underwriting review.' },
@@ -83,7 +83,7 @@ const P = [
         '房产相关信息；再融资时还需现有贷款月结单',
       ],
       next: [
-        '最清晰的第一步是一次简短、私密的沟通。点击“开始了解贷款路径”回答几个简单问题，或预约私人评估，持牌专业人士会与您联系。',
+        '最清晰的第一步是一次简短、私密的沟通。预约私人评估，持牌专业人士会与您联系。',
       ],
       faq: [
         { q: '大额贷款必须首付 20% 吗？', a: '不一定。首付要求因贷款机构、项目、房产及借款人情况而异。部分情形在符合机构规定与承保审核的前提下，可能采用不同结构。' },
@@ -96,14 +96,14 @@ const P = [
 
   {
     slug: 'foreign-national-mortgage',
-    keywords: 'foreign national mortgage, foreign buyer financing, non-resident mortgage, international buyer home loan California, foreign national loan Florida, buy property in California and Florida, ITIN mortgage, buy US property as a foreign national, 外国买家房贷',
+    keywords: 'foreign national mortgage, foreign buyer financing, non-resident mortgage, international buyer home loan California, foreign national loan, buy property in the U.S., ITIN mortgage, buy US property as a foreign national, 外国买家房贷',
     en: {
       title: 'Foreign National Financing | Lunada Bay Mortgage',
-      description: 'How international buyers may finance a home in California or Florida as a foreign national — often without a U.S. credit score or green card. Guidance in English and 中文.',
+      description: 'How international buyers may finance a home in the U.S. as a foreign national — often without a U.S. credit score or green card. Guidance in English and 中文.',
       h1: 'Financing for Foreign National Buyers',
       intro: [
         'A “foreign national” loan is a mortgage for a buyer who is not a U.S. citizen or permanent resident — often someone living abroad who wants to own property in the United States. You do not always need a U.S. credit score, a Social Security number, or a green card to be considered.',
-        'International buyers are among the most active purchasers in California and Florida — two of the most sought-after U.S. markets. We help qualified foreign nationals finance a home in either state: from coastal Los Angeles near Palos Verdes and the South Bay to a purchase in Florida, subject to lender guidelines and underwriting approval.',
+        'International buyers are among the most active purchasers in U.S. real estate. We help qualified foreign nationals finance a home in many states across the U.S. — from coastal Los Angeles near Palos Verdes and the South Bay to purchases elsewhere in the country — subject to lender guidelines and underwriting approval.',
       ],
       meaning: [
         'Instead of relying on a U.S. credit report, lenders offering foreign national programs may review your income and assets from your home country, your source of funds, and international credit reference letters from your bank. In exchange for that flexibility, these programs typically expect a larger down payment and verified reserves.',
@@ -132,7 +132,7 @@ const P = [
         'International purchases benefit from clear guidance from the very start. Request a private review — or use Review My Scenario — and a licensed professional will explain, in English or 中文, what may be possible for your situation, subject to lender guidelines and underwriting approval.',
       ],
       faq: [
-        { q: 'Which states can you help me buy in?', a: 'We work with foreign national buyers purchasing in California and Florida — two of the markets international buyers ask about most. Program availability still depends on the lender, the property, and underwriting.' },
+        { q: 'Which states can you help me buy in?', a: 'Many states across the U.S. — check your state with us. Program availability still depends on the state, the lender, the property, and underwriting; tell us where you plan to buy in the review form and we will confirm.' },
         { q: 'Do I need a U.S. credit score or Social Security number?', a: 'Not always. Some foreign national programs use an ITIN or international credit reference letters from your bank instead of a U.S. credit score, subject to lender guidelines and underwriting review.' },
         { q: 'Can I buy without living in the United States?', a: 'Yes. Many programs allow non-resident foreign nationals to purchase a second home, vacation home, or investment property in the U.S.' },
         { q: 'How much down payment will I need?', a: 'Foreign national programs generally expect a larger down payment than standard loans. The exact amount depends on the lender, program, property, and your profile. We do not quote figures here.' },
@@ -143,11 +143,11 @@ const P = [
     },
     zh: {
       title: '外国买家（Foreign National）融资 | Lunada Bay Mortgage',
-      description: '海外买家如何作为外国买家（Foreign National）在加州或佛罗里达购房融资——在许多情况下无需美国信用分数或绿卡。提供中英双语指导。',
+      description: '海外买家如何作为外国买家（Foreign National）在美国购房融资——在许多情况下无需美国信用分数或绿卡。提供中英双语指导。',
       h1: '外国买家融资方案',
       intro: [
         '“外国买家（Foreign National）”贷款，是为并非美国公民或永久居民的买家提供的房贷——通常是居住在海外、希望在美国拥有房产的人。在许多情况下，您不一定需要美国信用分数、社会安全号码（SSN）或绿卡。',
-        '国际买家是加州与佛罗里达最活跃的购房群体之一——这两地都是最受青睐的美国置业市场。我们可以帮助符合条件的外国买家在这两个州购房融资：从帕洛斯弗迪斯与南湾（South Bay）所在的洛杉矶沿海地区，到佛罗里达的置业，具体视贷款机构规定及承保审批而定。',
+        '国际买家是美国房地产市场上最活跃的购房群体之一。我们可以帮助符合条件的外国买家在美国多个州购房融资：从帕洛斯弗迪斯与南湾（South Bay）所在的洛杉矶沿海地区，到美国其他地方的置业，具体视贷款机构规定及承保审批而定。',
       ],
       meaning: [
         '贷款机构在提供外国买家项目时，可能不依赖美国信用报告，而是审阅您在本国的收入与资产、资金来源，以及来自您银行的国际信用参考函。作为这种灵活性的交换，这类项目通常要求更高的首付与经核实的储备金。',
@@ -176,7 +176,7 @@ const P = [
         '国际购房若从一开始就获得清晰的指导，会很有帮助。预约私人评估——或使用“在线预审我的情况”——持牌专业人士会以中文或英文，说明在您的情况下可能可行的方案，具体视机构规定及承保审批而定。',
       ],
       faq: [
-        { q: '你们可以帮助我在哪些州购房？', a: '我们为在加州与佛罗里达购房的外国买家提供服务——这两地是国际买家询问最多的市场。具体项目能否提供，仍取决于贷款机构、房产与承保。' },
+        { q: '你们可以帮助我在哪些州购房？', a: '美国多个州——请向我们确认您所在的州。具体项目能否提供，仍取决于所在州、贷款机构、房产与承保；请在评估申请表中告诉我们您计划购房的地点，我们会为您确认。' },
         { q: '我需要美国信用分数或社会安全号码（SSN）吗？', a: '不一定。部分外国买家项目会以 ITIN 或来自您银行的国际信用参考函，替代美国信用分数，具体视机构规定及承保审核而定。' },
         { q: '我可以在不居住于美国的情况下购房吗？', a: '可以。许多项目允许非居民外国买家在美国购买第二套住宅、度假屋或投资房产。' },
         { q: '我需要多少首付？', a: '外国买家项目通常要求高于标准贷款的首付。具体金额取决于贷款机构、项目、房产及您的情况。我们不在此给出具体数字。' },
@@ -219,7 +219,7 @@ const P = [
         'Business license or equivalent proof of the business',
       ],
       next: [
-        'Every self-employed file is different. Start Mortgage Path or request a private review, and we will help present your income the way lenders are prepared to evaluate — subject to lender guidelines and underwriting approval.',
+        'Every self-employed file is different. Request a private review, and we will help present your income the way lenders are prepared to evaluate — subject to lender guidelines and underwriting approval.',
       ],
       faq: [
         { q: 'What if my tax returns do not show all of my income?', a: 'This is common. Alternative-documentation options such as bank statement loans may review income through business deposits instead of tax returns, subject to lender guidelines and underwriting approval.' },
@@ -257,7 +257,7 @@ const P = [
         '营业执照或同等的业务证明',
       ],
       next: [
-        '每一份自雇文件都不同。点击“开始了解贷款路径”或预约私人评估，我们会帮助以贷款机构认可的方式呈现您的收入——具体视机构规定及承保审批而定。',
+        '每一份自雇文件都不同。预约私人评估，我们会帮助以贷款机构认可的方式呈现您的收入——具体视机构规定及承保审批而定。',
       ],
       faq: [
         { q: '如果我的税表未能体现全部收入怎么办？', a: '这很常见。银行流水贷款等替代性文件方案，可能以企业存款而非税表审阅收入，具体视机构规定及承保审批而定。' },
@@ -300,7 +300,7 @@ const P = [
         'Property information; for a refinance, your current mortgage statement',
       ],
       next: [
-        'A bank statement loan is not right for everyone. Start Mortgage Path or request a private review to see whether it may fit — subject to lender guidelines and underwriting approval.',
+        'A bank statement loan is not right for everyone. Request a private review to see whether it may fit — subject to lender guidelines and underwriting approval.',
       ],
       faq: [
         { q: 'How many months of statements are needed?', a: 'Often 12 or 24 months, but the requirement varies by lender and program.' },
@@ -338,7 +338,7 @@ const P = [
         '房产信息；再融资时需现有贷款月结单',
       ],
       next: [
-        '银行流水贷款并非适合所有人。点击“开始了解贷款路径”或预约私人评估，了解它是否可能适合您——具体视机构规定及承保审批而定。',
+        '银行流水贷款并非适合所有人。预约私人评估，了解它是否可能适合您——具体视机构规定及承保审批而定。',
       ],
       faq: [
         { q: '需要多少个月的流水？', a: '通常为 12 或 24 个月，但要求因机构与项目而异。' },
@@ -381,7 +381,7 @@ const P = [
         'Entity documents if the property is held in an LLC',
       ],
       next: [
-        'DSCR financing depends on the property and the numbers. Start Mortgage Path or request a private review to explore qualifying scenarios — subject to lender guidelines and underwriting approval.',
+        'DSCR financing depends on the property and the numbers. Request a private review to explore qualifying scenarios — subject to lender guidelines and underwriting approval.',
       ],
       faq: [
         { q: 'Do I need to prove personal income?', a: 'DSCR loans focus on the property’s cash flow rather than personal income, though credit, reserves, and down payment still matter, subject to guidelines.' },
@@ -419,7 +419,7 @@ const P = [
         '如以 LLC 持有房产，还需实体文件',
       ],
       next: [
-        'DSCR 融资取决于房产与相关数字。点击“开始了解贷款路径”或预约私人评估，探讨符合条件的情形——具体视机构规定及承保审批而定。',
+        'DSCR 融资取决于房产与相关数字。预约私人评估，探讨符合条件的情形——具体视机构规定及承保审批而定。',
       ],
       faq: [
         { q: '我需要证明个人收入吗？', a: 'DSCR 贷款关注房产的现金流而非个人收入，但信用、储备金与首付仍然重要，具体视规定而定。' },
@@ -462,7 +462,7 @@ const P = [
         'For a refinance, your current mortgage statement',
       ],
       next: [
-        'Interest-only is a planning tool, not a default choice. Start Mortgage Path or request a private review to weigh it against your goals — subject to lender guidelines and underwriting approval.',
+        'Interest-only is a planning tool, not a default choice. Request a private review to weigh it against your goals — subject to lender guidelines and underwriting approval.',
       ],
       faq: [
         { q: 'Will my payment go up later?', a: 'Yes. When the interest-only period ends, the payment increases because you begin repaying principal over the remaining term.' },
@@ -500,7 +500,7 @@ const P = [
         '再融资时需现有贷款月结单',
       ],
       next: [
-        '只还利息是一种规划工具，而非默认选择。点击“开始了解贷款路径”或预约私人评估，结合您的目标进行权衡——具体视机构规定及承保审批而定。',
+        '只还利息是一种规划工具，而非默认选择。预约私人评估，结合您的目标进行权衡——具体视机构规定及承保审批而定。',
       ],
       faq: [
         { q: '我的月供之后会上升吗？', a: '会。只还利息期结束后，月供会上升，因为您将在剩余期限内开始偿还本金。' },
@@ -543,7 +543,7 @@ const P = [
         'Recent bank statements and an estimate of current value',
       ],
       next: [
-        'A cash-out refinance should fit your longer-term plan. Start Mortgage Path or request a private review to weigh whether it aligns with your goals — subject to borrower qualification and underwriting approval.',
+        'A cash-out refinance should fit your longer-term plan. Request a private review to weigh whether it aligns with your goals — subject to borrower qualification and underwriting approval.',
       ],
       faq: [
         { q: 'How much equity can I access?', a: 'It varies by lender, program, property, and profile. Lenders usually require you to keep some equity in the home.' },
@@ -581,7 +581,7 @@ const P = [
         '近期银行流水及当前价值估算',
       ],
       next: [
-        '套现再融资应契合您的长期规划。点击“开始了解贷款路径”或预约私人评估，权衡它是否与您的目标相符——需符合借款人资格及承保审批。',
+        '套现再融资应契合您的长期规划。预约私人评估，权衡它是否与您的目标相符——需符合借款人资格及承保审批。',
       ],
       faq: [
         { q: '我能动用多少净值？', a: '因贷款机构、项目、房产及个人情况而异。贷款机构通常要求您在房产中保留一部分净值。' },
@@ -624,7 +624,7 @@ const P = [
         'For a refinance, your current mortgage statement',
       ],
       next: [
-        'Non-QM covers many paths. Start Mortgage Path or request a private review to find the one that may fit — subject to lender guidelines and underwriting approval.',
+        'Non-QM covers many paths. Request a private review to find the one that may fit — subject to lender guidelines and underwriting approval.',
       ],
       faq: [
         { q: 'Is Non-QM risky or unregulated?', a: 'No. Non-QM loans still require the lender to review your ability to repay and follow underwriting guidelines. They simply document income differently.' },
@@ -662,7 +662,7 @@ const P = [
         '再融资时需现有贷款月结单',
       ],
       next: [
-        'Non-QM 涵盖多种路径。点击“开始了解贷款路径”或预约私人评估，找到可能适合您的那一种——具体视机构规定及承保审批而定。',
+        'Non-QM 涵盖多种路径。预约私人评估，找到可能适合您的那一种——具体视机构规定及承保审批而定。',
       ],
       faq: [
         { q: 'Non-QM 风险高或不受监管吗？', a: '不是。Non-QM 贷款仍要求贷款机构审阅您的还款能力并遵循承保规定，只是收入的记录方式不同。' },
@@ -707,7 +707,7 @@ const P = [
         'Anything else the specific program requests',
       ],
       next: [
-        'You do not need everything ready to start. Start Mortgage Path or request a private review, and we will tell you exactly what applies to you — subject to lender guidelines and underwriting approval.',
+        'You do not need everything ready to start. Request a private review, and we will tell you exactly what applies to you — subject to lender guidelines and underwriting approval.',
       ],
       faq: [
         { q: 'Do I need all of this before I reach out?', a: 'No. Nothing is required to begin. The lists simply help you prepare; a professional will confirm what applies once you talk.' },
@@ -747,7 +747,7 @@ const P = [
         '具体项目所要求的其他材料',
       ],
       next: [
-        '开始时并不需要备齐一切。点击“开始了解贷款路径”或预约私人评估，我们会明确告诉您具体适用哪些——具体视机构规定及承保审批而定。',
+        '开始时并不需要备齐一切。预约私人评估，我们会明确告诉您具体适用哪些——具体视机构规定及承保审批而定。',
       ],
       faq: [
         { q: '联系之前需要备齐这些吗？', a: '不需要。开始时无需任何文件。清单只是帮助您准备；沟通之后专业人士会确认具体适用哪些。' },
@@ -790,7 +790,7 @@ const P = [
         'Details on the property you are considering',
       ],
       next: [
-        'The best time to understand financing is before you make an offer. Start Mortgage Path or request a private review, and use our estimate tool to see a payment and cash-to-close range — educational only, not a quote.',
+        'The best time to understand financing is before you make an offer. Request a private review, and use our estimate tool to see a payment and cash-to-close range — educational only, not a quote.',
       ],
       faq: [
         { q: 'What is pre-approval?', a: 'Pre-approval is a lender’s review of your information indicating what you may qualify for, subject to full underwriting. It is not a commitment to lend.' },
@@ -828,7 +828,7 @@ const P = [
         '您所考虑房产的相关信息',
       ],
       next: [
-        '了解融资的最佳时机，是在出价之前。点击“开始了解贷款路径”或预约私人评估，并使用我们的估算工具查看月供与交割现金的区间——仅供参考，并非报价。',
+        '了解融资的最佳时机，是在出价之前。预约私人评估，并使用我们的估算工具查看月供与交割现金的区间——仅供参考，并非报价。',
       ],
       faq: [
         { q: '什么是预批（pre-approval）？', a: '预批是贷款机构对您信息的审阅，表明您可能符合的条件，具体仍需完整承保。它不构成贷款承诺。' },
